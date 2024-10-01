@@ -2,6 +2,12 @@ h1 {
   font-family: samarkan;
 }
 
-.t-b-grad{
-  background: linear-gradient(to bottom, #232754 0%,#232754 50%,#283994 60%,  #283994 100%);
+.t-b-grad {
+  background: linear-gradient(
+    to bottom,
+    #232754 0%,
+    #232754 50%,
+    #283994 60%,
+    #283994 100%
+  );
 }
