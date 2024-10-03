@@ -6,11 +6,11 @@ import Home from '../components/Home';
 import Sponsors from '../components/Sponsors/Sponsors';
 import { useAuth } from './AuthManager';
 import { Register } from '../components/Register';
-import { useLocation } from 'react-router-dom';
+//import { useLocation } from 'react-router-dom';
 
 const RoutesManager = () => {
 	const { user } = useAuth();
-	const location = useLocation();
+	//const location = useLocation();
 	window.scroll(0,0);
 	return (
 		<Routes>
