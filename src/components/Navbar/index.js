@@ -7,7 +7,7 @@ import './index.css';
 const oldNavigation = [
 	{ name: "HOME", link: "/" },
 	{ name: "ABOUT", link: "/about" },
-	{ name: "Event", link: "#" },
+	{ name: "EVENTS", link: "#" },
 	
 ];
 
