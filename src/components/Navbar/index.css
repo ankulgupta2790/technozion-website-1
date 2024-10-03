@@ -1,4 +1,5 @@
-:root {
+
+ :root {
 	--img-width: 5vw;
 	z-index: 100;
 }
@@ -15,18 +16,18 @@
 
 
 nav {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	align-items: center;
-	align-self: center;
+	display:inline-block;
+	width: 20%;
+	justify-content:space-evenly;
 	color: white;
 	position: fixed;
 	z-index: 999;
+	 padding:10px 0px 0px 10px; 
 
-	margin-right: 3%;
-	margin-left: 3%;
-	margin-top: 3%;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	border-radius: 10px;
+
 }
 
 .logo {
@@ -50,7 +51,7 @@ nav .reg-login a {
 	color: #031f1b;
 	border-radius: 5rem;
 	/* font-family: "Aftersick", sans-serif; */
-	font-family: "EB Garamond", serif;
+	font-family: 'sans-serif, serif, bold, rounded';
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
   font-style: normal;
@@ -68,6 +69,7 @@ nav ul {
 	display: flex;
 	flex: 1;
 	justify-content: flex-start;
+	
 }
 
 nav ul li {
@@ -80,9 +82,9 @@ nav ul li {
 
 nav ul li a {
 	display: block;
-	font-weight: 1000;
+	font-weight: 500;
 	/* font-family: "Aftersick", sans-serif; */
-	font-family: "EB Garamond", serif;
+	font-family: "Golos Text", sans-serif;
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
   font-style: normal;
@@ -102,7 +104,7 @@ nav ul li button {
 	text-decoration: none;
 	color: rgb(0, 0, 0);
 	padding: 0.5rem;
-	margin: 0 0.5rem;
+	margin: 0.5rem;
 	border-radius: 0.5rem;
 	white-space: nowrap;
 	background-color: #031f1b;
@@ -288,6 +290,6 @@ nav .menu {
 @media (min-width: 500px) and (max-width: 1000px) {
 
 	.logo img {
-		width: calc(var(--img-width) + 3vw);
+		width: calc(var(--img-width) + 3vw);
 	}
 }
