@@ -7,6 +7,8 @@ import './index.css';
 const oldNavigation = [
 	{ name: "HOME", link: "/" },
 	{ name: "ABOUT", link: "/about" },
+	{ name: "Event", link: "#" },
+	
 ];
 
 export default function Navbar() {
@@ -73,3 +75,20 @@ export default function Navbar() {
 		</>
 	);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
