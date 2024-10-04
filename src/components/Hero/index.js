@@ -8,23 +8,24 @@ import ring2 from "./ring2.png";
 
 // Countdown Component
 const CountdownTimer = ({ targetDate }) => {
-    const [timeLeft, setTimeLeft] = useState({});
+    const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
     useEffect(() => {
         const interval = setInterval(() => {
             const now = new Date();
             const diff = targetDate - now;
+            if (diff < 0) {
+                clearInterval(interval);
+                setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+                return;
+            }
+
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
             const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
             setTimeLeft({ days, hours, minutes, seconds });
-
-            if (diff < 0) {
-                clearInterval(interval);
-                setTimeLeft({});
-            }
         }, 1000);
 
         return () => clearInterval(interval);
@@ -35,19 +36,19 @@ const CountdownTimer = ({ targetDate }) => {
             {/* <p className="stay-tuned">Coming Soon...</p> */}
             <div className="countdown-clock">
                 <div className="time-box">
-                    <span>{timeLeft.days !== undefined ? timeLeft.days : 0}</span>
+                    <span>{timeLeft.days}</span>
                     <span className="time-label">Days</span>
                 </div>
                 <div className="time-box">
-                    <span>{timeLeft.hours !== undefined ? timeLeft.hours : 0}</span>
+                    <span>{timeLeft.hours}</span>
                     <span className="time-label">Hours</span>
                 </div>
                 <div className="time-box">
-                    <span>{timeLeft.minutes !== undefined ? timeLeft.minutes : 0}</span>
+                    <span>{timeLeft.minutes}</span>
                     <span className="time-label">Minutes</span>
                 </div>
                 <div className="time-box">
-                    <span>{timeLeft.seconds !== undefined ? timeLeft.seconds : 0}</span>
+                    <span>{timeLeft.seconds}</span>
                     <span className="time-label">Seconds</span>
                 </div>
             </div>
@@ -60,19 +61,18 @@ const Hero = () => {
     const targetDate = new Date("2024-11-08T12:00:00Z"); // Target date
 
     useEffect(() => {
-        Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => {
+        Promise.allSettled(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => {
             img.onload = img.onerror = resolve;
         })))
             .then(() => {
                 console.log('Images finished loading');
                 setLoading(false);
-            }).catch(() => {
-                console.log('Some images failed to load');
             });
     }, []);
 
     const WebCanvas = () => {
         const canvasRef = useRef(null);
+        const mousePos = useRef({ x: 0, y: 0 });
         const [ctx, setCtx] = useState(null);
         const [points, setPoints] = useState([]);
 
@@ -90,13 +90,19 @@ const Hero = () => {
             const handleResize = () => {
                 canvas.width = window.innerWidth;
                 canvas.height = window.innerHeight;
-                initPoints();
+                setPoints([]); // Clear points
+                initPoints(); // Reinitialize points
             };
 
             const initPoints = () => {
                 const screenWidth = window.innerWidth;
-                const numPoints = screenWidth < 768 ? 300 : 700; // 300 points for small screens, 700 for larger screens
+    const screenHeight = window.innerHeight;
 
+    const screenArea = screenWidth * screenHeight;
+    
+    // Set the number of points based on screen area
+    const baseArea = 1000000;  // Set a base area, e.g., 1000000 pixels (1000x1000)
+               const numPoints = Math.floor((screenArea / baseArea) * 500);
                 const newPoints = [];
                 for (let i = 0; i < numPoints; i++) {
                     newPoints.push({
@@ -132,12 +138,12 @@ const Hero = () => {
             }
         };
 
-        const movePoints = (mouseX, mouseY) => {
+        const movePoints = () => {
             points.forEach(point => {
                 if (point.isFollowing) {
                     // Move point towards the cursor with increased speed
-                    point.x += (mouseX - point.x) * 0.15; // Follow cursor position faster
-                    point.y += (mouseY - point.y) * 0.15;
+                    point.x += (mousePos.current.x - point.x) * 0.15;
+                    point.y += (mousePos.current.y - point.y) * 0.15;
                 } else {
                     point.x += point.vx;
                     point.y += point.vy;
@@ -151,12 +157,10 @@ const Hero = () => {
 
         useEffect(() => {
             const animate = () => {
-                const canvas = canvasRef.current; // Get the current canvas reference
+                const canvas = canvasRef.current;
                 if (ctx && points.length > 0 && canvas) { // Check for null
                     ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    const mouseX = canvas.mouseX;
-                    const mouseY = canvas.mouseY;
-                    movePoints(mouseX, mouseY);
+                    movePoints();
 
                     // Draw lines between nearby points
                     points.forEach((pointA, index) => {
@@ -174,25 +178,23 @@ const Hero = () => {
 
         // Track mouse movement
         const handleMouseMove = (e) => {
-            const mouseX = e.clientX;
-            const mouseY = e.clientY;
-            canvasRef.current.mouseX = mouseX; // Store mouse position
-            canvasRef.current.mouseY = mouseY;
-
+            mousePos.current.x = e.clientX;
+            mousePos.current.y = e.clientY;
+             // console.log("inside mouse function");
             points.forEach(point => {
                 const dist = Math.sqrt(
-                    Math.pow(point.x - mouseX, 2) + Math.pow(point.y - mouseY, 2)
+                    Math.pow(point.x - mousePos.current.x, 2) + Math.pow(point.y - mousePos.current.y, 2)
                 );
-                point.isFollowing = dist < 30; // Set isFollowing to true if cursor is close
+                point.isFollowing = dist < 50; // Set isFollowing to true if cursor is close
             });
         };
-
+   
         return <canvas ref={canvasRef} onMouseMove={handleMouseMove}></canvas>;
     };
 
     return (
         <div>
-            {loading ? <Loader /> : ""}
+            {loading && <Loader />}
             <div className="relative flex overflow-hidden mx-auto w-full">
                 <WebCanvas />
                 <div className="absolute h-full w-full top-0 left-0 spotlight opacity-95"></div>

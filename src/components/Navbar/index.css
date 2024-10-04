@@ -23,6 +23,7 @@ nav {
 	position: fixed;
 	z-index: 10;
 	 padding:10px 0px 0px 10px; 
+
 	border-radius: 10px;
 
 }
@@ -146,7 +147,7 @@ nav .menu {
 .cross {
 	position: absolute;
 	cursor: pointer;
-	color: white;
+	color: #f1f2f2;
 	height: 2rem;
 	width: 2rem;
 	margin-left: 0.6rem;
@@ -281,5 +282,13 @@ nav .menu {
 
 	nav ul li a:not(.active):hover {
 		animation: none;
+	}
+}
+
+
+@media (min-width: 500px) and (max-width: 1000px) {
+
+	.logo img {
+		width: calc(var(--img-width) + 3vw);
 	}
 }
