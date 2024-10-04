@@ -2,6 +2,9 @@ import React, { useRef, useEffect, useState } from "react";
 import './index.css';
 import Loader from "../Loader";
 import main_logo_removebg from "./main_logo-removebg.png";
+import tz_logo from "./tz_logo.png";
+import ring1 from "./ring1.png";
+import ring2 from "./ring2.png";
 
 // Countdown Component
 const CountdownTimer = ({ targetDate }) => {
@@ -29,7 +32,7 @@ const CountdownTimer = ({ targetDate }) => {
 
     return (
         <div className="countdown-container">
-            <p className="stay-tuned">Coming Soon...</p>
+            {/* <p className="stay-tuned">Coming Soon...</p> */}
             <div className="countdown-clock">
                 <div className="time-box">
                     <span>{timeLeft.days !== undefined ? timeLeft.days : 0}</span>
@@ -195,9 +198,30 @@ const Hero = () => {
                 <div className="absolute h-full w-full top-0 left-0 spotlight opacity-95"></div>
 
                 <div className='heading1 flex flex-col justify-center items-center' style={{ 'background': 'transparent' }}>
-                    <div className="spree-title" style={{ 'padding': '0 25px' }}>
+                    {/* <div className="spree-title" style={{ 'padding': '0 25px' }}>
                         <img src={main_logo_removebg} alt="Spree dates" />
+                    </div> */}
+
+                    {/* Add the rotating logo here */}
+                    <div className="rotating-logo-container">
+                        <div className="static-part">
+                            <img src={tz_logo} alt="Static Logo Part" />
+                        </div>
+                        <div className="rotate-clockwise">
+                            <img src={ring1} alt="Clockwise Rotating Part" />
+                        </div>
+                        <div className="rotate-counterclockwise">
+                            <img src={ring2} alt="Counterclockwise Rotating Part" />
+                        </div>
                     </div>
+
+                    {/* New date display */}
+                    <div className="event-date">
+                        <span>Technozion'24</span>
+                        <br></br>
+                        <span>8th - 10th Nov</span>
+                    </div>
+
                     {/* Countdown Clock */}
                     <CountdownTimer targetDate={targetDate} />
                 </div>

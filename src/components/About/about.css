@@ -10,10 +10,24 @@ h1 {
   background: linear-gradient(
     to bottom,
     #232754 0%,
-    #232754 50%,
+    #020928 50%,
     #283994 60%,
     #283994 100%
   );
+}
+
+/* Body and Container Styles */
+body {
+  margin: 0; /* Remove default body margin */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  height: auto; /* Allow body height to auto */
+}
+
+/* Card Container Styles */
+.about-container {
+  padding: 20px; /* Add padding to the container */
+  box-sizing: border-box; /* Include padding in height calculations */
+  min-height: 100vh; /* Ensure content takes full height */
 }
 
 /* Card Styles */
@@ -26,16 +40,17 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Default to column for mobile */
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  margin: 10px 0; /* Add vertical margin for spacing */
+  width: 100%; /* Ensure card takes full width */
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Hover effect */
 }
 
 /* Hover animation */
@@ -58,12 +73,55 @@ h1 {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) { /* Adjusted for iPads and smaller screens */
   .card {
-    flex-direction: column;
+    flex-direction: column; /* Stack elements vertically on mobile */
     padding: 20px;
   }
+
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    margin: 10px 0; /* Adjusted margin for header */
   }
+
+  .theme-content {
+    padding: 10px; /* Add some padding to text */
+  }
+
+  img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Keep aspect ratio */
+  }
+
+  /* Remove hover effects for small screens */
+  .card:hover {
+    transform: none; /* Disable hover scaling */
+  }
+
+  .card:hover::before {
+    transform: none; /* Disable hover before scaling */
+  }
+
+  /* Disable the circle effect on small screens */
+  .card::before {
+    display: none; /* Hide the circle */
+  }
+
+  /* Ensure text remains visible */
+  .card:hover h1,
+  .card:hover .theme-content {
+    color: black; /* Keep text color on hover */
+  }
+}
+
+@media (min-width: 1025px) {
+  .card {
+    flex-direction: row; /* Align elements in row for larger screens */
+  }
+}
+
+/* Additional Styles to Ensure Scrollability */
+html, body {
+  height: auto; /* Set body height to auto */
+  overflow-y: auto; /* Enable vertical scrolling */
 }

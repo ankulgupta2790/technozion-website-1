@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { About } from '../components/About';
+import  { Events }  from '../components/Events';
 import AuthPage from '../components/Authpage/AuthPage';
 import Home from '../components/Home';
 import Sponsors from '../components/Sponsors/Sponsors';
@@ -16,19 +17,20 @@ const RoutesManager = () => {
 		<Routes>
 			{!user ? (
 				<>
-					<Route path="/auth" element={<AuthPage />} />
-					<Route path="/register" element={<AuthPage />} />
+					{/* <Route path="/auth" element={<AuthPage />} /> */}
+					{/* <Route path="/register" element={<AuthPage />} /> */}
 				</>
 			) : (
 				<>
-					<Route path="/auth" element={<Register />} />
-					<Route path="/register" element={<Register />} />
+					{/* <Route path="/auth" element={<Register />} /> */}
+					{/* <Route path="/register" element={<Register />} /> */}
 				</>
 			)}
 
 			<Route path="/" element={<Home />} />
 			<Route path="/about" element={<About />} />
-			<Route path="/sponsors" element={<Sponsors />} />
+			{/* <Route path="/sponsors" element={<Sponsors />} /> */}
+			<Route path="/events" element={<Events />} />
 		</Routes>
 	);
 };

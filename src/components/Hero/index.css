@@ -2,7 +2,13 @@
 :root {
 	--mar: 10px;
 	--imsz: 264px;
-	background-color: #031f1b;
+	background-color: #000000; /* Set background color to black */
+}
+
+/* Body and General Styles */
+body {
+    background-color: #000000; /* Ensure body background is black */
+    color: white; /* Set default text color to white */
 }
 
 @keyframes scrollYf {
@@ -57,7 +63,7 @@
 	width: 100vw;
 	height: 10vh;
 	bottom: 0px;
-	background: linear-gradient(to bottom, transparent 0%, #031f1b 100%);
+	background: linear-gradient(to bottom, transparent 0%, #01010e 100%);
 	z-index: 1;
 }
 
@@ -112,7 +118,7 @@
 	height: 60px;
 	bottom: 40px;
 	right: 40px;
-	background-color: #f7ca17;
+	background-color: #f7ca17; /* This can remain for visibility */
 	color: #fff;
 	border-radius: 50px;
 	border: 1px solid black;
@@ -202,7 +208,7 @@ button.float:hover>img {
 }
 
 .time-box {
-	background-color: #031f1b;
+	background-color: #000; /* Adjusted to dark for visibility */
 	color: white;
 	padding: 25px; /* Increased padding for larger boxes */
 	margin: 10px;
@@ -273,11 +279,80 @@ button.float:hover>img {
 		overflow-x: hidden;
 	}
 	.time-box {
-		width: 95px; /* Ensured the boxes stay large enough for small screens */
-		padding: 12px;
-		margin: 5px;
+		width: 80px; /* Ensured the boxes stay large enough for small screens */
+		padding: 5px;
+		margin: 3px;
+	}
+	.time-box span{
+		font-size:1rem;
 	}
 	.time-label {
 		font-size: 0.75em;
 	}
 }
+
+/* Rotate */
+.rotating-logo-container {
+	position: relative;
+	width: 400px; /* Adjust as necessary */
+	height: 400px;
+}
+
+.static-part img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Or 'contain' depending on your needs */
+}
+
+.rotate-clockwise img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	animation: rotateClockwise 3s linear infinite; /* Adjust speed as needed */
+}
+
+.rotate-counterclockwise img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	animation: rotateCounterclockwise 3s linear infinite;
+}
+
+@keyframes rotateClockwise {
+	from {
+	    transform: rotate(0deg);
+	}
+	to {
+	    transform: rotate(360deg);
+	}
+}
+
+@keyframes rotateCounterclockwise {
+	from {
+	    transform: rotate(0deg);
+	}
+	to {
+	    transform: rotate(-360deg);
+	}
+}
+
+.event-date {
+	/* margin-top: 10px; Space between logo and date */
+	font-size: 24px; /* Adjust font size as needed */
+	font-weight: bold; /* Make the date bold */
+	color: white; /* Light bluish neon color */
+	text-align: center; /* Center the text */
+	letter-spacing: 1px; /* Add some letter spacing for style */
+	text-shadow: 
+	    0 0 5px #00bfff,    /* Inner glow */
+	    0 0 10px #00bfff,   /* Outer glow */
+	    0 0 15px #0080ff,   /* Light outer glow */
+	    0 0 20px #0080ff,   /* Strong outer glow */
+	    0 0 25px #0080ff;   /* Very strong outer glow */
+  }
+  
+  
+  

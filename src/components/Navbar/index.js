@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { ImCross } from "react-icons/im";
-import chota_logo from "./chota_logo.png";
+import chota_logo from "./logo-05.png";
 import './index.css';
 
 const oldNavigation = [
 	{ name: "HOME", link: "/" },
 	{ name: "ABOUT", link: "/about" },
-	{ name: "EVENTS", link: "#" },
+	{ name: "EVENTS", link: "/events" },
 	
 ];
 
@@ -28,7 +28,7 @@ export default function Navbar() {
 
 	useEffect(() => {
 		if (isMobileView) {
-			setNavigation([...oldNavigation, { name: "REGISTER", link: "/auth" }]);
+			setNavigation([...oldNavigation]);
 		} else {
 			setNavigation(oldNavigation);
 		}
@@ -75,20 +75,3 @@ export default function Navbar() {
 		</>
 	);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
