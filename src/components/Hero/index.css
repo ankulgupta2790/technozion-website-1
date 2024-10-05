@@ -91,6 +91,12 @@ body {
 	display: inline-block;
 }
 
+.main-logo{
+	/* height:70vh; */
+	display: flex;
+	justify-content: center;
+}
+
 .heading1 .i1 {
 	min-width: 75px;
 	max-width: 235px;
@@ -217,9 +223,14 @@ button.float:hover>img {
 	text-align: center;
 	width: 130px; /* Increased width for larger text */
 	transition: transform 0.2s;
-	border: 2px solid white;
+	border: 2px solid white; /* Base border color */
 	flex-shrink: 0; /* Prevent shrinking of boxes */
-}
+	/* Glow effect for the border */
+	box-shadow: 0 0 5px #16f6f3, /* Inner glow */
+			0 0 10px #16f6f3, /* Outer glow */
+			0 0 15px #16f6f3; /* Strong outer glow */
+  }
+  
 
 .time-box span {
 	display: block;
@@ -292,67 +303,57 @@ button.float:hover>img {
 }
 
 /* Rotate */
+/* Container for Rotating Images */
 .rotating-logo-container {
-	position: relative;
-	width: 400px; /* Adjust as necessary */
-	height: 400px;
-}
-
-.static-part img {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: cover; /* Or 'contain' depending on your needs */
-}
-
-.rotate-clockwise img {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	animation: rotateClockwise 3s linear infinite; /* Adjust speed as needed */
-}
-
-.rotate-counterclockwise img {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	animation: rotateCounterclockwise 3s linear infinite;
-}
-
-@keyframes rotateClockwise {
-	from {
-	    transform: rotate(0deg);
-	}
-	to {
-	    transform: rotate(360deg);
-	}
-}
-
-@keyframes rotateCounterclockwise {
-	from {
-	    transform: rotate(0deg);
-	}
-	to {
-	    transform: rotate(-360deg);
-	}
-}
-
-.event-date {
-	/* margin-top: 10px; Space between logo and date */
-	font-size: 24px; /* Adjust font size as needed */
-	font-weight: bold; /* Make the date bold */
-	color: white; /* Light bluish neon color */
-	text-align: center; /* Center the text */
-	letter-spacing: 1px; /* Add some letter spacing for style */
-	text-shadow: 
-	    0 0 5px #00bfff,    /* Inner glow */
-	    0 0 10px #00bfff,   /* Outer glow */
-	    0 0 15px #0080ff,   /* Light outer glow */
-	    0 0 20px #0080ff,   /* Strong outer glow */
-	    0 0 25px #0080ff;   /* Very strong outer glow */
+	position: relative; /* Relative container for stacking images */
+	width: 400px; /* Adjust based on the size of your images */
+	height: 400px; /* Same as the image size */
+	margin: 0 auto; /* Center the container horizontally */
+	overflow: hidden; /* Ensures no part of image goes out of bounds */
   }
+  
+  /* Stacking and Centering Images */
+  .rotating-logo-container img {
+	position: absolute; /* Stack images on top of each other */
+	top: 50%; /* Align vertically at the center */
+	left: 50%; /* Align horizontally at the center */
+	transform: translate(-50%, -50%); /* Center the image perfectly */
+	width: 100%; /* Ensure image fits within container */
+	height: 100%; /* Ensure image fits within container */
+	object-fit: cover; /* Ensure image doesn't stretch */
+	transform-origin: center; /* Rotate from the center of each image */
+  }
+  
+  /* Clockwise Rotation */
+  .rotate-clockwise img {
+	animation: rotateClockwise 1s linear infinite;
+  }
+  
+  /* Counterclockwise Rotation */
+  .rotate-counterclockwise img {
+	animation: rotateCounterclockwise 1s linear infinite;
+  }
+  
+  /* Keyframes for Clockwise Rotation */
+  @keyframes rotateClockwise {
+	from {
+	    transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+	    transform: translate(-50%, -50%) rotate(360deg);
+	}
+  }
+  
+  /* Keyframes for Counterclockwise Rotation */
+  @keyframes rotateCounterclockwise {
+	from {
+	    transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+	    transform: translate(-50%, -50%) rotate(-360deg);
+	}
+  }
+
   
   
   
