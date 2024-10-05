@@ -1,31 +1,23 @@
-
 :root {
 	--img-width: 5vw;
 	z-index: 100;
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
-
-
 .active {
-	/* background-color: #D4ADFC; */
 	color: white;
 }
 
-
 nav {
-	display:inline-block;
+	display: inline-block;
 	width: 20%;
-	justify-content:space-evenly;
+	justify-content: space-evenly;
 	color: white;
 	position: fixed;
 	z-index: 10;
-	 padding:10px 0px 0px 10px; 
-
+	padding: 10px 0px 0px 10px;
 	border-radius: 10px;
-
 }
 
 .logo {
@@ -48,12 +40,10 @@ nav .reg-login a {
 	background-color: white;
 	color: #031f1b;
 	border-radius: 5rem;
-	/* font-family: "Aftersick", sans-serif; */
-	font-family: 'sans-serif, serif, bold, rounded';
-  font-optical-sizing: auto;
-  /* font-weight: <weight>; */
-  font-style: normal;
-  font-size: large;
+	font-family: "Golos Text", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: large;
 }
 
 nav .reg-login a:not(.active):hover {
@@ -61,13 +51,10 @@ nav .reg-login a:not(.active):hover {
 	color: white;
 }
 
-/* --------------------------- */
-
 nav ul {
 	display: flex;
 	flex: 1;
 	justify-content: flex-start;
-	
 }
 
 nav ul li {
@@ -76,24 +63,22 @@ nav ul li {
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
+	margin: 0; /* Reset margin */
+	padding: 0; /* Reset padding */
 }
 
 nav ul li a {
 	display: block;
 	font-weight: 500;
-	/* font-family: "Aftersick", sans-serif; */
 	font-family: "Golos Text", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: <weight>; */
-  font-style: normal;
-	font-size: 105%;
-	padding: 0.5rem;
-	margin: 0 0.3rem;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: 105%; /* Default font size */
+	padding: 0.5rem; /* Default padding */
+	margin: 0 0.3rem; /* Default margin */
 	border-radius: 0.5rem;
 	white-space: nowrap;
-	/* prevents from overflowing into two lines */
-	transition: text-shadow 0.3s ease;
-	cursor: pointer;
+	transition: text-shadow 0.3s ease, font-size 0.3s ease, margin 0.3s ease; /* Add transition for margin */
 }
 
 /* Log out button */
@@ -124,12 +109,10 @@ nav ul li a:not(.active):hover {
 	0% {
 		box-shadow: 0 0 30px white;
 	}
-
 	100% {
 		box-shadow: 0 0 100px white;
 	}
 }
-
 
 nav .menu {
 	display: none;
@@ -161,8 +144,10 @@ nav .menu {
 	cursor: pointer;
 }
 
+nav img {
+	width: calc(var(--img-width) + 1vw);
+}
 
-/* To stop logo from shrinking  */
 @media (max-width: 1150px) {
 	nav img {
 		width: calc(var(--img-width) + 1vw);
@@ -175,34 +160,82 @@ nav .menu {
 	}
 }
 
-/* ------------------------------ */
+/* Right Navbar */
+.right-nav {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+	position: fixed; /* Ensure it stays fixed to the right */
+	right: 0; /* Align to the right */
+}
 
-
-/* ------------- Drop-Down ----------------- */
-
-.dropdown-menu {
-	background-color: #f9f9f9;
-	z-index: 1;
+.right-nav ul {
+	display: flex;
+	justify-content: flex-end;
 	list-style-type: none;
-	padding: 0;
-	margin: 0;
 }
 
-.dropdown-content li {
-	margin: 0;
+.right-nav ul li {
+	margin-right: 20px; /* Adjust margin between items */
 }
 
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: transparent;
-	z-index: 1;
-	cursor: pointer;
+/* Adjustments for Navbar Items Spacing */
+nav ul li {
+	list-style: none;
+	background: linear-gradient(to right, white, white);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	margin: 0; /* Reset margin */
+	padding: 0; /* Reset padding */
 }
 
-/* ------------------------------------------ */
+nav ul li a {
+	display: block;
+	font-weight: 500;
+	font-family: "Golos Text", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: 105%; /* Default font size */
+	padding: 0.5rem; /* Default padding */
+	margin: 0 0.3rem; /* Default margin */
+	border-radius: 0.5rem;
+	white-space: nowrap;
+	transition: text-shadow 0.3s ease, font-size 0.3s ease, margin 0.3s ease; /* Add transition for margin */
+}
 
-/* making it responsive */
+/* Responsive spacing adjustments */
+@media (max-width: 900px) {
+	nav ul li {
+		margin: 0 0.2rem; /* Decrease margin between items */
+	}
+
+	nav ul li a {
+		font-size: 95%; /* Decrease font size */
+		padding: 0.4rem; /* Adjust padding */
+	}
+
+	.right-nav ul li {
+		margin-right: 10px; /* Decrease margin for smaller screens */
+	}
+}
+
+@media (max-width: 725px) {
+	nav ul li {
+		margin: 0.1rem; /* Further decrease margin */
+	}
+
+	nav ul li a {
+		font-size: 90%; /* Further decrease font size */
+		padding: 0.3rem; /* Adjust padding */
+	}
+
+	.right-nav ul li {
+		margin-right: 5px; /* Further decrease margin */
+	}
+}
+
+/* Responsive adjustments */
 @media (max-width: 725px) {
 	nav .menu {
 		display: flex;
@@ -221,7 +254,6 @@ nav .menu {
 		width: 100%;
 		margin-left: 0%;
 		margin-top: 0%;
-		/* background-color: #000000; */
 	}
 
 	nav ul {
@@ -244,7 +276,6 @@ nav .menu {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		/* Up Right Down Left */
 	}
 
 	nav ul li {
@@ -283,12 +314,22 @@ nav .menu {
 	nav ul li a:not(.active):hover {
 		animation: none;
 	}
+
+	.right-nav ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.right-nav ul li {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10%;
+	}
 }
 
-
-@media (min-width: 500px) and (max-width: 1000px) {
-
-	.logo img {
-		width: calc(var(--img-width) + 3vw);
-	}
+.dropdown2 {
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	opacity: 0.5;
 }
