@@ -2,7 +2,7 @@
 import './about.css';
 import logo1 from './logo1.png';
 import AboutCard from './AboutCard';
-import { WebCanvas } from '../background_animation/bg_animate.js';
+import { WebCanvas } from '../bg_animation/bg_animate.js';
 
 export const About = () => {
   return (
