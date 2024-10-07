@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { About } from '../components/About';
-import  { Events }  from '../components/Events';
+import   Events   from '../components/Events';
 import AuthPage from '../components/Authpage/AuthPage';
 import Home from '../components/Home';
 import Sponsors from '../components/Sponsors/Sponsors';

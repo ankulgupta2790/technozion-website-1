@@ -1,10 +1,145 @@
-.coming-soon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #000;
-      color: #fff;
-      font-size: 3rem;
-    }
-    
+.events-container {
+  position: relative;
+  height: 90vh; 
+  width: 100vw;  
+  background-color: black; 
+  overflow: hidden; 
+  top:10vh;
+}
+
+/* Styling for the WebCanvas background */
+.web-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1; /* WebCanvas should be the lowest layer */
+}
+
+/* Styling for the Event image in the center of the screen */
+.EventImg {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the image vertically and horizontally */
+  z-index: 2; /* Above the WebCanvas */
+  width: 15%; /* Adjust as needed */
+ 
+  max-height: auto; /* Adjust as needed */
+}
+
+/* Styling for the Portal image at the bottom of the screen */
+.portal-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 3; /* Above WebCanvas but below other content */
+  width: 100%; 
+  max-width: 800px; 
+  height: auto;
+}
+
+
+.Maincards-container {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfect centering */
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2%; /* Space between the cards */
+  z-index: 4; /* Above Event and Portal */
+}
+
+/* Individual card styling */
+.Maincard {
+  background: url('./Wtbg.png');
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem; /* Adjusted to rem for better scalability */
+  font-weight: bold;
+  color: black;
+  box-shadow: 0 4px 8px rgba(217, 2, 2, 0); /* Adds a subtle shadow */
+  width: 13vw; /* Make card size responsive */
+  height: 30vh; /* Increased height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+  background-size: cover;
+   /* to center the image */
+}
+
+.Maincard h1 {
+  max-width: 90%; /* Limit width of text */
+  overflow-wrap: break-word; /* Break long words */
+    font-size: 1.6rem;/* Adjust font size */
+}
+/* Hover effect to make the cards "come out" */
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .Maincards-container {
+    width: 90%;
+    gap: 10%; /* Increase gap on smaller screens */
+  }
+
+  .Maincard {
+    width: 15vw; /* Adjust card width on smaller screens */
+    height: 35vh; /* Adjusted height for smaller screens */
+    font-size: 1rem; /* Adjust font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .Maincards-container {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center; /* Center-align cards */
+  }
+
+  .Maincard {
+    width: 60vw; /* Increase card width on smaller screens */
+    height: 10vh; /* Adjust height for mobile view */
+    margin-bottom: 20px; /* Add space between vertically stacked cards */
+    font-size: 1rem;
+  }
+
+  .event-img {
+    max-width: 90%; /* Ensure event image scales down */
+  }
+
+  .portal-img {
+    width: 80%; /* Scale down the portal image */
+    height:auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .Maincards-container {
+    align-items: center; /* Ensure the cards are centered */
+  }
+
+  .Maincard {
+    width: 80vw; /* Full width for mobile devices */
+    height: 8vh; /* Adjusted height for smaller mobile view */
+    font-size: 0.9rem; /* Smaller font for mobile */
+  }
+
+  .event-img {
+    max-width: 80%; /* Smaller event image for mobile */
+  }
+
+  .portal-img {
+    width: 70%; /* Smaller portal image for mobile */
+    height:auto;
+  }
+}
