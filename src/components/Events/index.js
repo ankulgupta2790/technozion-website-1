@@ -22,8 +22,29 @@ const Events = () => {
   // New state for initial animation (from bottom to initial position)
   const [initialLoad, setInitialLoad] = useState(true);
 
+  // States to hold data fetched from JSON files
+  const [data1, setData1] = useState([]);
+  const [data2, setData2] = useState([]);
+  const [data3, setData3] = useState([]);
+
   // UseEffect to disable initial load state after the animation is done
   useEffect(() => {
+    fetch('/societies.json')
+      .then(response => response.json())
+      .then(data => setData1(data))
+      .catch(error => console.error('Error loading data1:', error));
+
+    // Fetch data2.json
+    fetch('/societies.json')
+      .then(response => response.json())
+      .then(data => setData2(data))
+      .catch(error => console.error('Error loading data2:', error));
+
+    // Fetch data3.json
+    fetch('/societies.json')
+      .then(response => response.json())
+      .then(data => setData3(data))
+      .catch(error => console.error('Error loading data3:', error));
     // Disable after animation (adjust timeout based on animation duration)
     const timer = setTimeout(() => setInitialLoad(false), 1000); // Assuming 1 second animation
     return () => clearTimeout(timer); // Cleanup timer if component unmounts
