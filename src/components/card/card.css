@@ -1,0 +1,486 @@
+/* Global reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General container for the card */
+.event_card {
+    margin: 0;
+    padding: 0;
+    bottom: 5%;
+}
+
+/* Wrapper for the main content */
+.app-wrapper {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #009cba, #16f6f3, #80e0e0, #16f6f3, #009cba);
+    font-family: "Martel Sans", sans-serif;
+}
+
+h1 {
+    font-size: 5.25vmin;
+    text-align: center;
+    color: #ffffff;
+}
+
+p {
+    font-size: max(10pt, 2.5vmin);
+    line-height: 1.4;
+    color: #ffffff; /* Change to white text color */
+    margin-bottom: 1.5rem;
+}
+
+/* Main card container */
+.wrap {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    width: 70vmin;
+    height: 70vmin;
+    border: 3px solid;
+    border-image: linear-gradient(
+            -50deg,
+            #16f6f3,
+            #16f6f3,
+            #16f6f7,
+            #16f6f9,
+            #16f6f1,
+            #16f6f3
+        ) 1;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 20px rgba(22, 246, 243, 0.75), 0px 0px 40px rgba(22, 246, 243, 0.5); /* Neon glow */
+}
+
+/* Updated glassy effect for .text */
+.text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Light semi-transparent background for glassy effect */
+    backdrop-filter: blur(3px); /* Glassy blur effect */
+    box-shadow: inset 1px 1px 15px rgba(0, 0, 0, 0.4); /* Optional shadow for depth */
+    color: white; /* Change text color to white */
+    overflow-y: scroll;
+    z-index: 2;
+}
+
+/* Removed the dark background overlay */
+/* Optional: Adding a glassy effect instead */
+.text:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.05); /* Lighter glassy background for contrast */
+    z-index: -1;
+    backdrop-filter: blur(10px); /* Blur effect for glassy appearance */
+}
+
+/* Overlay style for images/text */
+.overlay {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0.75rem;
+    background: rgba(0, 153, 167, 0.9); /* Slightly transparent overlay */
+    transition: 0.4s ease-in-out;
+    z-index: 1;
+}
+
+/* Image content */
+.image-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+}
+
+/* Dots indicating clickable content */
+.dots {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 55px;
+    height: 3vmin;
+    transition: 0.3s ease-in-out 0.3s;
+    font-size: 0.5rem;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    border: 1px solid #16f6f3;
+    /* border-radius: 50%; */
+    transition: 0.3s ease-in-out 0.3s;
+}
+
+/* Style of button */
+.dots button {
+    background-color: #16f6f3; /* Cyan background */
+    border: none; /* Remove default borders */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer; /* Pointer on hover */
+    color: white; /* White text color */
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Card navigation */
+.logo-cardnav-container {
+    display: flex; /* Flex container for logo and content */
+    width: 100%;
+    /* background-color: black; */
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Sticky logo-container */
+.logo-container {
+    flex: 1; /* Logo takes 1 part */
+    display: flex;
+    justify-content: center; /* Center the logo */
+    align-items: center; /* Center the logo vertically */
+    width: 40%;
+    position: sticky;
+    top: 0; /* Stick the logo at the top */
+    z-index: 10; /* Ensure it stays on top of other content */
+}
+
+.cnt-logo {
+    height: 50%; /* Set height to 60% of the card */
+    width: 80%; /* Maintain aspect ratio */
+    background-color: #000000;
+}
+
+/* Sticky content-container */
+.content-container {
+    flex: 3; /* Content takes 3 parts */
+    padding: 0.6rem;
+    width: 60%;
+    overflow-y: auto; /* Allow scrolling of content */
+    margin-bottom: 2rem;
+}
+
+.content{
+    margin-top:1.8rem;
+}
+
+/* Sticky cardnav */
+.cardnav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent cyan background */
+    backdrop-filter: blur(10px); /* Blur effect for glassy appearance */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9); /* Optional shadow for depth */
+}
+
+
+/* Glassy effect for navigation buttons */
+.cardnav button {
+    background-color: rgba(22, 246, 243, 0.2); /* Semi-transparent cyan */
+    border: none;
+    color: white;
+    padding: 0.3rem 0.2rem;
+    border-radius: 5px; /* Softer edges */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem; /* Set font size */
+    min-width: 80px; /* Set a minimum width for buttons */
+    backdrop-filter: blur(6px); /* Blur effect for glassy appearance */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Soft white border */
+}
+
+.cardnav button:hover {
+    background-color: rgba(0, 156, 186, 0.3); /* Darker cyan on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* More shadow on hover */
+}
+
+/* Hover effect */
+.wrap.active .overlay {
+    transform: translateX(-1000vmin);
+}
+
+.wrap.active .image-content {
+    width: 0vmin;
+}
+
+.wrap.active .dots {
+    transform: translateX(1rem);
+}
+
+.wrap.active .dots .dot {
+    background: #16f6f3; /* Change dot color on hover */
+}
+
+.wrap.active {
+    width: 100%;
+}
+
+/* Animations */
+.animate {
+    animation-duration: 0.7s;
+    animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+    animation-fill-mode: backwards;
+}
+
+.pop {
+    animation-name: pop;
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+.slide {
+    animation-name: slide;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translate(4em, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+/* Delay animations */
+.delay-1 {
+    animation-delay: 0.3s;
+}
+.delay-2 {
+    animation-delay: 0.6s;
+}
+.delay-3 {
+    animation-delay: 0.9s;
+}
+.delay-4 {
+    animation-delay: 1.2s;
+}
+.delay-5 {
+    animation-delay: 1.5s;
+}
+.delay-6 {
+    animation-delay: 1.8s;
+}
+.delay-7 {
+    animation-delay: 2.1s;
+}
+.delay-8 {
+    animation-delay: 2.4s;
+}
+
+/* Responsive design */
+@media (max-width: 1440px) {
+    .wrap {
+        width: 75vmin;
+        height: 75vmin;
+    }
+    h1 {
+        font-size: 4.5vmin;
+    }
+    p {
+        font-size: max(9pt, 2.2vmin);
+    }
+    /* .image-content {
+        width: 55vmin;
+    } */
+}
+
+@media (max-width: 1024px) {
+    .wrap {
+        flex-direction: column;
+        height: 70vmin;
+        width: 75vmin;
+    }
+    .image-content {
+        width: 100%;
+        height: 70vmin;
+    }
+    .overlay-content {
+        width: 100%;
+        padding: 1rem;
+    }
+    .dots {
+        position: absolute; /* Change to absolute positioning */
+        bottom: 1rem; /* Position it at the bottom */
+        left: 78%; /* Center it horizontally */
+        transform: translateX(-50%); /* Offset to truly center */
+        display: flex;
+        justify-content: flex-end; /* Center dots */
+        z-index: 5; /* Ensure it stays above other elements */
+    }
+    
+}
+
+:root {
+    --logo-height: 16rem; /* Default value for logo height */
+}
+
+@media (max-width: 510px) {
+    h1 {
+        font-size: 6vmin;
+    }
+    p {
+        font-size: max(12pt, 3vmin);
+    }
+    .wrap {
+        flex-direction: column;
+        width: 55vmin;
+        height: 55vmin;
+    }
+    .overlay-content {
+        width: 100%;
+        padding: 1rem;
+        aspect-ratio: 1;
+    }
+    .image-content {
+        height: 70vmin;
+    }
+    .dots {
+        width: 100%;
+        justify-content: center;
+    }
+    .event_card {
+        height: 53%;
+        width: 90%;
+    }
+
+    /* Apply overflow hidden to .text */
+    .text {
+        overflow: hidden; /* Prevent outer scrollbar on this element */
+        height: 100%; /* Ensure it takes full height */
+    }
+
+    /* Allow the content container to be scrollable */
+    .content-container {
+        overflow-y: auto; /* Enable scrolling for content only */
+    }
+
+    /* Additional changes for small devices */
+    .logo-cardnav-container {
+        display: block; /* Stacks the containers vertically */
+    }
+
+    .logo-container, 
+    .content-container {
+        width: 100%; /* Make each container take full width */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 0; /* Remove any margin */
+    }
+
+    .logo-container {
+        /* margin-bottom: 1rem;  */
+        position: fixed; /* Keep the logo fixed at the top */
+        top: 0; /* Align to the top of the viewport */
+        z-index: 10; /* Keep the logo on top */
+        background-color: rgba(0, 0, 0, 0.8); /* Ensure background is solid for visibility */
+        width: 100%; /* Make logo container full width */
+        padding: 1rem; /* Add some padding for spacing */
+    }
+
+    .cardnav {
+        position: fixed; /* Keep the navigation fixed */
+        margin-top: calc(var(--logo-height) ); /* Place it just below the logo */
+        z-index: 9; /* Ensure it appears below the logo but on top of the content */
+        width: 100%; /* Ensure full width for navigation */
+        display: flex; /* Flexbox for horizontal layout */
+        justify-content: space-around; /* Evenly distribute buttons */
+        padding: 0.5rem 0; /* Adjust padding to reduce height */
+        box-shadow: none; /* Remove shadow for a cleaner look */
+        background-color: rgba(0, 0, 0, 0.8); /* Ensure the background is solid */
+        left:0;
+    }
+
+    .cardnav button {
+        /* padding: 0.4rem 0.8rem; */
+        font-size: 0.5rem; /* Smaller font size */
+        min-width: 3rem; /* Set a minimum width for buttons */
+        margin: 0 0.2rem; /* Add some margin between buttons */
+        text-align: center; /* Center the text in buttons */
+        border-radius: 5px; /* Add rounded corners for buttons */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+    }
+
+    .cardnav button:hover {
+        background-color: rgba(0, 156, 186, 0.3); /* Darker cyan on hover */
+        transform: scale(1.05); /* Slightly enlarge button on hover */
+    }
+
+    .content-container {
+        height: calc(100% - (var(--logo-height) + 1rem)); /* Allow the content to take the remaining height of the viewport */
+        padding: 1rem; /* Add padding to improve readability */
+        padding-top:0;
+        overflow-y: auto; /* Allow scrolling only for content */
+        margin-top: calc(var(--logo-height) + 1rem); /* Add margin top to account for fixed logo and nav */
+    }
+}
+
+
+/*Scrollbar*/
+/* Custom scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 8px; /* Change the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.7); /* White color for the scrollbar */
+    border-radius: 10px; /* Rounded edges for the scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly darker on hover */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2); /* Dark track for contrast */
+}
+
+/* Custom scrollbar for Firefox */
+.scroll-container {
+    scrollbar-width: thin; /* Reduces the scrollbar width */
+    scrollbar-color: rgba(255, 255, 255, 0.7) rgba(0, 0, 0, 0.2); /* White scrollbar and dark track */
+}

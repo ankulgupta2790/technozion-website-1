@@ -10,7 +10,7 @@ function AboutCard({ content, image, imgToRight, title }) {
         </h1>
 
         {/* For small screens, image appears first */}
-        <div className="card text-black p-10 rounded-md flex flex-wrap">
+        <div className="about-card text-black p-10 rounded-md flex flex-wrap">
           <div className="border z-10 flex justify-center items-center duration-700 flex-col sm:flex-row">
             {/* <div className="sm:w-[100%] md:w-[45%] flex justify-center items-center">
               <img className="sm:w-[330px] md:w-[590px] max-w-full rounded-md" src={image} alt="themelogo" />
