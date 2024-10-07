@@ -1,4 +1,5 @@
 /* ANIMATION */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 :root {
 	--mar: 10px;
 	--imsz: 264px;
@@ -76,6 +77,7 @@ body {
 	color: white;
 	z-index: 1;
 	padding: 1rem;
+	padding-bottom: 0;
 	transform: translate(-50%, -50%);
 }
 
@@ -194,16 +196,14 @@ button.float:hover>img {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 .countdown-container {
-	text-align: center;
+	/* margin-top: 6rem; */
+	display: flex;
+	text-align: end;
+	font-family: "Chakra Petch", sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
-.stay-tuned {
-	margin-bottom: 5px;
-	font-size: 1.6em;
-	color: white;
-	background-color: transparent;
-	font-family: 'Roboto', sans-serif;
-}
 
 .countdown-clock {
 	display: flex;
@@ -214,11 +214,15 @@ button.float:hover>img {
 }
 
 .time-box {
-	background-color: #000; /* Adjusted to dark for visibility */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000; /* Adjusted to dark for visibility */
 	color: white;
-	padding: 25px; /* Increased padding for larger boxes */
+	padding: 20px; 
 	margin: 10px;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 	text-align: center;
 	width: 130px; /* Increased width for larger text */
@@ -226,19 +230,24 @@ button.float:hover>img {
 	border: 2px solid white; /* Base border color */
 	flex-shrink: 0; /* Prevent shrinking of boxes */
 	/* Glow effect for the border */
+	height: 9rem;
 	box-shadow: 0 0 5px #16f6f3, /* Inner glow */
 			0 0 10px #16f6f3, /* Outer glow */
-			0 0 15px #16f6f3; /* Strong outer glow */
+			0 0 5px #16f6f3; /* Strong outer glow */
+  }
+
+  .time-box{
+	height: 9rem;
   }
   
 
 .time-box span {
 	display: block;
-	font-size: 1.1em;
+	font-size: 1.4em;
 }
 
 .time-label {
-	font-size: 0.85em; /* Increased label size for visibility */
+	font-size: 1em; /* Increased label size for visibility */
 }
 
 /* Responsive Design */
@@ -276,6 +285,9 @@ button.float:hover>img {
 		width: 100px;
 		padding: 15px;
 	}
+	.time-box{
+		height: 7.5rem;
+	}
 }
 
 @media (max-width: 576px) {
@@ -299,6 +311,9 @@ button.float:hover>img {
 	}
 	.time-label {
 		font-size: 0.75em;
+	}
+	.time-box{
+		height: 6rem;
 	}
 }
 

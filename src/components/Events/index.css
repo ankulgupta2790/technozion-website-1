@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 .events-container {
   position: relative;
   height: 90vh; 
@@ -80,6 +81,10 @@
   max-width: 90%; /* Limit width of text */
   overflow-wrap: break-word; /* Break long words */
     font-size: 1.6rem;/* Adjust font size */
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 /* Hover effect to make the cards "come out" */
 
