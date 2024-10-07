@@ -115,6 +115,7 @@ const Hero = () => {
                     <div className="main-logo"> 
                         <img src={tzlogo_with_date}></img>
                     </div>
+                    <h1> hii</h1>
                     {/* Countdown Clock */}
                     <CountdownTimer targetDate={targetDate} />
                 </div>

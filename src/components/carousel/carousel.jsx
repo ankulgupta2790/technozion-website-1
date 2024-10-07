@@ -57,7 +57,7 @@ const Carousel = () => {
           <Card
             title={cards[currentIndex].title}
             description={cards[currentIndex].description}
-            rules={cards[currentIndex].rules} // Passing rules to Card
+            // rules={cards[currentIndex].rules} // Passing rules to Card
             contact={cards[currentIndex].contact} // Passing contact to Card
             imgSrc={cards[currentIndex].imgSrc}
           />

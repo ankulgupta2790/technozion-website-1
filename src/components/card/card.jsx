@@ -21,8 +21,8 @@ const Card = ({ title, description, rules, contact, imgSrc }) => {
         switch (activeTab) {
             case 'description':
                 return <p>{description}</p>;
-            case 'rules':
-                return <p>{rules}</p>;
+            // case 'rules':
+            //     return <p>{rules}</p>;
             case 'contact':
                 return <p>{contact}</p>;
             default:
@@ -75,7 +75,7 @@ const Card = ({ title, description, rules, contact, imgSrc }) => {
                             <div className="cardnav">
                                 {/* New Back Button */}
                                 <button onClick={() => setActiveTab('description')}>Description</button>
-                                <button onClick={() => setActiveTab('rules')}>Rules</button>
+                                {/* <button onClick={() => setActiveTab('rules')}>Rules</button> */}
                                 <button onClick={() => setActiveTab('contact')}>Contact</button>
                                 <button className="back-button" onClick={handleBack}>Back</button>
                             </div>
