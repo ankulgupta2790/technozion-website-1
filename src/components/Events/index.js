@@ -120,7 +120,7 @@ const cardVariants = {
             transition={{ duration: initialLoad ? 1 : (card1State.moveDown ? 0.8 : 0.5) }} // Set a longer duration for the first animation
             onClick={handleCard1Click}
           >
-           <h1>Club</h1>
+           <h1>CLUB</h1>
           </motion.div>
 
           <motion.div
@@ -139,7 +139,7 @@ const cardVariants = {
             transition={{ duration: initialLoad ? 1 : (card1State.moveDown ? 0.8 : 0.5) }}// Keep other cards as is
             onClick={handleCard2Click}
           >
-           <h1>Spotlight</h1>
+           <h1>SPOTLIGHT</h1>
           </motion.div>
 
           <motion.div
@@ -159,7 +159,7 @@ const cardVariants = {
             onClick={handleCard3Click}
                   
                   >
-             <h1>Department</h1>
+             <h1>SOCIETY</h1>
           </motion.div>
         </div>
       </div>
