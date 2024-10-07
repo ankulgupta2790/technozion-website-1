@@ -7,6 +7,7 @@ import ring1 from "./finalDraft_2.png";
 import ring2 from "./finalDraft_3.png";
 import main_logo from "./utd.png";
 import { WebCanvas } from "../bg_animation/bg_animate";
+import tzlogo_with_date from "./tzlogo_with_date.png";
 
 // Countdown Component
 const CountdownTimer = ({ targetDate }) => {
@@ -112,7 +113,7 @@ const Hero = () => {
                         <span>8th - 10th Nov</span>
                     </div> */}
                     <div className="main-logo"> 
-                        <img src={main_logo}></img>
+                        <img src={tzlogo_with_date}></img>
                     </div>
                     {/* Countdown Clock */}
                     <CountdownTimer targetDate={targetDate} />

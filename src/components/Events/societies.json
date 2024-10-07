@@ -1,0 +1,289 @@
+[
+    {
+        "name": "Computer Science Society",
+        "faculty_advisor": "Prof. S. Ravi Chandra",
+        "mobile_no": "+91 83329 69414",
+        "events": [
+            {
+                "name": "Trial by code",
+                "description": "A coding contest consisting of problem-solving questions, starting with easy and then progressively getting harder. It will be beneficial for practice for future OT's and Interviews and will build skills. We are planning on having a scoreboard based on the number of questions/test cases passed.",
+                "team_size": "Solo - 1"
+            },
+            {
+                "name": "Escape room: algorithmic approach",
+                "description": "Similar to a normal escape room except every level consists of an algorithm. Example: data structure: graphs, level 1 (Kahn's algo), level 2 (Dijkstra), level 3 (Kruskal's/Prim's).",
+                "team_size": "Team of 3 members"
+            },
+            {
+                "name": "Tech Wordle",
+                "description": "The event is a CS-themed word puzzle game where participants must guess technical terms related to computer science, such as algorithms, programming languages, or data structures.",
+                "team_size": "Solo event"
+            },
+            {
+                "name": "Data Science",
+                "description": "Solve business problems using data science. Use ML, AI concepts to solve the problem statement. Level-wise problem statements will be given.",
+                "team_size": "Solo event"
+            },
+            {
+                "name": "Mouse less Contest",
+                "description": "You will be given tasks and you have to do it without using a mouse. This can be done in a booth where there will be volunteers who will check whether the mouse is being used or not.",
+                "team_size": "Solo event"
+            }
+        ]
+    },
+    {
+        "name": "ECE Society",
+        "faculty_advisor": "Prof. P Prithvi",
+        "mobile_no": "+91 83329 69360",
+        "events": [
+            {
+                "name": "Build-A-PC Challenge",
+                "description": "An engaging team event where students will have the opportunity to assemble their own fully functional PCs. Teams will race against the clock to assemble their PCs.",
+                "team_size": "Team of 3 members"
+            },
+            {
+                "name": "Debugger’s Duel",
+                "description": "A group-based challenge where participants troubleshoot and fix intentional faults in pre-designed circuits. External resources are prohibited.",
+                "team_size": "Team of up to 4 members"
+            },
+            {
+                "name": "LLD: Game on!",
+                "description": "A coding challenge where participants are given incomplete classes and objects and must implement the correct methods to develop a game.",
+                "team_size": "Solo event"
+            }
+        ]
+    },
+    {
+        "name": "EEE Society",
+        "faculty_advisor": "Dr T Vinay Kumar",
+        "mobile_no": "9885281148",
+        "events": [
+            {
+                "name": "Voltage Vortex",
+                "description": "Series of rounds where questions and tasks related to electrical engineering are given.",
+                "team_size": "Team of 6 members"
+            },
+            {
+                "name": "Dare to feel the pain",
+                "description": "This event brings you the chance of experiencing the pain of period cramps through a simulator.",
+                "team_size": "Solo event"
+            },
+            {
+                "name": "Simulation and Modelling workshop",
+                "description": "Participants will explore real-world scenarios, using MATLAB/Simulink software to model circuits, power systems, and control systems.",
+                "team_size": "Solo event"
+            }
+        ]
+    },
+    {
+        "name": "Mechanical Engineering Society",
+        "faculty_advisor": "Srikanth Korla",
+        "mobile_no": "8332969327",
+        "events": [
+            {
+                "name": "Mechanical Kit Assembly",
+                "description": "A mechanical kit will be provided for the team to assemble using different assembly drawings and component lists.",
+                "team_size": "Team of 3 members"
+            }
+        ]
+    },
+    {
+        "name": "Civil Engineering Society",
+        "faculty_advisor": "Dr Aneetha V",
+        "mobile_no": "9489787495",
+        "events": [
+            {
+                "name": "Primavera Workshop",
+                "description": "Primavera is a construction management software. A workshop in the software training with a case study will be given to the participants.",
+                "team_size": "Team event"
+            },
+            {
+                "name": "Concrete Canoe Contest",
+                "description": "Concrete canoe contest is concrete boat making which has to float in water.",
+                "team_size": "Team event"
+            }
+        ]
+    },
+    {
+        "name": "Biotechnology Society",
+        "faculty_advisor": "Prof. Korrapati Narasimhulu",
+        "mobile_no": "9985470286",
+        "events": [
+            {
+                "name": "Forensic Investigation",
+                "description": "A workshop on DNA fingerprinting and other forensic technologies involved in criminal investigation.",
+                "team_size": "Team of 3 members"
+            },
+            {
+                "name": "Cellution",
+                "description": "Round 1: a quiz about the topics involved in the problem statement. Round 2: The team must propose a viable solution for a developmental challenge in biotechnology.",
+                "team_size": "Team of 3 members"
+            }
+        ]
+    },
+    {
+        "name": "MME Society",
+        "faculty_advisor": "Sukla Mondol",
+        "mobile_no": "9535023200",
+        "events": [
+            {
+                "name": "Metallusion(Display)",
+                "description": "A display of illusionary materials where participants can explore and interact with various unique materials.",
+                "team_size": "Team of 2 to 4 members"
+            },
+            {
+                "name": "Meta Forge",
+                "description": "A quiz event where questions are based on guessing or a fun topic chosen by the participants.",
+                "team_size": "Team of 2 members"
+            },
+            {
+                "name": "Metarush",
+                "description": "Participants solve clues related to metallurgy and materials. They will collect clues from each department.",
+                "team_size": "Team of 4 members"
+            },
+            {
+                "name": "Mysteries of Materials(demo)",
+                "description": "Discover hidden mysteries behind iconic failures and achievements through interactive displays.",
+                "team_size": "Team event"
+            },
+            {
+                "name": "Mystery Maze",
+                "description": "A classroom will be required and it will be completely dark, then participants will be given clues to find the materials among all materials which are hidden.",
+                "team_size": "Team of 2 members"
+            }
+        ]
+    },
+    {
+        "name": "chES",
+        "faculty_advisor": "Dr. Lion Rajmohan",
+            "mobile_no": "+91 99946 46610",
+        "events": [
+            {
+                "name": "Inno Chem",
+                "description": "The event offers a platform for inquisitive minds to present insights on Sustainable Energy and Environment: Role of Chemical Engineering, captivating the audience with flair and passion.",
+                "nature": "Team",
+                "max_students": 4
+            },
+            {
+                "name": "Chem Quest Auction",
+                "description": "Teams bid on industrial chemical compounds to create meaningful reactions. The team with the most valid reactions wins.",
+                "nature": "Team",
+                "max_students": 4,
+                "rules": [
+                    "Teams start with a fixed number of points.",
+                    "Bid on compounds in an auction format.",
+                    "Bartering between teams is allowed after the auction.",
+                    "The team with the most complete reactions wins."
+                ]
+            },
+            {
+                "name": "Chem Relay Race",
+                "description": "Teams compete in a relay race where each member must complete chemical-related challenges at various checkpoints across campus.",
+                "nature": "Team",
+                "max_students": 4
+            },
+            {
+                "name": "MATLAB Workshop",
+                "description": "Participants will gain hands-on experience with MATLAB for applications in chemical engineering, including data analysis and simulation.",
+                "nature": "Workshop",
+                "max_students": 20
+            },
+            {
+                "name": "Chem E Case",
+                "description": "Participants will analyze a problem statement in chemical engineering and present original solutions.",
+                "nature": "Team",
+                "max_students": 4
+            }
+        ]
+    },
+    {
+        "name": "Mathematics Society",
+        "faculty_advisor": "Triveni Prasad Shukla",
+        "mobile_no": "9702961319",
+        "events": [
+            {
+                "name": "Find X",
+                "description": "A multi-level mathematics-based competition where the competitors have to solve the mathematical challenges and gain that X points which will help them to win the competition.",
+                "nature": "Team",
+                "max_students": 4
+            },
+            {
+                "name": "Treco Hunt",
+                "description": "Treasure hunt integrated with mathematics. Teams must solve mathematical puzzles and challenges to find clues.",
+                "nature": "Team",
+                "max_students": 4
+            }
+        ]
+    },
+    {
+        "name": "Physics Society",
+        "faculty_advisor": "Prof. K. Thangaraju",
+        "mobile_no": "8332969476",
+        "events": [
+            {
+                "name": "Centre of Mass Game",
+                "description": "Balance an object at their centre of mass using minimal support.",
+                "team_size": "Team of 3 to 4 members."
+            },
+            {
+                "name": "Science Quiz Relay",
+                "description": "A quiz-based relay race where teams have to solve science problems quickly.",
+                "team_size": "Team of 3 to 4 members."
+            },
+            {
+                "name": "Optics Laser Target Game",
+                "description": "Participants use mirrors and lenses to direct a laser beam at specific targets from a distance.",
+                "team_size": "Team of 3 to 4 members."
+            },
+            {
+                "name": "Physics Model Demonstration",
+                "description": "Models which are based on the physical phenomenon.",
+                "team_size": "Team of 3 to 4 members."
+            }
+        ]
+    },
+    {
+        "name": "Management Society",
+        "faculty_advisor": "Rahul Thangeda",
+        "mobile_no": "89782648488",
+        "events": [
+            {
+                "name": "Product Launch",
+                "description": "The event aims at understanding the creativity of the team while launching a product.",
+                "team_size": "Team of 3 members."
+            },
+            {
+                "name": "Future Manager",
+                "description": "An individual will be tested on leadership and other skills related to management.",
+                "team_size": "Solo event."
+            }
+        ]
+    },
+    {
+        "name": "Chemistry Society",
+        "faculty_advisor": "Dr. M Raghasudha",
+        "mobile_no": "+91 95500 83100",
+        "events": [
+            {
+                "name": "Let him Cook",
+                "description": "There will be 3-5 boxes, 2 containing organic and metal compounds named chits. One containing solvents, one containing reagents and catalyst named chits.",
+                "team_size": "Individual event."
+            },
+            {
+                "name": "Chemistry Reaction Exhibit",
+                "description": "Letting the participants perform simple reactions using day to day products and letting them know the chemistry behind it.",
+                "team_size": "Individual event."
+            },
+            {
+                "name": "Periodic Table Battleship",
+                "description": "3 stages of activities will be there based on purely periodic table (Participants must be aware of each and everything related to periodic table).",
+                "team_size": "Individual event."
+            },
+            {
+                "name": "Chemophile-Racing",
+                "description": "It’s a toy car racing but the fuel for this car is not a battery or a fuel. This car will go on the principle of some reaction which can move that car. Anyone (individual) can design the reaction and present that car for the race.",
+                "team_size": "Individual event."
+            }
+        ]
+    }
+]
