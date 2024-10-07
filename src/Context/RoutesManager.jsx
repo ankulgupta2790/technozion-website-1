@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { About } from '../components/About';
 import   Events   from '../components/Events';
+import { Displayevents } from '../components/DisplayEvents';
 import AuthPage from '../components/Authpage/AuthPage';
 import Home from '../components/Home';
 import Sponsors from '../components/Sponsors/Sponsors';
@@ -31,6 +32,7 @@ const RoutesManager = () => {
 			<Route path="/about" element={<About />} />
 			{/* <Route path="/sponsors" element={<Sponsors />} /> */}
 			<Route path="/events" element={<Events />} />
+			<Route path="/displayevents" element={<Displayevents />} />
 		</Routes>
 	);
 };

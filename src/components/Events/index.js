@@ -107,9 +107,84 @@ const cardVariants = {
   };
 
   return (
-    <div className="coming-soon">
-      <h1>Coming Soon...</h1>
-    </div>
+    <>
+      <div className="web-canvas">
+        <WebCanvas />
+      </div>
+      <div className="events-container">
+        <div className="EventImg">
+          <img src={Event} alt="Event" />
+        </div>
+        <img src={Portal} alt="Portal" className="portal-img" />
+        <motion.img
+          src={Flame}
+          alt="Flame"
+          className="portal-img"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: flamestate||initialLoad ? 1 : 0 }}
+          transition={{ duration: 0.5 }}
+        />
+        <div className="Maincards-container">
+          <motion.div
+            className="Maincard" id='C1'
+            variants={cardVariants}
+            initial={initialLoad ? { scale: 0, opacity: 0, x:x1f,y:400 } : { scale: 1, opacity: 0 }} // Conditional initial state
+            animate={
+              initialLoad
+                ? 'cardAppear1'
+                : card1State.moveDown
+                ? 'moveDownCard1'
+                : card1State.moveToCenter
+                ? 'moveToCenterCard1'
+                : 'initial'
+            }
+            transition={{ duration: initialLoad ? 1 : (card1State.moveDown ? 0.8 : 0.5) }} // Set a longer duration for the first animation
+            onClick={handleCard1Click}
+          >
+           <h1>CLUB</h1>
+          </motion.div>
+
+          <motion.div
+            className="Maincard" id='C2'
+            variants={cardVariants}
+            initial={initialLoad ? { scale: 0, opacity: 0,y:400 } : { scale: 1, opacity: 0 }} // Conditional initial state
+            animate={
+              initialLoad
+                ? 'cardAppear2'
+                : card2State.moveDown
+                ? 'moveDownCard2'
+                : card2State.moveToCenter
+                ? 'moveToCenterCard2'
+                : 'initial'
+            }
+            transition={{ duration: initialLoad ? 1 : (card1State.moveDown ? 0.8 : 0.5) }}// Keep other cards as is
+            onClick={handleCard2Click}
+          >
+           <h1>SPOTLIGHT</h1>
+          </motion.div>
+
+          <motion.div
+            className="Maincard" id='C3'
+            variants={cardVariants}
+            initial={initialLoad ? { scale: 0, opacity: 0 ,x:x2f,y:400} : { scale: 1, opacity: 0 }} // Conditional initial state
+            animate={
+              initialLoad
+                ? 'cardAppear3'
+                : card3State.moveDown
+                ? 'moveDownCard3'
+                : card3State.moveToCenter
+                ? 'moveToCenterCard3'
+                : 'initial'
+            }
+            transition={{ duration: initialLoad ? 1 : (card1State.moveDown ? 0.8 : 0.5) }}// Keep other cards as is
+            onClick={handleCard3Click}
+                  
+                  >
+             <h1>SOCIETY</h1>
+          </motion.div>
+        </div>
+      </div>
+    </>
   );
 };
 
