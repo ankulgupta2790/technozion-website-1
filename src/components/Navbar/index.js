@@ -60,7 +60,7 @@ export default function Navbar() {
 
   const listItems = navigation.map((menuItem, index) => (
     <li key={index}>
-      {menuItem.name === "EVENTS" ? (
+      {menuItem.name === "REVENTS" ? (
         <div className="dropdown2-trigger">
           <a onClick={toggleDropdown}>{menuItem.name}</a>
           {showDropdown && (

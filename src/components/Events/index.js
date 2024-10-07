@@ -5,9 +5,9 @@ import { useNavigate } from 'react-router-dom';
 import Event from './Event.png';
 import Portal from './Portal.png';
 import Flame from './Flame.png';
-import Club from './Club.png';
-import Dept from './Dept.png';
-import Spotlight from './Spotlight.png'
+import Club from './4.png';
+import Dept from './2.png';
+import Spotlight from './3.png'
 import './index.css'; // Assuming you have this file for styling
 
 const Events = () => {
@@ -80,7 +80,7 @@ const cardVariants = {
       setflamestate(true);
     }, 800);
     setTimeout(() => {
-      navigate('/Event1');
+      navigate('/displayevents');
     }, 1600);
   };
 
@@ -141,7 +141,6 @@ const cardVariants = {
             transition={{ duration: initialLoad ? 1 : (card1State.moveDown ? 0.8 : 0.5) }} // Set a longer duration for the first animation
             onClick={handleCard1Click}
           >
-           <h1>CLUB</h1>
           </motion.div>
 
           <motion.div
@@ -160,7 +159,6 @@ const cardVariants = {
             transition={{ duration: initialLoad ? 1 : (card1State.moveDown ? 0.8 : 0.5) }}// Keep other cards as is
             onClick={handleCard2Click}
           >
-           <h1>SPOTLIGHT</h1>
           </motion.div>
 
           <motion.div
@@ -180,7 +178,6 @@ const cardVariants = {
             onClick={handleCard3Click}
                   
                   >
-             <h1>SOCIETY</h1>
           </motion.div>
         </div>
       </div>
