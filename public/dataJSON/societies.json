@@ -1,0 +1,192 @@
+[
+    {
+        "name": "Trial by code",
+        "description": "<h1>Computer Science Society</h1>\n\nA coding contest consisting of problem-solving questions, starting with easy and then progressively getting harder. It will be beneficial for practice for future OT's and Interviews and will build skills. We are planning on having a scoreboard based on the number of questions/test cases passed.\n\n<h4>Team size: Solo - 1</h4>",
+        "contact": "Prof. S. Ravi Chandra, +91 83329 69414"
+    },
+    {
+        "name": "Escape room: algorithmic approach",
+        "description": "<h1>Computer Science Society</h1>\n\nSimilar to a normal escape room except every level consists of an algorithm. Example: data structure: graphs, level 1 (Kahn's algo), level 2 (Dijkstra), level 3 (Kruskal's/Prim's).\n\n<h4>Team size: Team of 3 members</h4>",
+        "contact": "Prof. S. Ravi Chandra, +91 83329 69414"
+    },
+    {
+        "name": "Tech Wordle",
+        "description": "<h1>Computer Science Society</h1>\n\nThe event is a CS-themed word puzzle game where participants must guess technical terms related to computer science, such as algorithms, programming languages, or data structures.\n\n<h4>Team size: Solo event</h4>",
+        "contact": "Prof. S. Ravi Chandra, +91 83329 69414"
+    },
+    {
+        "name": "Data Science",
+        "description": "<h1>Computer Science Society</h1>\n\nSolve business problems using data science. Use ML, AI concepts to solve the problem statement. Level-wise problem statements will be given.\n\n<h4>Team size: Solo event</h4>",
+        "contact": "Prof. S. Ravi Chandra, +91 83329 69414"
+    },
+    {
+        "name": "Mouse less Contest",
+        "description": "<h1>Computer Science Society</h1>\n\nYou will be given tasks and you have to do it without using a mouse. This can be done in a booth where there will be volunteers who will check whether the mouse is being used or not.\n\n<h4>Team size: Solo event</h4>",
+        "contact": "Prof. S. Ravi Chandra, +91 83329 69414"
+    },
+    {
+        "name": "Build-A-PC Challenge",
+        "description": "<h1>ECE Society</h1>\n\nAn engaging team event where students will have the opportunity to assemble their own fully functional PCs. Teams will race against the clock to assemble their PCs.\n\n<h4>Team size: Team of 3 members</h4>",
+        "contact": "Prof. P Prithvi, +91 83329 69360"
+    },
+    {
+        "name": "Debugger\u2019s Duel",
+        "description": "<h1>ECE Society</h1>\n\nA group-based challenge where participants troubleshoot and fix intentional faults in pre-designed circuits. External resources are prohibited.\n\n<h4>Team size: Team of up to 4 members</h4>",
+        "contact": "Prof. P Prithvi, +91 83329 69360"
+    },
+    {
+        "name": "LLD: Game on!",
+        "description": "<h1>ECE Society</h1>\n\nA coding challenge where participants are given incomplete classes and objects and must implement the correct methods to develop a game.\n\n<h4>Team size: Solo event</h4>",
+        "contact": "Prof. P Prithvi, +91 83329 69360"
+    },
+    {
+        "name": "Voltage Vortex",
+        "description": "<h1>EEE Society</h1>\n\nSeries of rounds where questions and tasks related to electrical engineering are given.\n\n<h4>Team size: Team of 6 members</h4>",
+        "contact": "Dr T Vinay Kumar, 9885281148"
+    },
+    {
+        "name": "Dare to feel the pain",
+        "description": "<h1>EEE Society</h1>\n\nThis event brings you the chance of experiencing the pain of period cramps through a simulator.\n\n<h4>Team size: Solo event</h4>",
+        "contact": "Dr T Vinay Kumar, 9885281148"
+    },
+    {
+        "name": "Simulation and Modelling workshop",
+        "description": "<h1>EEE Society</h1>\n\nParticipants will explore real-world scenarios, using MATLAB/Simulink software to model circuits, power systems, and control systems.\n\n<h4>Team size: Solo event</h4>",
+        "contact": "Dr T Vinay Kumar, 9885281148"
+    },
+    {
+        "name": "Mechanical Kit Assembly",
+        "description": "<h1>Mechanical Engineering Society</h1>\n\nA mechanical kit will be provided for the team to assemble using different assembly drawings and component lists.\n\n<h4>Team size: Team of 3 members</h4>",
+        "contact": "Srikanth Korla, 8332969327"
+    },
+    {
+        "name": "Primavera Workshop",
+        "description": "<h1>Civil Engineering Society</h1>\n\nPrimavera is a construction management software. A workshop in the software training with a case study will be given to the participants.\n\n<h4>Team size: Team event</h4>",
+        "contact": "Dr Aneetha V, 9489787495"
+    },
+    {
+        "name": "Concrete Canoe Contest",
+        "description": "<h1>Civil Engineering Society</h1>\n\nConcrete canoe contest is concrete boat making which has to float in water.\n\n<h4>Team size: Team event</h4>",
+        "contact": "Dr Aneetha V, 9489787495"
+    },
+    {
+        "name": "Forensic Investigation",
+        "description": "<h1>Biotechnology Society</h1>\n\nA workshop on DNA fingerprinting and other forensic technologies involved in criminal investigation.\n\n<h4>Team size: Team of 3 members</h4>",
+        "contact": "Prof. Korrapati Narasimhulu, 9985470286"
+    },
+    {
+        "name": "Cellution",
+        "description": "<h1>Biotechnology Society</h1>\n\nRound 1: a quiz about the topics involved in the problem statement. Round 2: The team must propose a viable solution for a developmental challenge in biotechnology.\n\n<h4>Team size: Team of 3 members</h4>",
+        "contact": "Prof. Korrapati Narasimhulu, 9985470286"
+    },
+    {
+        "name": "Metallusion(Display)",
+        "description": "<h1>MME Society</h1>\n\nA display of illusionary materials where participants can explore and interact with various unique materials.\n\n<h4>Team size: Team of 2 to 4 members</h4>",
+        "contact": "Sukla Mondol, 9535023200"
+    },
+    {
+        "name": "Meta Forge",
+        "description": "<h1>MME Society</h1>\n\nA quiz event where questions are based on guessing or a fun topic chosen by the participants.\n\n<h4>Team size: Team of 2 members</h4>",
+        "contact": "Sukla Mondol, 9535023200"
+    },
+    {
+        "name": "Metarush",
+        "description": "<h1>MME Society</h1>\n\nParticipants solve clues related to metallurgy and materials. They will collect clues from each department.\n\n<h4>Team size: Team of 4 members</h4>",
+        "contact": "Sukla Mondol, 9535023200"
+    },
+    {
+        "name": "Mysteries of Materials(demo)",
+        "description": "<h1>MME Society</h1>\n\nDiscover hidden mysteries behind iconic failures and achievements through interactive displays.\n\n<h4>Team size: Team event</h4>",
+        "contact": "Sukla Mondol, 9535023200"
+    },
+    {
+        "name": "Mystery Maze",
+        "description": "<h1>MME Society</h1>\n\nA classroom will be required and it will be completely dark, then participants will be given clues to find the materials among all materials which are hidden.\n\n<h4>Team size: Team of 2 members</h4>",
+        "contact": "Sukla Mondol, 9535023200"
+    },
+    {
+        "name": "Inno Chem",
+        "description": "<h1>chES</h1>\n\nThe event offers a platform for inquisitive minds to present insights on Sustainable Energy and Environment: Role of Chemical Engineering, captivating the audience with flair and passion.\n\n<h4>Team size: Not specified</h4>",
+        "contact": "Dr. Lion Rajmohan, +91 99946 46610"
+    },
+    {
+        "name": "Chem Quest Auction",
+        "description": "<h1>chES</h1>\n\nTeams bid on industrial chemical compounds to create meaningful reactions. The team with the most valid reactions wins.\n\n<h4>Team size: Not specified</h4>",
+        "contact": "Dr. Lion Rajmohan, +91 99946 46610"
+    },
+    {
+        "name": "Chem Relay Race",
+        "description": "<h1>chES</h1>\n\nTeams compete in a relay race where each member must complete chemical-related challenges at various checkpoints across campus.\n\n<h4>Team size: Not specified</h4>",
+        "contact": "Dr. Lion Rajmohan, +91 99946 46610"
+    },
+    {
+        "name": "MATLAB Workshop",
+        "description": "<h1>chES</h1>\n\nParticipants will gain hands-on experience with MATLAB for applications in chemical engineering, including data analysis and simulation.\n\n<h4>Team size: Not specified</h4>",
+        "contact": "Dr. Lion Rajmohan, +91 99946 46610"
+    },
+    {
+        "name": "Chem E Case",
+        "description": "<h1>chES</h1>\n\nParticipants will analyze a problem statement in chemical engineering and present original solutions.\n\n<h4>Team size: Not specified</h4>",
+        "contact": "Dr. Lion Rajmohan, +91 99946 46610"
+    },
+    {
+        "name": "Find X",
+        "description": "<h1>Mathematics Society</h1>\n\nA multi-level mathematics-based competition where the competitors have to solve the mathematical challenges and gain that X points which will help them to win the competition.\n\n<h4>Team size: Not specified</h4>",
+        "contact": "Triveni Prasad Shukla, 9702961319"
+    },
+    {
+        "name": "Treco Hunt",
+        "description": "<h1>Mathematics Society</h1>\n\nTreasure hunt integrated with mathematics. Teams must solve mathematical puzzles and challenges to find clues.\n\n<h4>Team size: Not specified</h4>",
+        "contact": "Triveni Prasad Shukla, 9702961319"
+    },
+    {
+        "name": "Centre of Mass Game",
+        "description": "<h1>Physics Society</h1>\n\nBalance an object at their centre of mass using minimal support.\n\n<h4>Team size: Team of 3 to 4 members.</h4>",
+        "contact": "Prof. K. Thangaraju, 8332969476"
+    },
+    {
+        "name": "Science Quiz Relay",
+        "description": "<h1>Physics Society</h1>\n\nA quiz-based relay race where teams have to solve science problems quickly.\n\n<h4>Team size: Team of 3 to 4 members.</h4>",
+        "contact": "Prof. K. Thangaraju, 8332969476"
+    },
+    {
+        "name": "Optics Laser Target Game",
+        "description": "<h1>Physics Society</h1>\n\nParticipants use mirrors and lenses to direct a laser beam at specific targets from a distance.\n\n<h4>Team size: Team of 3 to 4 members.</h4>",
+        "contact": "Prof. K. Thangaraju, 8332969476"
+    },
+    {
+        "name": "Physics Model Demonstration",
+        "description": "<h1>Physics Society</h1>\n\nModels which are based on the physical phenomenon.\n\n<h4>Team size: Team of 3 to 4 members.</h4>",
+        "contact": "Prof. K. Thangaraju, 8332969476"
+    },
+    {
+        "name": "Product Launch",
+        "description": "<h1>Management Society</h1>\n\nThe event aims at understanding the creativity of the team while launching a product.\n\n<h4>Team size: Team of 3 members.</h4>",
+        "contact": "Rahul Thangeda, 89782648488"
+    },
+    {
+        "name": "Future Manager",
+        "description": "<h1>Management Society</h1>\n\nAn individual will be tested on leadership and other skills related to management.\n\n<h4>Team size: Solo event.</h4>",
+        "contact": "Rahul Thangeda, 89782648488"
+    },
+    {
+        "name": "Let him Cook",
+        "description": "<h1>Chemistry Society</h1>\n\nThere will be 3-5 boxes, 2 containing organic and metal compounds named chits. One containing solvents, one containing reagents and catalyst named chits.\n\n<h4>Team size: Individual event.</h4>",
+        "contact": "Dr. M Raghasudha, +91 95500 83100"
+    },
+    {
+        "name": "Chemistry Reaction Exhibit",
+        "description": "<h1>Chemistry Society</h1>\n\nLetting the participants perform simple reactions using day to day products and letting them know the chemistry behind it.\n\n<h4>Team size: Individual event.</h4>",
+        "contact": "Dr. M Raghasudha, +91 95500 83100"
+    },
+    {
+        "name": "Periodic Table Battleship",
+        "description": "<h1>Chemistry Society</h1>\n\n3 stages of activities will be there based on purely periodic table (Participants must be aware of each and everything related to periodic table).\n\n<h4>Team size: Individual event.</h4>",
+        "contact": "Dr. M Raghasudha, +91 95500 83100"
+    },
+    {
+        "name": "Chemophile-Racing",
+        "description": "<h1>Chemistry Society</h1>\n\nIt\u2019s a toy car racing but the fuel for this car is not a battery or a fuel. This car will go on the principle of some reaction which can move that car. Anyone (individual) can design the reaction and present that car for the race.\n\n<h4>Team size: Individual event.</h4>",
+        "contact": "Dr. M Raghasudha, +91 95500 83100"
+    }
+]

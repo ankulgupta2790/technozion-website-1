@@ -29,26 +29,47 @@ const Events = () => {
 
   // UseEffect to disable initial load state after the animation is done
   useEffect(() => {
-    fetch('/societies.json')
-      .then(response => response.json())
-      .then(data => setData1(data))
+    fetch('/dataJSON/societies.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        setData1(data);
+      })
       .catch(error => console.error('Error loading data1:', error));
-
-    // Fetch data2.json
-    fetch('/societies.json')
-      .then(response => response.json())
-      .then(data => setData2(data))
+  
+    fetch('/dataJSON/spotlight.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        setData2(data);
+      })
       .catch(error => console.error('Error loading data2:', error));
-
-    // Fetch data3.json
-    fetch('/societies.json')
-      .then(response => response.json())
-      .then(data => setData3(data))
+  
+    fetch('/dataJSON/clubevents.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        setData3(data);
+      })
       .catch(error => console.error('Error loading data3:', error));
-    // Disable after animation (adjust timeout based on animation duration)
-    const timer = setTimeout(() => setInitialLoad(false), 1000); // Assuming 1 second animation
-    return () => clearTimeout(timer); // Cleanup timer if component unmounts
+  
+    const timer = setTimeout(() => setInitialLoad(false), 1000);
+    return () => clearTimeout(timer);
   }, []);
+  
+  
 
   // Variants for card animations
   const screenWidth = window.innerWidth;
@@ -80,7 +101,7 @@ const cardVariants = {
       setflamestate(true);
     }, 800);
     setTimeout(() => {
-      navigate('/displayevents');
+      navigate('/displayevents', {state : {data: data1}});
     }, 1600);
   };
 
@@ -91,7 +112,7 @@ const cardVariants = {
       setflamestate(true);
     }, 800);
     setTimeout(() => {
-      navigate('/Event2');
+      navigate('/displayevents', {state : {data: data2}});
     }, 1600);
   };
 
@@ -102,7 +123,7 @@ const cardVariants = {
       setflamestate(true);
     }, 800);
     setTimeout(() => {
-      navigate('/Event3');
+      navigate('/displayevents', {state : {data: data3}});
     }, 1600);
   };
 

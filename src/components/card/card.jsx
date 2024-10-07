@@ -20,9 +20,13 @@ const Card = ({ title, description, rules, contact, imgSrc }) => {
     const renderContent = () => {
         switch (activeTab) {
             case 'description':
-                return <p>{description}</p>;
-            case 'rules':
-                return <p>{rules}</p>;
+                return (
+                    <div 
+                    dangerouslySetInnerHTML={{ __html: description }} 
+                    />
+                );
+            // case 'rules':
+            //     return <p>{rules}</p>;
             case 'contact':
                 return <p>{contact}</p>;
             default:
@@ -75,8 +79,9 @@ const Card = ({ title, description, rules, contact, imgSrc }) => {
                             <div className="cardnav">
                                 {/* New Back Button */}
                                 <button onClick={() => setActiveTab('description')}>Description</button>
-                                <button onClick={() => setActiveTab('rules')}>Rules</button>
-                                <button onClick={() => setActiveTab('contact')}>Contact</button>
+                                {/* <button onClick={() => setActiveTab('rules')}>Rules</button> */}
+                                {/* Only render the Contact button if contact is passed */}
+                                {contact && <button onClick={() => setActiveTab('contact')}>Contact</button>}
                                 <button className="back-button" onClick={handleBack}>Back</button>
                             </div>
                             <div className="content">
@@ -91,3 +96,4 @@ const Card = ({ title, description, rules, contact, imgSrc }) => {
 };
 
 export default Card;
+
