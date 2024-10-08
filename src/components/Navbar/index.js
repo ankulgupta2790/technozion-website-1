@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { ImCross } from "react-icons/im";
-import chota_logo from "./logo-05.png";
+import chota_logo from "./logo-03.png";
 import './index.css';
 
 const oldNavigation = [
