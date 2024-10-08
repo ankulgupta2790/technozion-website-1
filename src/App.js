@@ -35,7 +35,7 @@ const App = () => {
                 <AuthProvider>
                     <Navbar />
                     <RoutesManager />
-                    <Footer />
+                    {/* <Footer /> */}
                 </AuthProvider>
             )}
         </>
