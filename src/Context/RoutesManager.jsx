@@ -7,7 +7,10 @@ import AuthPage from '../components/Authpage/AuthPage';
 import Home from '../components/Home';
 import Sponsors from '../components/Sponsors/Sponsors';
 import { useAuth } from './AuthManager';
-import { Register } from '../components/Register';
+// import { Register } from '../components/Register';
+import { Register } from '../components/Register1/register.js';
+import { Gallery } from '../components/Gallery/gallery.js';
+import { Team } from '../components/Team/team.js';
 import { useLocation } from 'react-router-dom';
 
 const RoutesManager = () => {
@@ -33,6 +36,9 @@ const RoutesManager = () => {
 			{/* <Route path="/sponsors" element={<Sponsors />} /> */}
 			<Route path="/events" element={<Events />} />
 			<Route path="/displayevents" element={<Displayevents />} />
+			<Route path="/team" element={<Team />} />
+			<Route path="/register" element={<Register />} />
+			<Route path="/gallery" element={<Gallery />} />
 		</Routes>
 	);
 };

@@ -4,6 +4,7 @@ import  {Loader} from './components/Loader'; // Import the Loader component
 import Navbar from './components/Navbar';
 import AuthProvider from './Context/AuthManager';
 import RoutesManager from './Context/RoutesManager';
+import Footer from './components/Footer/footer';
 
 const App = () => {
     const [loading, setLoading] = useState(true);
