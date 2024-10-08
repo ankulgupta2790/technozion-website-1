@@ -53,7 +53,7 @@ const cardVariants = {
       setflamestate(true);
     }, 800);
     setTimeout(() => {
-      navigate('/displayevents');
+      navigate('/displayevents', { state: { dataSource: 'clubevents' } });
     }, 1600);
   };
 
@@ -64,7 +64,7 @@ const cardVariants = {
       setflamestate(true);
     }, 800);
     setTimeout(() => {
-      navigate('/displayevents');
+      navigate('/displayevents', { state: { dataSource: 'spotlight' } });
     }, 1600);
   };
 
@@ -75,7 +75,7 @@ const cardVariants = {
       setflamestate(true);
     }, 800);
     setTimeout(() => {
-      navigate('/displayevents');
+      navigate('/displayevents', { state: { dataSource: 'societies' } });
     }, 1600);
   };
 
