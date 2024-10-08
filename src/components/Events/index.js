@@ -32,20 +32,21 @@ const Events = () => {
 // Calculate X1f and X2f in vw (viewport width)
 const X1f = (screenWidth < 768) ? '0vw' : '25vw'; // Set as '0vw' or '25vw' based on the condition
 const X2f = (screenWidth < 768) ? '0vw' : '-25vw'; // Set as '0vw' or '-25vw' based on the condition
-
+const Xf3=(screenWidth>7678 &&screenWidth<1000)?-190:0;
 const cardVariants = {
   initial: { scale: 1, opacity: 1 },
 
   // Click animations
-  moveToCenterCard1: { scale: 1.5, x: X1f, y: '-20vh', opacity: 1, rotateY: 360 },
+  moveToCenterCard1: { scale: 2, x: X1f, y: '-20vh', opacity: 1, rotateY: 720 },
   moveDownCard1: { scale: 0, y: '100vh', x: '40vh', opacity: 0 },
-  moveToCenterCard2: { scale: 1.5, x: '0', y: '-20vh', opacity: 1, rotateY: 360 },
+  moveToCenterCard2: { scale: 2, x: '0', y: '-20vh', opacity: 1, rotateY: 720 },
   moveDownCard2: { scale: 0, y: '100vh', opacity: 0 },
-  moveToCenterCard3: { scale: 1.5, x: X2f, y: '-20vh', opacity: 1, rotateY: 360 },
+  moveToCenterCard3: { scale: 2, x: X2f, y: '-20vh', opacity: 1, rotateY: 720 },
   moveDownCard3: { scale: 0, y: '100vh', x: '-40vh', opacity: 0 },
 };
 
   // Handle click events for each card
+
   const handleCard1Click = () => {
     setCard1State({ moveToCenter: true, moveDown: false });
     setTimeout(() => {
@@ -53,7 +54,7 @@ const cardVariants = {
       setflamestate(true);
     }, 800);
     setTimeout(() => {
-      navigate('/displayevents', { state: { dataSource: 'clubevents' } });
+      navigate('/displayevents');
     }, 1600);
   };
 
@@ -64,7 +65,7 @@ const cardVariants = {
       setflamestate(true);
     }, 800);
     setTimeout(() => {
-      navigate('/displayevents', { state: { dataSource: 'spotlight' } });
+      navigate('/displayevents');
     }, 1600);
   };
 
@@ -75,7 +76,7 @@ const cardVariants = {
       setflamestate(true);
     }, 800);
     setTimeout(() => {
-      navigate('/displayevents', { state: { dataSource: 'societies' } });
+      navigate('/displayevents');
     }, 1600);
   };
 
@@ -107,11 +108,13 @@ const cardVariants = {
         y: "100vh", // Start from the bottom of the screen
         opacity: 0, // Start with 0 opacity
         scale: 0,   // Start with 0 scale
+        x:0
       }}
       animate={{
         y: 0,      
         opacity: 1,
-        scale: 1,  
+        scale: 1,
+        x:0
       }}
       transition={{
         duration: 1, // Adjust duration as needed
@@ -133,7 +136,7 @@ const cardVariants = {
             transition={{ duration:  (card1State.moveDown ? 0.8 : 0.5) }} // Set a longer duration for the first animation
             onClick={handleCard1Click}
           >
-      <h1>CLUB</h1>
+     
           </motion.div>
 
           <motion.div
@@ -150,7 +153,7 @@ const cardVariants = {
             transition={{ duration:  (card1State.moveDown ? 0.8 : 0.5) }}// Keep other cards as is
             onClick={handleCard2Click}
           >
-      <h1>SPOTLIGHT</h1>
+   
           </motion.div>
 
           <motion.div
@@ -168,7 +171,7 @@ const cardVariants = {
             onClick={handleCard3Click}
                   
                   >
-             <h1>SOCIETY</h1>
+           
           </motion.div>
         </motion.div>
       </div>
