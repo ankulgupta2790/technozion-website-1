@@ -65,7 +65,7 @@ const cardVariants = {
       setflamestate(true);
     }, 800);
     setTimeout(() => {
-      navigate('/displayevents', {state : { dataSource: 'societies'}});
+      navigate('/displayevents', {state : { dataSource: 'spotlight'}});
     }, 1600);
   };
 
@@ -76,7 +76,7 @@ const cardVariants = {
       setflamestate(true);
     }, 800);
     setTimeout(() => {
-      navigate('/displayevents', {state : { dataSource: 'spotlight'}});
+      navigate('/displayevents', {state : { dataSource: 'societies'}});
     }, 1600);
   };
 
