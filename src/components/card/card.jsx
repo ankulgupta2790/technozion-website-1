@@ -65,8 +65,8 @@ const Card = ({ title, description, rules, contact, imgSrc }) => {
                     className="image-content animate slide delay-5"
                     style={{ backgroundImage: `url(${imgSrc})` }} // Use imgSrc for background image
                 />
-                <div className="dots animate">
-                    <button onClick={handleClick}>Read!</button>
+                <div className="read animate">
+                    <button onClick={handleClick}>More!</button>
                 </div>
             </div>
             {isClicked && (

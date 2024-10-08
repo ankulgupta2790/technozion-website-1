@@ -9,7 +9,8 @@
 .event_card {
     margin: 0;
     padding: 0;
-    bottom: 5%;
+    box-sizing: border-box;
+    /* bottom: 5%; */
 }
 
 /* Wrapper for the main content */
@@ -56,11 +57,12 @@ p {
     position: relative;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0px 0px 20px rgba(22, 246, 243, 0.75), 0px 0px 40px rgba(22, 246, 243, 0.5); /* Neon glow */
+    box-shadow: 0px 0px 20px rgba(22, 246, 243, 0.75), 0px 0px 40px rgba(22, 246, 243, 0.5); 
 }
 
 /* Updated glassy effect for .text */
 .text {
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     right: 0;
@@ -94,7 +96,7 @@ p {
     display: flex;
     width: 100%;
     height: 100%;
-    padding: 1rem 0.75rem;
+    /* padding: 1rem 0.75rem; */
     background: rgba(0, 153, 167, 0.9); /* Slightly transparent overlay */
     transition: 0.4s ease-in-out;
     z-index: 1;
@@ -102,7 +104,7 @@ p {
 
 /* Image content */
 .image-content {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     width: 100%;
@@ -111,40 +113,39 @@ p {
     transition: 0.3s ease-in-out;
 }
 
-/* Dots indicating clickable content */
-.dots {
+/* read indicating clickable content */
+.read {
     position: absolute;
     bottom: 1rem;
-    right: 2rem;
+    right: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 55px;
+    width: 10vmin;
     height: 3vmin;
     transition: 0.3s ease-in-out 0.3s;
-    font-size: 0.5rem;
+    font-size: 0.2rem;
 }
 
-.dot {
+/* .dot {
     width: 14px;
     height: 14px;
     background: #ffffff;
     border: 1px solid #16f6f3;
-    /* border-radius: 50%; */
     transition: 0.3s ease-in-out 0.3s;
-}
+} */
 
 /* Style of button */
-.dots button {
+.read button {
     background-color: #16f6f3; /* Cyan background */
     border: none; /* Remove default borders */
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    /* border-radius: 50%; */
+    width: 10vmin;
+    height: 3vmin;
     cursor: pointer; /* Pointer on hover */
-    color: white; /* White text color */
-    font-size: 1.5rem; /* Adjust font size */
+    color: black; /* White text color */
+    font-size: 2vmin; /* Adjust font size */
     font-weight: bold;
     outline: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -166,21 +167,35 @@ p {
     justify-content: center; /* Center the logo */
     align-items: center; /* Center the logo vertically */
     width: 40%;
-    position: sticky;
+    /* position: sticky; */
     top: 0; /* Stick the logo at the top */
     z-index: 10; /* Ensure it stays on top of other content */
 }
 
 .cnt-logo {
-    height: 50%; /* Set height to 60% of the card */
-    width: 80%; /* Maintain aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #000000;
+    overflow: hidden;
+    width: 100%;  /* Width set to 100% of its parent container */
+    aspect-ratio: 1 / 1; /* Enforce square shape */
 }
+
+.cnt-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+    object-position: center; /* Center the image */
+}
+
+
 
 /* Sticky content-container */
 .content-container {
     flex: 3; /* Content takes 3 parts */
     padding: 0.6rem;
+    /* padding-top: ; */
     width: 60%;
     overflow-y: auto; /* Allow scrolling of content */
     margin-bottom: 2rem;
@@ -238,11 +253,11 @@ p {
     width: 0vmin;
 }
 
-.wrap.active .dots {
+/* .wrap.active .read {
     transform: translateX(1rem);
-}
+} */
 
-.wrap.active .dots .dot {
+.wrap.active .read .dot {
     background: #16f6f3; /* Change dot color on hover */
 }
 
@@ -325,6 +340,10 @@ p {
     p {
         font-size: max(9pt, 2.2vmin);
     }
+    .cnt-logo{
+        /* height: 35vmin; */
+        width: 35vmin;
+    }
     /* .image-content {
         width: 55vmin;
     } */
@@ -344,16 +363,10 @@ p {
         width: 100%;
         padding: 1rem;
     }
-    .dots {
-        position: absolute; /* Change to absolute positioning */
-        bottom: 1rem; /* Position it at the bottom */
-        left: 78%; /* Center it horizontally */
-        transform: translateX(-50%); /* Offset to truly center */
-        display: flex;
-        justify-content: flex-end; /* Center dots */
-        z-index: 5; /* Ensure it stays above other elements */
+    .cnt-logo{
+        /* height: 30vmin; */
+        width: 30vmin;
     }
-    
 }
 
 :root {
@@ -369,25 +382,22 @@ p {
     }
     .wrap {
         flex-direction: column;
-        width: 55vmin;
-        height: 55vmin;
+        width: 70vmin;
+        height: 70vmin;
     }
-    .overlay-content {
+    /* .overlay-content {
         width: 100%;
         padding: 1rem;
         aspect-ratio: 1;
-    }
+    } */
+    /* .event_card {
+        height: 53%;
+        width: 90%;
+    } */
     .image-content {
         height: 70vmin;
     }
-    .dots {
-        width: 100%;
-        justify-content: center;
-    }
-    .event_card {
-        height: 53%;
-        width: 90%;
-    }
+    
 
     /* Apply overflow hidden to .text */
     .text {
@@ -402,13 +412,16 @@ p {
 
     /* Additional changes for small devices */
     .logo-cardnav-container {
-        display: block; /* Stacks the containers vertically */
+        /* display: block;  */
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
     }
 
     .logo-container, 
     .content-container {
         width: 100%; /* Make each container take full width */
-        height: auto; /* Allow height to adjust based on content */
+        /* height: auto;  */
         margin: 0; /* Remove any margin */
     }
 
@@ -420,19 +433,29 @@ p {
         background-color: rgba(0, 0, 0, 0.8); /* Ensure background is solid for visibility */
         width: 100%; /* Make logo container full width */
         padding: 1rem; /* Add some padding for spacing */
+        height: 50%;
+    }
+
+    .content-container {
+        margin-top: 48%;
+        height: 50%; /* Allow the content to take the remaining height of the viewport */
+        /* margin-left: 1rem;
+        margin-right: 1rem; */
+        overflow-y: auto; /* Allow scrolling only for content */
+        padding: 0px;
     }
 
     .cardnav {
         position: fixed; /* Keep the navigation fixed */
-        margin-top: calc(var(--logo-height) ); /* Place it just below the logo */
         z-index: 9; /* Ensure it appears below the logo but on top of the content */
         width: 100%; /* Ensure full width for navigation */
         display: flex; /* Flexbox for horizontal layout */
         justify-content: space-around; /* Evenly distribute buttons */
-        padding: 0.5rem 0; /* Adjust padding to reduce height */
         box-shadow: none; /* Remove shadow for a cleaner look */
         background-color: rgba(0, 0, 0, 0.8); /* Ensure the background is solid */
         left:0;
+        margin-top: 48%;
+        height: 10%;
     }
 
     .cardnav button {
@@ -450,12 +473,14 @@ p {
         transform: scale(1.05); /* Slightly enlarge button on hover */
     }
 
-    .content-container {
-        height: calc(100% - (var(--logo-height) + 1rem)); /* Allow the content to take the remaining height of the viewport */
-        padding: 1rem; /* Add padding to improve readability */
-        padding-top:0;
-        overflow-y: auto; /* Allow scrolling only for content */
-        margin-top: calc(var(--logo-height) + 1rem); /* Add margin top to account for fixed logo and nav */
+    .content{
+        height: 40%;
+        margin-top: 10%;
+    }
+
+    .cnt-logo{
+        /* height: 28vmin; */
+        width: 28vmin;
     }
 }
 
