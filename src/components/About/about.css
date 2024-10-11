@@ -162,7 +162,7 @@ body {
   }
 }
 
-@media (max-width: 450px){
+@media (max-width: 485px){
   .theme-content{
     padding: 0px;
     font-size: 0.9rem;
@@ -208,6 +208,13 @@ body {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) { /* Targeting iPad devices */
+  .theme-content {
+    padding: 0px; /* Add some padding to text */
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 768px) { /* Targeting iPad devices */
   .theme-content {
     padding: 0px; /* Add some padding to text */
     font-size: 1rem;
