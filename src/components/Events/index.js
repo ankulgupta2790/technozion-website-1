@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { WebCanvas } from '../bg_animation/bg_animate';
 import { useNavigate } from 'react-router-dom';
 import Event from './Event.png';
-import Portal from './Portal.png';
+import Portal from './newPortal.png';
 import Flame from './Flame.png';
-import P1 from './2.png';
-import { Helmet } from 'react-helmet'
+
+
 
 import './index.css'; // Assuming you have this file for styling
 
@@ -21,7 +21,7 @@ const Events = () => {
   const [card3State, setCard3State] = useState({ moveToCenter: false, moveDown: false });
   const [flamestate, setflamestate] = useState(true);
 
-  const [initial,setinitial] =useState(false);
+ 
 
   
   
@@ -32,17 +32,18 @@ const Events = () => {
 // Calculate X1f and X2f in vw (viewport width)
 const X1f = (screenWidth < 768) ? '0vw' : '25vw'; // Set as '0vw' or '25vw' based on the condition
 const X2f = (screenWidth < 768) ? '0vw' : '-25vw'; // Set as '0vw' or '-25vw' based on the condition
-const Xf3=(screenWidth>7678 &&screenWidth<1000)?-190:0;
+const D1f= (screenWidth < 768) ? '0vw' : '40vw';
+const D2f = (screenWidth < 768) ? '0vw' : '-40vw'; 
 const cardVariants = {
   initial: { scale: 1, opacity: 1 },
 
   // Click animations
   moveToCenterCard1: { scale: 2, x: X1f, y: '-20vh', opacity: 1, rotateY: 720 },
-  moveDownCard1: { scale: 0, y: '100vh', x: '40vh', opacity: 0 },
+  moveDownCard1: { scale: 0, y: '100vh', x: D1f, opacity: 0 },
   moveToCenterCard2: { scale: 2, x: '0', y: '-20vh', opacity: 1, rotateY: 720 },
   moveDownCard2: { scale: 0, y: '100vh', opacity: 0 },
   moveToCenterCard3: { scale: 2, x: X2f, y: '-20vh', opacity: 1, rotateY: 720 },
-  moveDownCard3: { scale: 0, y: '100vh', x: '-40vh', opacity: 0 },
+  moveDownCard3: { scale: 0, y: '100vh', x: D2f, opacity: 0 },
 };
 
   // Handle click events for each card
@@ -93,16 +94,18 @@ const cardVariants = {
         <div className="EventImg">
           <img src={Event} alt="Event" />
         </div>
+        <div className="Portal">
         <img src={Portal} alt="Portal" className="portal-img" />
-        <motion.img
-          src={Flame}
-          alt="Flame"
-          className="portal-img"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: flamestate ? 1 : 0 }}
-          transition={{ duration: 0.5 }}
-          
-        />
+        <motion.img 
+  src={Flame}
+  alt="Flame"
+  className="Flame-img"  // <-- Add a unique class here
+  initial={{ opacity: 0 }}
+  animate={{ opacity: flamestate ? 1 : 0}}
+  transition={{ duration: 0.5 }}
+/>
+
+        </div>
         <motion.div className="Maincards-container"
           initial={{
         y: "100vh", // Start from the bottom of the screen
