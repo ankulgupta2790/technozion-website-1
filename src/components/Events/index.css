@@ -36,7 +36,7 @@
   left: 50%;
   transform: translateX(-50%); /* Center horizontally */
   z-index: 3; /* Above WebCanvas but below other content */
-  width: 100%; 
+  width: 800vw; 
   max-width: 800px; 
   height: auto;
 }
@@ -53,6 +53,18 @@
   justify-content: space-between;
   gap: 2%; /* Space between the cards */
   z-index: 4; /* Above Event and Portal */
+}
+ /* Specific styling for the Flame image */
+.Flame-img {
+  position: absolute;
+  bottom: 1%;
+  left: 51%;
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 3;
+  width: 70%; /* Adjust the size as needed */
+  max-width: 800px; /* Adjust this value to make the image smaller */
+  height: 75%;
+
 }
 
 /* Individual card styling */
@@ -101,6 +113,23 @@
 /* Hover effect to make the cards "come out" */
 
 
+@media (min-width:1025){
+  .Maincards-container {
+    width: 90%;
+    gap: 5%; /* Increase gap on smaller screens */
+    left:-30vh;
+  }
+  .Maincard {
+    width: 30vw; /* Adjust card width on smaller screens */
+    height: 35vh; /* Adjusted height for smaller screens */
+    font-size: 1rem;
+    left:0% /* Adjust font size */
+  }
+  .EventImg {
+    width: 40%; /* Ensure event image scales down */
+  }
+  
+}
 /* Media Queries for responsiveness */
 @media (max-width: 1024px) {
   .Maincards-container {
@@ -110,27 +139,22 @@
     gap: 10%; /* Increase gap on smaller screens */
    
   }
+  .Flame-img {
+    width: 80%; /* Adjust size for tablets */
+    max-width: 1000px; 
+    height: 70vh;
+  }
 
   .Maincard {
-    width: 15vw; /* Adjust card width on smaller screens */
+    width: 20vw; /* Adjust card width on smaller screens */
     height: 35vh; /* Adjusted height for smaller screens */
     font-size: 1rem; /* Adjust font size */
   }
-}
-@media (max-width:1035){
-  .Maincards-container {
-    width: 90%;
-    gap: 10%; /* Increase gap on smaller screens */
-    left:-30vh;
+  .EventImg {
+    width: 40%; /* Ensure event image scales down */
   }
-  .Maincard {
-    width: 15vw; /* Adjust card width on smaller screens */
-    height: 35vh; /* Adjusted height for smaller screens */
-    font-size: 1rem;
-    left:0% /* Adjust font size */
-  }
-  
 }
+
 
 @media (max-width: 768px) {
   .Maincards-container {
@@ -147,14 +171,28 @@
     margin-bottom: 20px; /* Add space between vertically stacked cards */
     font-size: 1rem;
   }
+  .Flame-img {
+    width: 70%; /* Increase size for smaller screens */
+    max-width: 900px;
+    height: auto;
+  }
 
-  .event-img {
-    max-width: 90%; /* Ensure event image scales down */
+
+  .EventImg {
+    width: 40%; /* Ensure event image scales down */
   }
 
   .portal-img {
     width: 80%; /* Scale down the portal image */
     height:auto;
+  }
+  .Portal{
+    position: absolute;
+    top:85%;
+    width: 120%;
+    left: -10%;
+    
+    height: auto;
   }
 }
 
@@ -164,19 +202,24 @@
     left:5%;
     align-items: center; /* Ensure the cards are centered */
   }
-
+  .Flame-img {
+    width: 70%; /* Full width for mobile devices */
+    max-width: 300px; /* Set a smaller max-width for mobile */
+    height: 26vh;
+    
+  }
   .Maincard {
     width: 80vw; /* Full width for mobile devices */
     height: 8vh; /* Adjusted height for smaller mobile view */
     font-size: 0.9rem; /* Smaller font for mobile */
   }
 
-  .event-img {
-    max-width: 80%; /* Smaller event image for mobile */
+  .EventImg {
+    width: 40%; /* Smaller event image for mobile */
   }
 
   .portal-img {
-    width: 70%; /* Smaller portal image for mobile */
+    width: 60%; /* Smaller portal image for mobile */
     height:auto;
   }
 }
