@@ -28,7 +28,7 @@ const Card = ({ title, description, rules, contact, imgSrc }) => {
             // case 'rules':
             //     return <p>{rules}</p>;
             case 'contact':
-                return <p>{contact}</p>;
+                return <h3>{contact}</h3>;
             default:
                 return null;
         }
