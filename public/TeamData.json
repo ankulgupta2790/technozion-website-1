@@ -1,32 +1,32 @@
 [
   {
-    "name": "Ishan",
-    "contactNo": "sec_fms@nitw.ac.in",
+    "name": "Ishaan Sharma",
+    "contactNo": "9817809166",
     "position": "SAC Secretary Technical",
-  
+    "email": "sec_technical@nitw.ac.in",
     "image": "Ishan.png"
   },
   {
-    "name": "Atharva",
-    "contactNo": "sec_cultural@nitw.ac.in",
+    "name": "Atharva Deshpande",
+    "email": "sec_cultural@nitw.ac.in",
     "position": "Sports Secretary SAC",
-    
+     "contactNo": "9923822196",
     "image": "Atharva.jpg"
   },
  
   {
-    "name": "Yaswanth",
-    "contactNo": "sec_technical@nitw.ac.in",
+    "name": "G. Yaswanth",
+    "email": "sec_fms@nitw.ac.in",
     "position": "SAC Secretary Film and Music",
-   
+    "contactNo": "9989257407",
     "image": "Yaswanth.jpg"
   },
   {
     "name": "Randheer",
-    "contactNo": "sec_cultural@nitw.ac.in",
+    "contactNo": "7569743332",
     "position": "SAC Secretary Cultural",
- 
-    "image": "4.png"
+   "email": "sec_cultural@nitw.ac.in",
+    "image": "Randheer.jpg"
   }
   
 ]
