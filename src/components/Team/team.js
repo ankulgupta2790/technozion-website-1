@@ -84,7 +84,7 @@ export const Team = () => {
                   style={{ borderRadius: '50%', width: '100%', height: '100%', objectFit: 'cover' }} 
                    />
                  </div>
-                  {!hoverStates[rowIndex * 2 + personIndex] ? ( // Check individual hover state
+                  {!(hoverStates[rowIndex * 2 + personIndex])&&(windowWidth>510) ? ( // Check individual hover state
                     <div className="personDetails">
                       <h1>{person.position}</h1>
                       <h2>{person.name}</h2>
@@ -95,6 +95,7 @@ export const Team = () => {
                       <p><strong>{person.position}</strong></p>
                       <p><strong>Name:</strong> {person.name}</p>
                       <p><strong>Contact:</strong> {person.contactNo}</p>
+                      <p><strong>Email:</strong> {person.email}</p>
                     </div>
                   )}
                 </div>
