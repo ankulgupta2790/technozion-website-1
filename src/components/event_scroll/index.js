@@ -4,6 +4,9 @@ import Poster from './poster.js';
 import './index.css';
 import { WebCanvas } from '../bg_animation/bg_animate.js';
 import imgsrc from './tzcomingsoon.png'; // Fallback image
+import dept from './dept_poster_page.png';
+import club from './club_event_page.png';
+import spotlight from './spot_event_page.png';
 
 function Index() {
   const location = useLocation();
@@ -11,6 +14,7 @@ function Index() {
   const { state } = location || {};
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [headingImage, setHeadingImage] = useState(null); // State to hold the heading image
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,10 +22,13 @@ function Index() {
         let response;
         if (state && state.dataSource === 'societies') {
           response = await fetch('/dataJSON/societyx.json');
+          setHeadingImage(dept); // Set heading image to dept when societies data is fetched
         } else if (state && state.dataSource === 'spotlight') {
           response = await fetch('/dataJSON/spotlight.json');
+          setHeadingImage(spotlight); // Set heading image to spotlight
         } else if (state && state.dataSource === 'clubevents') {
           response = await fetch('/dataJSON/club.json');
+          setHeadingImage(club); // Set heading image to club
         }
 
         if (!response.ok) {
@@ -79,6 +86,11 @@ function Index() {
     <div className="outer-container">
       <div className="poster-canvas">
         <WebCanvas />
+      </div>
+      <div className="heading">
+        {headingImage && (
+          <img src={headingImage} alt="eventtype" className="heading-image" />
+        )}
       </div>
       <div className="inner-container">
         {state && state.dataSource === 'societies' ? renderSocieties() : (

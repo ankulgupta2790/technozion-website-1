@@ -262,85 +262,90 @@ nav ul li a {
 	}
 }
 
-/* Responsive adjustments for screens less than 725px */
 @media (max-width: 725px) {
 	nav .menu {
-		display: flex;
-		margin-top: 1.6rem;
-		margin-right: 1rem;
-		width: 1.75rem; /* Reduce width of the menu icon */
-		height: 1.5rem;  /* Reduce height of the menu icon */
-		z-index: 10;
+	  display: flex;
+	  margin-top: 1.6rem;
+	  margin-right: 1rem;
+	  width: 1.75rem; /* Reduce width of the menu icon */
+	  height: 1.5rem;  /* Reduce height of the menu icon */
+	  z-index: 10;
 	}
-
+  
 	.ham {
-		height: 0.3rem; /* Reduce the height of the hamburger lines */
-		width: 100%;    /* Keep the width full relative to .menu */
-		background-color: white;
-		border-radius: 1rem;
-		cursor: pointer;
+	  height: 0.3rem; /* Reduce the height of the hamburger lines */
+	  width: 100%;    /* Keep the width full relative to .menu */
+	  background-color: white;
+	  border-radius: 1rem;
+	  cursor: pointer;
 	}
-
+  
 	.logo img {
-		width: calc(var(--img-width) + 10vw);
-		margin-top: 1rem;
+	  width: calc(var(--img-width) + 10vw);
+	  margin-top: 1rem;
 	}
-
+  
 	nav {
-		flex-direction: column;
-		justify-content: center;
-		width: 100%;
-		margin-left: 0%;
-		margin-top: 0%;
-		z-index: 10;
+	  flex-direction: column;
+	  justify-content: center;
+	  width: 100%;
+	  margin-left: 0%;
+	  margin-top: 0%;
+	  z-index: 10;
 	}
-
+  
 	nav ul {
-		display: none;
-		margin-top: 2rem;
-		align-items: center;
-		flex-direction: column;
-		width: 50%;
-		margin-bottom: 0.25rem;
+	  display: none;
+	  margin-top: 1rem;
+	  align-items: center;
+	  flex-direction: column;
+	  width: 100%; /* Make sure the menu box takes full width */
+	  margin-bottom: 0.1rem;
 	}
-
+  
 	.menu-open {
-		background-color: black;
-		margin-left: 0%;
-		padding-bottom: 2%;
+	  background-color: rgba(0,0,0,0.9);
+	  margin-left: 0%;
+	  padding-bottom: 2%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
 	}
-
+  
 	nav ul.open {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center; /* Center content vertically */
+	  align-items: center; /* Center content horizontally */
+	  width: 50%; /* Ensure full width for centering */
 	}
-
+  
 	nav ul li {
-		width: 100%;
-		text-align: center;
-		color: white;
+	  width: 100%;
+	  text-align: center;
+	  color: white;
+	  margin-bottom: 0.5rem; /* Add space between menu items */
 	}
-
+  
 	nav ul li a {
-		font-size: 1.5rem;
+	  font-size: 1.2rem;
 	}
-
+  
 	nav ul li a.active {
-		color: white;
-		font-size: large;
+	  color: white;
+	  font-size: large;
 	}
-
+  
 	.right-nav ul {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 1rem;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  margin-bottom: 1rem;
 	}
-
+  
 	.right-nav ul li {
-		margin-right: 0; /* Remove margin for vertical layout */
-		margin-bottom: 0.5rem; /* Add margin between vertical items */
+	  margin-right: 0; /* Remove margin for vertical layout */
+	  margin-bottom: 0.5rem; /* Add margin between vertical items */
 	}
-}
+  }
+  
