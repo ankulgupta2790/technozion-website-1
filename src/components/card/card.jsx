@@ -1,40 +1,37 @@
-// src/Card.js
 import React, { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom'; // Import useLocation and useNavigate
+import { useLocation, useNavigate } from 'react-router-dom';
 import './card.css';
 import ResizeObserver from 'resize-observer-polyfill';
-import { WebCanvas } from '../bg_animation/bg_animate'; // Import WebCanvas
-import imgsrc from './tzcomingsoon.png';
+import { WebCanvas } from '../bg_animation/bg_animate'; 
+import fallbackImg from './tzcomingsoon.png'; // Fallback image
 
 const Card = () => {
     const location = useLocation(); // Extract data from navigation
     const navigate = useNavigate(); // For navigating back
-    const { title, overview, rules, judging_criteria, imgsrc } = location.state || {}; // Update to overview, rules, judgingCriteria
+    const { title, overview, rules, judging_criteria, imgsrc } = location.state || {}; // Extract state data
 
     const [activeTab, setActiveTab] = useState('overview'); // Track the active tab
+    const [imageSrc, setImageSrc] = useState(imgsrc); // State for image source
 
     // Handles navigation back to the previous view
     const handleBack = () => {
         navigate(-1); // Navigate back in browser history
     };
 
+    // Handles image load error
+    const handleImageError = () => {
+        setImageSrc(fallbackImg); // Set to fallback image on error
+    };
+
     // Renders the content of the active tab
     const renderContent = () => {
         switch (activeTab) {
             case 'overview':
-                return (
-                    <div 
-                    dangerouslySetInnerHTML={{ __html: overview }} 
-                    />
-                );
+                return <div dangerouslySetInnerHTML={{ __html: overview }} />;
             case 'rules':
-                return (
-                    <div dangerouslySetInnerHTML={{ __html: rules }} />
-                );
+                return <div dangerouslySetInnerHTML={{ __html: rules }} />;
             case 'judging_criteria':
-                return (
-                    <div dangerouslySetInnerHTML={{ __html: judging_criteria }} />
-                );
+                return <div dangerouslySetInnerHTML={{ __html: judging_criteria }} />;
             default:
                 return null;
         }
@@ -68,27 +65,44 @@ const Card = () => {
             <div className='web-canvas'>
                 <WebCanvas />
             </div>
-            <div className={`event_card wrap animate pop active`}> {/* Always active */} 
+            <div className={`event_card wrap animate pop active`}>
                 <div className="text">
-                    <div className="logo-cardnav-container"> {/* Flex container */} 
+                    <div className="logo-cardnav-container"> 
                         <div className="logo-container">
-                            <img src={imgsrc || imgsrc} alt="Logo" className="cnt-logo" />
+                            <img src={imageSrc} alt="Logo" className="cnt-logo" onError={handleImageError} />
                         </div>
-                        <div className="content-container"> {/* Content section */}
+                        <div className="content-container">
                             <div className="cardnav">
-                                <button onClick={() => setActiveTab('overview')}>Overview</button>
+                                <button 
+                                    onClick={() => setActiveTab('overview')} 
+                                    className={activeTab === 'overview' ? 'active' : ''}
+                                >
+                                    Overview
+                                </button>
                                 {rules && (
-                                    <button onClick={() => setActiveTab('rules')}>Rules</button>
+                                    <button 
+                                        onClick={() => setActiveTab('rules')} 
+                                        className={activeTab === 'rules' ? 'active' : ''}
+                                    >
+                                        Rules
+                                    </button>
                                 )}
                                 {judging_criteria && (
-                                    <button onClick={() => setActiveTab('judging_criteria')}>Judging Criteria</button>
+                                    <button 
+                                        onClick={() => setActiveTab('judging_criteria')} 
+                                        className={activeTab === 'judging_criteria' ? 'active' : ''}
+                                    >
+                                        Judging Criteria
+                                    </button>
                                 )}
-                                <button className="back-button" onClick={handleBack}>Back</button> {/* Navigate back */}
+                                <button className="back-button" onClick={handleBack}>Back</button>
                             </div>
                             <div className="content">
                                 {renderContent()}
                             </div>
-                            <div className="register"><button className="register-button">Register</button></div>
+                            <div className="register">
+                                <button className="register-button">Register</button>
+                            </div>
                         </div>
                     </div>
                 </div>

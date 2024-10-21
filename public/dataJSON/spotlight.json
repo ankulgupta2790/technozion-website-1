@@ -1,30 +1,51 @@
 [
     {
-        "description": "<h1>HACKATHON</h1><p>A team of students comes together to solve real-world problems using software development, coding, and engineering principles. Participants design, prototype, and present innovative solutions over a set period, usually 24-48 hours, often incorporating programming, hardware, and emerging technologies. These hackathons encourage creativity, teamwork, and hands-on learning, allowing students to apply their technical skills, collaborate across disciplines, and engage with industry professionals.</p>",
-        "title": "HACKATHON"
+      "title": "HACKATHON",
+      "overview": "<p>A team of students comes together to solve real-world problems using software development, coding, and engineering principles. Participants design, prototype, and present innovative solutions over a set period, usually 24-48 hours, often incorporating programming, hardware, and emerging technologies. These hackathons encourage creativity, teamwork, and hands-on learning, allowing students to apply their technical skills, collaborate across disciplines, and engage with industry professionals.</p>",
+      "imgsrc": "/posters/spotlight_1_imgsrc",
+      "bsrc1": "/posters/spotlight_1_bsrc1",
+      "bsrc2": "/posters/spotlight_1_bsrc2"
     },
     {
-        "description": "<h1>IDEATION_AND_PROTOTYPING</h1><p>Unleash Your Innovation Potential. Join us for the Ideation and Prototyping Competition, where brilliant minds from across the country converge to share their ideas and showcase their groundbreaking prototypes. This is your opportunity to collaborate with like-minded individuals, spark new innovations, and contribute to solving the pressing challenges facing our nation and the world. Whether you have a revolutionary concept in mind or a tangible prototype ready to be showcased, this competition provides a platform for you to unleash your creativity and make a lasting impact. Be part of a movement that fosters innovation, collaboration, and community.</p>",
-        "title": "IDEATION_AND_PROTOTYPING"
+      "title": "IDEATION (& Prototyping)",
+      "overview": "<p>Unleash Your Innovation Potential. Join us for the Ideation and Prototyping Competition where brilliant minds from across the country converge to share their ideas and showcase their groundbreaking prototypes. This is your opportunity to collaborate with like-minded individuals, spark new innovations, and contribute to solving the pressing challenges facing our nation and the world. Whether you have a revolutionary concept in mind or a tangible prototype ready to be showcased, this competition provides a platform for you to unleash your creativity and make a lasting impact. Be part of a movement that fosters innovation, collaboration, and community.</p>",
+      "imgsrc": "/posters/spotlight_2_imgsrc",
+      "bsrc1": "/posters/spotlight_2_bsrc1",
+      "bsrc2": "/posters/spotlight_2_bsrc2"
     },
     {
-        "description": "<h1>DRONE_RACE</h1><p>Are you ready to take flight? Join us for an adrenaline-pumping drone racing competition that will put your engineering prowess to the test. Design, build, and pilot your own drone, navigating through a challenging obstacle course at breakneck speeds. Construct a drone that meets specific technical requirements, including size, weight, and battery capacity. Compete against students from across the nation in a thrilling drone racing competition. Demonstrate your engineering skills, problem-solving abilities, and piloting expertise. Compete for valuable prizes and recognition as the top drone racer. Your drone's speed, agility, maneuverability, and innovative design will be judged. Open to all students with dreams to fly high.</p>",
-        "title": "DRONE_RACE"
+      "title": "DRONE RACE",
+      "overview": "<p>Are you ready to take flight? Join us for an adrenaline-pumping drone racing competition that will put your engineering prowess to the test. Design, build, and pilot your own drone, navigating through a challenging obstacle course at breakneck speeds. Construct a drone that meets specific technical requirements including size, weight, and battery capacity. Compete against students from across the nation in a thrilling drone racing competition. Demonstrate your engineering skills, problem-solving abilities, and piloting expertise. Compete for valuable prizes and recognition as the top drone racer. Your drone's speed, agility, manoeuvrability, and innovative design will be judged. Open to all students with dreams to fly high.</p>",
+      "imgsrc": "/posters/spotlight_3_imgsrc",
+      "bsrc1": "/posters/spotlight_3_bsrc1",
+      "bsrc2": "/posters/spotlight_3_bsrc2"
     },
     {
-        "description": "<h1>STARTUP_FAIR</h1><p>Startup Fair aims to foster innovation, entrepreneurship, and networking with the various startup communities, colleges, and businesses. It will provide a platform for budding entrepreneurs to showcase their ideas, connect with potential investors, mentors, and industry experts, and gain valuable insights into the startup ecosystem.</p>",
-        "title": "STARTUP_FAIR"
+      "title": "STARTUP FAIR",
+      "overview": "<p>Startup Fair aims to foster innovation, entrepreneurship, and networking with various startup communities, colleges, and businesses. It will provide a platform for budding entrepreneurs to showcase their ideas, connect with potential investors, mentors, and industry experts, and gain valuable insights into the startup ecosystem.</p>",
+      "imgsrc": "/posters/spotlight_4_imgsrc",
+      "bsrc1": "/posters/spotlight_4_bsrc1",
+      "bsrc2": "/posters/spotlight_4_bsrc2"
     },
     {
-        "description": "<h1>TREASURE_HUNT</h1><p>A Technological Odyssey. Embark on a thrilling journey through time and technology in our annual Treasure Hunt. This iconic competition challenges participants to use their knowledge, ingenuity, and problem-solving skills to uncover hidden artifacts. Navigate through a series of challenges that test your understanding of technical advancements and your ability to apply your knowledge to real-world problems. Connect with like-minded individuals from around the globe, sharing perspectives on the latest technological breakthroughs and discussing potential solutions to pressing global issues.</p>",
-        "title": "TREASURE_HUNT"
+      "title": "TREASURE HUNT",
+      "overview": "<p>A Technological Odyssey. Embark on a thrilling journey through time and technology in our annual Treasure Hunt. This iconic competition challenges participants to use their knowledge, ingenuity, and problem-solving skills to uncover hidden artifacts. Navigate through a series of challenges that test your understanding of technical advancements and your ability to apply your knowledge to real-world problems. Connect with like-minded individuals from around the globe, sharing perspectives on the latest technological breakthroughs and discussing potential solutions to pressing global issues.</p>",
+      "imgsrc": "/posters/spotlight_5_imgsrc",
+      "bsrc1": "/posters/spotlight_5_bsrc1",
+      "bsrc2": "/posters/spotlight_5_bsrc2"
     },
     {
-        "description": "<h1>MATLAB_RUN</h1><p>Join us for the MATLAB Innovation Challenge, where students from all engineering disciplines will compete to develop innovative solutions to real-world problems using MATLAB. Showcase your problem-solving abilities, creativity, and technical expertise as you tackle challenges specific to your branch of engineering. Compete against fellow students in your field, apply MATLAB to address real-world issues, connect with industry professionals, and receive guidance from MATLAB experts. Compete for exciting prizes and recognition. Join us for an exhilarating competition that will challenge your mind, inspire your creativity, and help you develop the skills needed to succeed in today's competitive engineering landscape.</p>",
-        "title": "MATLAB_RUN"
+      "title": "MATLAB RUN",
+      "overview": "<p>Join us for the MATLAB Innovation Challenge where students from all engineering disciplines will compete to develop innovative solutions to real-world problems using MATLAB. Showcase your problem-solving abilities, creativity, and technical expertise as you tackle challenges specific to your branch of engineering. Compete against fellow students in your field, apply MATLAB to address real-world issues, connect with industry professionals, and receive guidance from MATLAB experts. Compete for exciting prizes and recognition. Join us for an exhilarating competition that will challenge your mind, inspire your creativity, and help you develop the skills needed to succeed in today's competitive engineering landscape.</p>",
+      "imgsrc": "/posters/spotlight_6_imgsrc",
+      "bsrc1": "/posters/spotlight_6_bsrc1",
+      "bsrc2": "/posters/spotlight_6_bsrc2"
     },
     {
-        "description": "<h1>E_GAMES_IN_THE_NITW_ARENA</h1><p>Prepare to immerse yourself in a world of exhilarating competition and cutting-edge technology at the E-Games in the NITW Arena. This event brings together the most passionate and skilled students from across the nation to compete in intense virtual battles using VR headsets. Create and develop your own unique gaming experience and invite other players to join you in your virtual world. The most innovative and engaging games will be recognized and rewarded, and their creators may even catch the attention of renowned companies and industry leaders. Whether you're a seasoned pro or just starting your gaming journey, the E-Games in the NITW Arena offers an unforgettable experience. Compete for glory, connect with like-minded gamers, and discover the limitless possibilities of virtual reality.</p>",
-        "title": "E_GAMES_IN_THE_NITW_ARENA"
+      "title": "E-GAMES IN THE NITW ARENA",
+      "overview": "<p>Prepare to immerse yourself in a world of exhilarating competition and cutting-edge technology at the E-Games in the NITW Arena. This event brings together the most passionate and skilled students from across the nation to compete in intense virtual battles using VR headsets. Create and develop your own unique gaming experience and invite other players to join you in your virtual world. The most innovative and engaging games will be recognized and rewarded, and their creators may even catch the attention of renowned companies and industry leaders. Whether you're a seasoned pro or just starting your gaming journey, the e-Games in the NITW Arena offers an unforgettable experience. Compete for glory, connect with like-minded gamers, and discover the limitless possibilities of virtual reality.</p>",
+      "imgsrc": "/posters/spotlight_7_imgsrc",
+      "bsrc1": "/posters/spotlight_7_bsrc1",
+      "bsrc2": "/posters/spotlight_7_bsrc2"
     }
-]
+  ]

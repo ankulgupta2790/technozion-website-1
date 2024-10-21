@@ -294,10 +294,10 @@ p {
 }
 
 /* Active button style */
+/* Active button style */
 .cardnav button.active {
-    background-color: #16f6f3; /* Bright cyan for active button */
-    color: black; /* Black text color for active button */
-    border: 1px solid black; /* Optional: black border for emphasis */
+    border: 2px solid #16f6f3; /* Border color for active button */
+    transform: scale(1.05); /* Slightly enlarge button on active */
 }
 
 .cardnav button:hover {

@@ -1,14 +1,13 @@
-// src/Index.js
 import React, { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
-import Poster from './poster.js'; // Ensure this path is correct
+import { useLocation, useNavigate } from 'react-router-dom';
+import Poster from './poster.js';
 import './index.css';
 import { WebCanvas } from '../bg_animation/bg_animate.js';
-import imgsrc from './tzcomingsoon.png';
+import imgsrc from './tzcomingsoon.png'; // Fallback image
 
 function Index() {
   const location = useLocation();
-  const navigate = useNavigate(); // Initialize navigate function
+  const navigate = useNavigate();
   const { state } = location || {};
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -42,31 +41,33 @@ function Index() {
   }, [state]);
 
   if (isLoading) {
-    return <p>Loading...</p>; // Display loading indicator while fetching data
+    return <p>Loading...</p>;
   }
 
   if (!data.length) {
-    return <p>No data available</p>; // Handle case when no data is available
+    return <p>No data available</p>;
   }
 
   // Function to handle poster click
   const handlePosterClick = (item) => {
-    navigate('/card', { state: { ...item } }); // Navigate to /card with item data
+    // Always pass the original image src
+    navigate('/card', { state: { ...item, imgsrc: item.imgsrc || imgsrc } });
   };
 
-  // Function to render society posters
+  // Render society posters
   const renderSocieties = () => {
     return data.map((society) => (
       <div key={society.societyName}>
-        <h2 className="society-heading">{society.societyName}</h2> {/* Centered society name */}
+        <h2 className="society-heading">{society.societyName}</h2>
         <div className="poster-container">
           {society.events.map((event, index) => (
             <Poster
               key={index}
-              imageSrc={event.imgsrc || imgsrc} 
-              title={event.title} 
-              content={event.name} 
-              onClick={() => handlePosterClick(event)} // Handle click to navigate
+              imageSrc={event.imgsrc} // Pass the event's imgsrc
+              fallbackSrc={imgsrc} // Pass fallback image in case of error
+              title={event.title}
+              content={event.name}
+              onClick={() => handlePosterClick(event)}
             />
           ))}
         </div>
@@ -83,12 +84,13 @@ function Index() {
         {state && state.dataSource === 'societies' ? renderSocieties() : (
           <div className="poster-container">
             {data.map((item, index) => (
-              <Poster 
+              <Poster
                 key={index}
-                imageSrc={item.imgsrc || imgsrc} 
-                title={item.title} 
-                content={item.name} 
-                onClick={() => handlePosterClick(item)} // Handle click to navigate
+                imageSrc={item.imgsrc} // Pass the event's imgsrc
+                fallbackSrc={imgsrc} // Pass fallback image in case of error
+                title={item.title}
+                content={item.name}
+                onClick={() => handlePosterClick(item)}
               />
             ))}
           </div>
