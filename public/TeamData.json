@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Ishaan Sharma",
+    "contactNo": "9817809166",
+    "position": "SAC Secretary Technical",
+    "email": "sec_technical@nitw.ac.in",
+    "image": "Ishan.png"
+  },
+  {
+    "name": "Atharva Deshpande",
+    "email": "sec_cultural@nitw.ac.in",
+    "position": "Sports Secretary SAC",
+     "contactNo": "9923822196",
+    "image": "Atharva.jpg"
+  },
+ 
+  {
+    "name": "G. Yaswanth",
+    "email": "sec_fms@nitw.ac.in",
+    "position": "SAC Secretary Film and Music",
+    "contactNo": "9989257407",
+    "image": "Yaswanth.jpg"
+  },
+  {
+    "name": "Randheer",
+    "contactNo": "7569743332",
+    "position": "SAC Secretary Cultural",
+   "email": "sec_cultural@nitw.ac.in",
+    "image": "Randheer.jpg"
+  }
+  
+]
