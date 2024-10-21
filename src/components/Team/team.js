@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './team.css'; 
+// import './team.css'; 
 
 import { WebCanvas } from "../bg_animation/bg_animate";
 import Teams from './Teams.png';
