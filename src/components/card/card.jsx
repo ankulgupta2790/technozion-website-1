@@ -1,34 +1,40 @@
-import React, { useState, useEffect } from 'react';
-import './card.css'; // Import the CSS file
+// src/Card.js
+import React, { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom'; // Import useLocation and useNavigate
+import './card.css';
 import ResizeObserver from 'resize-observer-polyfill';
+import { WebCanvas } from '../bg_animation/bg_animate'; // Import WebCanvas
+import imgsrc from './tzcomingsoon.png';
 
-const Card = ({ title, description, rules, contact, imgSrc }) => {
-    const [isClicked, setIsClicked] = useState(false);
-    const [activeTab, setActiveTab] = useState('description'); // Track the active tab
+const Card = () => {
+    const location = useLocation(); // Extract data from navigation
+    const navigate = useNavigate(); // For navigating back
+    const { title, overview, rules, judging_criteria, imgsrc } = location.state || {}; // Update to overview, rules, judgingCriteria
 
-    // Toggles between clicked and unclicked states
-    const handleClick = () => {
-        setIsClicked(!isClicked);
-    };
+    const [activeTab, setActiveTab] = useState('overview'); // Track the active tab
 
-    // Handles navigation back to the first view
+    // Handles navigation back to the previous view
     const handleBack = () => {
-        setIsClicked(false);
+        navigate(-1); // Navigate back in browser history
     };
 
     // Renders the content of the active tab
     const renderContent = () => {
         switch (activeTab) {
-            case 'description':
+            case 'overview':
                 return (
                     <div 
-                    dangerouslySetInnerHTML={{ __html: description }} 
+                    dangerouslySetInnerHTML={{ __html: overview }} 
                     />
                 );
-            // case 'rules':
-            //     return <p>{rules}</p>;
-            case 'contact':
-                return <h3>{contact}</h3>;
+            case 'rules':
+                return (
+                    <div dangerouslySetInnerHTML={{ __html: rules }} />
+                );
+            case 'judging_criteria':
+                return (
+                    <div dangerouslySetInnerHTML={{ __html: judging_criteria }} />
+                );
             default:
                 return null;
         }
@@ -57,43 +63,38 @@ const Card = ({ title, description, rules, contact, imgSrc }) => {
         };
     }, []);
 
-
     return (
-        <div className={`event_card wrap animate pop ${isClicked ? 'active' : ''}`}>
-            <div className="overlay">
-                <div
-                    className="image-content animate slide delay-5"
-                    style={{ backgroundImage: `url(${imgSrc})` }} // Use imgSrc for background image
-                />
-                <div className="read animate">
-                    <button onClick={handleClick}>More!</button>
-                </div>
+        <div className="card-container">
+            <div className='web-canvas'>
+                <WebCanvas />
             </div>
-            {isClicked && (
+            <div className={`event_card wrap animate pop active`}> {/* Always active */} 
                 <div className="text">
-                    <div className="logo-cardnav-container"> {/* Flex container */}
-                        <div className="logo-container"> {/* Logo section */}
-                            <img src={imgSrc} alt="Logo" className="cnt-logo" /> {/* Use imgSrc for the logo */}
+                    <div className="logo-cardnav-container"> {/* Flex container */} 
+                        <div className="logo-container">
+                            <img src={imgsrc || imgsrc} alt="Logo" className="cnt-logo" />
                         </div>
                         <div className="content-container"> {/* Content section */}
                             <div className="cardnav">
-                                {/* New Back Button */}
-                                <button onClick={() => setActiveTab('description')}>Description</button>
-                                {/* <button onClick={() => setActiveTab('rules')}>Rules</button> */}
-                                {/* Only render the Contact button if contact is passed */}
-                                {contact && <button onClick={() => setActiveTab('contact')}>Contact</button>}
-                                <button className="back-button" onClick={handleBack}>Back</button>
+                                <button onClick={() => setActiveTab('overview')}>Overview</button>
+                                {rules && (
+                                    <button onClick={() => setActiveTab('rules')}>Rules</button>
+                                )}
+                                {judging_criteria && (
+                                    <button onClick={() => setActiveTab('judging_criteria')}>Judging Criteria</button>
+                                )}
+                                <button className="back-button" onClick={handleBack}>Back</button> {/* Navigate back */}
                             </div>
                             <div className="content">
                                 {renderContent()}
                             </div>
+                            <div className="register"><button className="register-button">Register</button></div>
                         </div>
                     </div>
                 </div>
-            )}
+            </div>
         </div>
     );
 };
 
 export default Card;
-

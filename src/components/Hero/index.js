@@ -6,6 +6,7 @@ import tzlogo_with_date from "./tzlogo_with_date.png";
 // Countdown Component
 const CountdownTimer = ({ targetDate }) => {
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+    const [isTimeUp, setIsTimeUp] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -13,7 +14,7 @@ const CountdownTimer = ({ targetDate }) => {
             const diff = targetDate - now;
             if (diff < 0) {
                 clearInterval(interval);
-                setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+                setIsTimeUp(true);  // Mark timer as finished
                 return;
             }
 
@@ -27,6 +28,10 @@ const CountdownTimer = ({ targetDate }) => {
 
         return () => clearInterval(interval);
     }, [targetDate]);
+
+    if (isTimeUp) {
+        return null; // Hide the countdown clock when the time is up
+    }
 
     return (
         <div className="countdown-container">
@@ -53,7 +58,8 @@ const CountdownTimer = ({ targetDate }) => {
 };
 
 const Hero = () => {
-    const targetDate = new Date("2024-11-08T12:00:00Z"); // Target date
+    // Set the target date and time for IST (Indian Standard Time)
+    const targetDate = new Date("2024-11-08T18:30:00Z"); // This is 00:00:00 IST on November 8, 2024
 
     return (
         <div>

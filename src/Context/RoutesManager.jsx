@@ -12,6 +12,9 @@ import { Register } from '../components/Register1/register.js';
 import { Gallery } from '../components/Gallery/gallery.js';
 import { Team } from '../components/Team/team.js';
 import { useLocation } from 'react-router-dom';
+import Card from '../components/card/card.jsx';
+
+import Index from '../components/event_scroll/index.js';
 
 const RoutesManager = () => {
 	const { user } = useAuth();
@@ -39,6 +42,8 @@ const RoutesManager = () => {
 			<Route path="/team" element={<Team />} />
 			<Route path="/register" element={<Register />} />
 			<Route path="/gallery" element={<Gallery />} />
+			<Route path="/index" element={<Index />} />
+			<Route path="/card" element={<Card />} /> {/* Route for the card component */}
 		</Routes>
 	);
 };

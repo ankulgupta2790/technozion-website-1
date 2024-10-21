@@ -7,6 +7,7 @@
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    color: #16f6f3 !important;
 }
 
 /* General container for the card */
@@ -14,7 +15,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    padding: 5rem;
     /* bottom: 5%; */
+}
+
+.card-container{
+    padding-top: 10rem;
+    padding: 10rem;
+    /* margin: 5rem; */
+    width: 100%;
 }
 
 /* Wrapper for the main content */
@@ -62,6 +71,8 @@ p {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0px 0px 20px rgba(22, 246, 243, 0.75), 0px 0px 40px rgba(22, 246, 243, 0.5); 
+    /* margin-left: 5rem; */
+    /* right: 5rem; */
 }
 
 /* Updated glassy effect for .text */
@@ -78,6 +89,7 @@ p {
     color: white; /* Change text color to white */
     overflow-y: scroll;
     z-index: 2;
+    /* padding: 7rem; */
 }
 
 /* Removed the dark background overlay */
@@ -213,6 +225,11 @@ p {
 .content{
     /* margin-top:1.8rem; */
     z-index: 5;
+    height: 90%;
+    /* padding-bottom: 5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content div{
@@ -221,6 +238,8 @@ p {
     font-weight: 300;
     font-style: normal;
     padding: 1rem;
+    height: 100%;
+    overflow: scroll;
 }
 .content div h1{
     text-align: center;
@@ -229,6 +248,8 @@ p {
 }
 .content div p{
     font-size: 1.5rem;
+    overflow: hidden;
+    height: auto;
 }
 .content h3{
     font-size: 1.5rem;
@@ -272,11 +293,54 @@ p {
     font-style: normal;
 }
 
+/* Active button style */
+.cardnav button.active {
+    background-color: #16f6f3; /* Bright cyan for active button */
+    color: black; /* Black text color for active button */
+    border: 1px solid black; /* Optional: black border for emphasis */
+}
+
 .cardnav button:hover {
     background-color: rgba(0, 156, 186, 0.3); /* Darker cyan on hover */
     transform: scale(1.05); /* Slightly enlarge button on hover */
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* More shadow on hover */
 }
+
+
+.register{
+    display: flex;
+    justify-content: center;
+}
+
+.register-button {
+    position: fixed;
+    /* bottom: 0; */
+    /* left: 50%; */
+    /* transform: translateX(-20%);
+    transform: translateY(500%); */
+    z-index: 10;
+    background-color: #16f6f3;
+    color: black !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+    /* color: #fff !important; */
+  }
+  
+  .register-button:hover {
+    background-color: #13e1d9;
+  }
+  
+  .footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
 
 /* Hover effect */
 .wrap.active .overlay {
@@ -309,6 +373,16 @@ p {
 .pop {
     animation-name: pop;
 }
+
+/* Styling for the WebCanvas background */
+.web-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; /* WebCanvas should be the lowest layer */
+  }
 
 @keyframes pop {
     0% {
@@ -408,16 +482,20 @@ p {
 }
 
 @media (max-width: 510px) {
+    .card-container{
+        padding: 2rem;
+        padding-top: 12rem;
+    }
     h1 {
-        font-size: 6vmin;
+        font-size: 8vmin;
     }
     p {
-        font-size: max(12pt, 3vmin);
+        font-size: 4vmin;
     }
     .wrap {
         flex-direction: column;
-        width: 80vmin;
-        height: 80vmin;
+        width: 95%;
+        height: 140vmin;
     }
     /* .overlay-content {
         width: 100%;
@@ -437,6 +515,7 @@ p {
     .text {
         overflow: hidden; /* Prevent outer scrollbar on this element */
         height: 100%; /* Ensure it takes full height */
+        width:100%;
     }
 
     /* Allow the content container to be scrollable */
@@ -460,14 +539,6 @@ p {
     }
 
     .logo-container {
-        /* margin-bottom: 1rem;  */
-        position: fixed; /* Keep the logo fixed at the top */
-        top: 0; /* Align to the top of the viewport */
-        z-index: 10; /* Keep the logo on top */
-        background-color: rgba(0, 0, 0, 0.8); /* Ensure background is solid for visibility */
-        width: 100%; /* Make logo container full width */
-        padding: 1rem; /* Add some padding for spacing */
-        height: 50%;
         display: none;
         z-index: 0;
     }
@@ -479,6 +550,7 @@ p {
         margin-right: 1rem; */
         overflow-y: auto; /* Allow scrolling only for content */
         padding: 0px;
+        width: 100%;
     }
 
     .cardnav {
@@ -496,7 +568,7 @@ p {
 
     .cardnav button {
         /* padding: 0.4rem 0.8rem; */
-        font-size: 0.5rem; /* Smaller font size */
+        font-size: 0.8rem; /* Smaller font size */
         min-width: 3rem; /* Set a minimum width for buttons */
         margin: 0 0.2rem; /* Add some margin between buttons */
         text-align: center; /* Center the text in buttons */
@@ -510,7 +582,7 @@ p {
     }
 
     .content{
-        height: 90%;
+        height: 75%;
         /* margin-top: 10%; */
     }
     .content div{
@@ -518,10 +590,10 @@ p {
     }
     .content div h1{
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .content div p{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .content h3{
         font-size: 1rem;

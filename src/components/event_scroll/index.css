@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Global reset */
+* {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.outer-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* No scroll on the outer container */
+  width: 100%;
+}
+
+.poster-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.inner-container {
+  position: relative;
+  margin-top: 8rem;
+  padding-bottom: 8rem;
+  z-index: 10;
+  width: 100%;
+  /* max-width: 1200px; */
+  height: 100%; /* Take full height of the outer-container */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  padding-right: 15px; /* Add padding to avoid scrollbar overlap */
+  box-sizing: border-box;
+  
+  /* Hide scrollbar */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.inner-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.poster-container {
+  display: grid;
+  gap: 20px;
+  padding: 3rem 7rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  z-index: 10;
+  width: 100%;
+  /* margin-left: 5rem;
+  margin-right: 5rem; */
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.society-heading {
+  text-align: center; /* Center the heading */
+  margin: 20px 0; /* Add some margin for spacing */
+  font-size: 1.5rem; /* Adjust font size as needed */
+  font-weight: 600;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .poster-container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .poster-container {
+      grid-template-columns: 1fr;
+      padding: 1rem 1.8rem;
+  }
+}
