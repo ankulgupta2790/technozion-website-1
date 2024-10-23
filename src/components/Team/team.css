@@ -131,7 +131,7 @@
 
 /* Person details */
 .personDetails {
-    width: 50%; /* Occupy 50% width of the card */
+    width: 100%; /* Occupy 50% width of the card */
     padding: 10px; 
     box-sizing: border-box; 
     display: flex; 

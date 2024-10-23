@@ -3,30 +3,59 @@
     "name": "Ishaan Sharma",
     "contactNo": "9817809166",
     "position": "SAC Secretary Technical",
-    "email": "sec_technical@nitw.ac.in",
-    "image": "Ishan.png"
+    "email": "sec_technical@nitw.ac.in"
+    
   },
   {
     "name": "Atharva Deshpande",
-    "email": "sec_cultural@nitw.ac.in",
+    "email": "sec_sports@nitw.ac.in",
     "position": "Sports Secretary SAC",
-     "contactNo": "9923822196",
-    "image": "Atharva.jpg"
+     "contactNo": "9923822196"
+   
   },
  
   {
     "name": "G. Yaswanth",
     "email": "sec_fms@nitw.ac.in",
     "position": "SAC Secretary Film and Music",
-    "contactNo": "9989257407",
-    "image": "Yaswanth.jpg"
+    "contactNo": "9989257407"
+    
   },
   {
     "name": "Randheer",
     "contactNo": "7569743332",
     "position": "SAC Secretary Cultural",
-   "email": "sec_cultural@nitw.ac.in",
-    "image": "Randheer.jpg"
+   "email": "sec_cultural@nitw.ac.in"
+    
+  },
+  {
+    "name":"Samanvith Reddy ",
+      "contactNo": "7702268442",
+    "position": "Joint Secretary Cultural",
+   "email": ""
+   
+  },
+  {
+    "name":"Dhairyesh Pande ",
+      "contactNo": "9545892828",
+    "position": "Joint Secretary Film and music",
+   "email": ""
+    
+  },
+  
+  {
+    "name":"Shubhangi Thakur ",
+      "contactNo": "9826078917",
+    "position": "Joint Secretary Sports",
+   "email": ""
+    
+  },
+  {
+    "name":"Ramachandra Reddy",
+      "contactNo": "9346617822",
+    "position": "Joint Secretary Technical",
+   "email": ""
+    
   }
   
 ]
