@@ -496,6 +496,7 @@ p {
         flex-direction: column;
         width: 95%;
         height: 140vmin;
+        bottom:3.5rem;
     }
     /* .overlay-content {
         width: 100%;

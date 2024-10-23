@@ -202,5 +202,16 @@
         "bsrc1": "/posters/society_23_bsrc1.png",
         "bsrc2": "/posters/society_23_bsrc2.png",
         "index": 23
+    },
+    {
+        "title": "Recreate the moment ",
+        "name": "Photography Club",
+        "overview": "<h1>Recreate the moment</h1><br><h4>Photography Club</h4><br><h6>Description</h6><br><p>The event is about recreation of a specific technique photography and taking a picture using it. </p><br><h6>Team Size</h6><br><p>1</p><br><h6>General Secretary</h6><br><p>Tejaswi T + 8374666955</p><br>",
+        "rules": "<p>The tutorial for the technique will provided to the participants. Participants are allowed to use any device to recreate the shot.</p>",
+        "judging_criteria": "<p>While submitting, only RAW or unmodified images are considered. Participants will be judged based on the parameters of the shot.<br></p>",
+        "imgsrc": "/posters/club_18_imgsrc.jpg",
+        "bsrc1": "/posters/club_18_bsrc1.jpg",
+        "bsrc2": "/posters/club_18_bsrc2.jpg",
+        "index": 18
     }
 ]

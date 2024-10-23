@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './card.css';
 import ResizeObserver from 'resize-observer-polyfill';
@@ -13,6 +13,8 @@ const Card = () => {
     const [activeTab, setActiveTab] = useState('overview'); // Track the active tab
     const [imageSrc, setImageSrc] = useState(imgsrc); // State for image source
 
+    const contentRef = useRef(null); // Ref to the content container
+
     // Handles navigation back to the previous view
     const handleBack = () => {
         navigate(-1); // Navigate back in browser history
@@ -22,6 +24,13 @@ const Card = () => {
     const handleImageError = () => {
         setImageSrc(fallbackImg); // Set to fallback image on error
     };
+
+    // Scroll to the top of the content container when the active tab changes
+    useEffect(() => {
+        if (contentRef.current) {
+            contentRef.current.scrollTop = 0; // Scroll the content container to the top
+        }
+    }, [activeTab]); // Runs whenever activeTab changes
 
     // Renders the content of the active tab
     const renderContent = () => {
@@ -97,7 +106,7 @@ const Card = () => {
                                 )}
                                 <button className="back-button" onClick={handleBack}>Back</button>
                             </div>
-                            <div className="content">
+                            <div className="content" ref={contentRef} key={activeTab}> {/* Key ensures content re-renders on tab change */}
                                 {renderContent()}
                             </div>
                             <div className="register">

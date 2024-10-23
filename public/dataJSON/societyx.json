@@ -196,9 +196,9 @@
                     "overview": "<h1>Find your balance</h1><br><h4>Physics Society </h4><br><h6>Description</h6><br><p>Test your balance, focus, and agility! Participants will navigate challenging obstacles and balance tasks, showcasing their physical and mental coordination</p><br><h6>Team Size</h6><br><p>Individual </p><br><h6>General Secretary</h6><br><p>Mehul Mishra  + 9811159445</p><br>",
                     "rules": "<p>Individual participation.<br><br>*Time will be recorded.<br><br>*Penalties for losing balance or falling off.<br><br>*Three attempts per obstacle.<br><br>*Best time wins.<br></p>",
                     "judging_criteria": "<p>*Time Completion (50%)<br><br>*Balance and Stability (50%)</p>",
-                    "imgsrc": "/posters/society_24_imgsrc.png",
-                    "bsrc1": "/posters/society_24_bsrc1.png",
-                    "bsrc2": "/posters/society_24_bsrc2.png",
+                    "imgsrc": "/posters/society_24_imgsrc.jpg",
+                    "bsrc1": "/posters/society_24_bsrc1.jpg",
+                    "bsrc2": "/posters/society_24_bsrc2.jpg",
                     "index": 24
                 },
                 {
@@ -297,6 +297,15 @@
                     "bsrc1": "/posters/society_8_bsrc1.png",
                     "bsrc2": "/posters/society_8_bsrc2.png",
                     "index": 8
+                },
+                {
+                    "title": "Vehicle Demonstration",
+                    "name": "Mechanical Enineering Society ",
+                    "overview": "<h1>Vehicle Demonstration</h1><br><h4>Mechanical Enineering Society </h4><br><h6>Description</h6><br><p>Vehicle demonstration is an event which showcases the vehicle of teams MechExhausters and Mechaholics, of which MechExhausters is a student team that builds an F1-style car and compete in competitions like SUPRA SAE INDIA and team Mechaholics builds a quadbike and compete in competitions like QBDC. People can see their vehicles, get to know how each component in vehicle works and know how these automobiles work, from the people who built them.</p><br><h6>Team Size</h6><br><p>nan</p><br><h6>General Secretary</h6><br><p>Dhruv Jain + 9619676068</p><br>",
+                    "imgsrc": "/posters/society_20_imgsrc.png",
+                    "bsrc1": "/posters/society_20_bsrc1.png",
+                    "bsrc2": "/posters/society_20_bsrc2.png",
+                    "index": 20
                 }
             ]
         },
@@ -309,10 +318,10 @@
                     "overview": "<h1>Forensic investigation </h1><br><h4>Biotechnology Society </h4><br><h6>Description</h6><br><p>Forensic Investigation\nTeam of up to 3 participants \nA workshop on DNA fingerprinting and other forensic technologies involved in criminal investigation. Following the workshop, participants have to use this knowledge to solve a case.</p><br><h6>Team Size</h6><br><p>3</p><br><h6>General Secretary</h6><br><p>Janga Manoj Kumar Reddy  + 8639676094</p><br>",
                     "rules": "<p>Following the workshop, participants have to use this knowledge to solve a case.</p>",
                     "judging_criteria": "<p>IDENTIFYING THE KILLER<br>IDENTIFYING THE MOTIVE<br>UNCOVERING THE EVENTS<br>LEADING UPTO THE MURDER</p>",
-                    "imgsrc": "/posters/society_12_imgsrc.png",
-                    "bsrc1": "/posters/society_12_bsrc1.png",
-                    "bsrc2": "/posters/society_12_bsrc2.png",
-                    "index": 12
+                    "imgsrc": "/posters/society_13_imgsrc.jpg",
+                    "bsrc1": "/posters/society_13_bsrc1.jpg",
+                    "bsrc2": "/posters/society_13_bsrc2.jpg",
+                    "index": 13
                 },
                 {
                     "title": "Cellution ",
@@ -320,24 +329,10 @@
                     "overview": "<h1>Cellution </h1><br><h4>Biotechnology Society </h4><br><h6>Description</h6><br><p>Team or individual participation \nRound 1 : a quiz about the topics involved in the problem statement.\nRound 1 qualifiers will be allowed to participate in round 2.</p><br><h6>Team Size</h6><br><p>4</p><br><h6>General Secretary</h6><br><p>Janga Manoj Kumar Reddy  + 8639676094</p><br>",
                     "rules": "<p>Round 1 qualifiers will be allowed to participate in round 2<br>Round 2 : the team will be presented with a problem statement highlighting a developmental challenge in biotechnology. The team must propose a viable solution for the problem.</p>",
                     "judging_criteria": "<p>Round 1 will be judged based on correct answers, since it is quiz.<br>Round 2 will be judged based on feasibility of the solution, cost implementation, efficiency and impact</p>",
-                    "imgsrc": "/posters/society_13_imgsrc.png",
-                    "bsrc1": "/posters/society_13_bsrc1.png",
-                    "bsrc2": "/posters/society_13_bsrc2.png",
-                    "index": 13
-                }
-            ]
-        },
-        {
-            "societyName": "Mechanical Enineering Society",
-            "events": [
-                {
-                    "title": "Vehicle Demonstration",
-                    "name": "Mechanical Enineering Society ",
-                    "overview": "<h1>Vehicle Demonstration</h1><br><h4>Mechanical Enineering Society </h4><br><h6>Description</h6><br><p>Vehicle demonstration is an event which showcases the vehicle of teams MechExhausters and Mechaholics, of which MechExhausters is a student team that builds an F1-style car and compete in competitions like SUPRA SAE INDIA and team Mechaholics builds a quadbike and compete in competitions like QBDC. People can see their vehicles, get to know how each component in vehicle works and know how these automobiles work, from the people who built them.</p><br><h6>Team Size</h6><br><p>nan</p><br><h6>General Secretary</h6><br><p>Dhruv Jain + 9619676068</p><br>",
-                    "imgsrc": "/posters/society_20_imgsrc.png",
-                    "bsrc1": "/posters/society_20_bsrc1.png",
-                    "bsrc2": "/posters/society_20_bsrc2.png",
-                    "index": 20
+                    "imgsrc": "/posters/society_12_imgsrc.jpg",
+                    "bsrc1": "/posters/society_12_bsrc1.jpg",
+                    "bsrc2": "/posters/society_12_bsrc2.jpg",
+                    "index": 12
                 }
             ]
         }

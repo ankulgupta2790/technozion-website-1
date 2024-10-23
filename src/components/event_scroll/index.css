@@ -6,6 +6,16 @@
     font-style: normal;
 }
 
+.heading-image-container {
+  text-align: center;
+}
+
+.heading-image {
+  max-width: 40%; /* Adjust size */
+  height: 300px;
+}
+
+
 .outer-container {
   position: relative;
   display: flex;

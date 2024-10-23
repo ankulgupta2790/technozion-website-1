@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer">
             <a href="https://www.instagram.com/sdcnitw/profilecard/?igsh=bmMwbXk1cTdhdzN1">
                 <p>
-                    Made by <strong className="bold-text">SDC</strong>
+                    Made by <strong className="bold-text">SDC, NIT Warangal</strong>
                 </p>
             </a>  
         </footer>
