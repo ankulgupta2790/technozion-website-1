@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Poster from './poster.js';
+import {Loader} from '../Loader/index.js'; // Import your loader
 import './index.css';
 import { WebCanvas } from '../bg_animation/bg_animate.js';
 import imgsrc from './tzcomingsoon.png'; // Fallback image
@@ -15,6 +16,7 @@ function Index() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [headingImage, setHeadingImage] = useState(null); // State to hold the heading image
+  const [error, setError] = useState(null); // State to track errors
 
   useEffect(() => {
     const fetchData = async () => {
@@ -37,20 +39,28 @@ function Index() {
 
         const result = await response.json();
         setData(result);
-        setIsLoading(false);
+        setIsLoading(false); // Set loading to false after successful fetch
       } catch (error) {
         console.error('Error loading data:', error);
-        setIsLoading(false);
+        setError(error.message); // Set error message if fetching fails
+        setIsLoading(false); // Still stop the loader after error
       }
     };
 
     fetchData();
   }, [state]);
 
+  // Display loader while fetching
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
+  // Display error message if fetching failed
+  if (error) {
+    return <p>Error: {error}</p>;
+  }
+
+  // Display when no data is available
   if (!data.length) {
     return <p>No data available</p>;
   }
