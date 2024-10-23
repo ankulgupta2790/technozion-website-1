@@ -21,6 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-direction: column;
   padding: 20px;
   height: 100vh; /* Full viewport height */
   overflow: hidden; /* No scroll on the outer container */
@@ -38,11 +39,25 @@
   overflow: visible;
 }
 
+.heading{
+  height: 4rem;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.heading-image{
+  height: 100%;
+  overflow: hidden;
+}
+
 .inner-container {
   position: relative;
-  margin-top: 8rem;
+  /* margin-top: 4rem; */
   padding-bottom: 8rem;
-  z-index: 10;
+  z-index: 1;
   width: 100%;
   /* max-width: 1200px; */
   height: 100%; /* Take full height of the outer-container */
@@ -90,5 +105,13 @@
   .poster-container {
       grid-template-columns: 1fr;
       padding: 1rem 1.8rem;
+  }
+  .heading{
+    height: 2.5rem;
+    width: 100%;
+  }
+  
+  .heading-image{
+    width: 80%;
   }
 }
