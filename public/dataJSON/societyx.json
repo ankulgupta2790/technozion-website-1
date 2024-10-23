@@ -267,9 +267,9 @@
                     "name": "Electrical engineering society ",
                     "overview": "<h1>Dare to feel the pain</h1><br><h4>Electrical engineering society </h4><br><h6>Description</h6><br><p>this event brings you the periodic pains simulator , we can experience the pain of women experiences when they are in periods .</p><br><h6>Team Size</h6><br><p>1</p><br><h6>General Secretary</h6><br><p>Rakesh  +  93474 81626</p><br>",
                     "judging_criteria": "<p>person who can bear highest pain will win</p>",
-                    "imgsrc": "/posters/society_15_imgsrc.png",
-                    "bsrc1": "/posters/society_15_bsrc1.png",
-                    "bsrc2": "/posters/society_15_bsrc2.png",
+                    "imgsrc": "/posters/society_15_imgsrc.jpg",
+                    "bsrc1": "/posters/society_15_bsrc1.jpg",
+                    "bsrc2": "/posters/society_15_bsrc2.jpg",
                     "index": 15
                 },
                 {
@@ -277,9 +277,9 @@
                     "name": "Electrical engineering society ",
                     "overview": "<h1>Voltage Vortex</h1><br><h4>Electrical engineering society </h4><br><h6>Description</h6><br><p>series of rounds where questions and Tasks related to electrical engineering are given and teams have to solve them in minimum time </p><br><h6>Team Size</h6><br><p>1- 4</p><br><h6>General Secretary</h6><br><p>Rakesh + 93474 81626</p><br>",
                     "judging_criteria": "<p>student teams who solve more problems in less time will be awarded .</p>",
-                    "imgsrc": "/posters/society_17_imgsrc.png",
-                    "bsrc1": "/posters/society_17_bsrc1.png",
-                    "bsrc2": "/posters/society_17_bsrc2.png",
+                    "imgsrc": "/posters/society_17_imgsrc.jpg",
+                    "bsrc1": "/posters/society_17_bsrc1.jpg",
+                    "bsrc2": "/posters/society_17_bsrc2.jpg",
                     "index": 17
                 }
             ]
@@ -333,6 +333,66 @@
                     "bsrc1": "/posters/society_12_bsrc1.jpg",
                     "bsrc2": "/posters/society_12_bsrc2.jpg",
                     "index": 12
+                }
+            ]
+        },
+        {
+            "societyName": "Chemistry Society",
+            "events": [
+                {
+                    "title": "CHEM EXPO",
+                    "name": "Chemistry Society",
+                    "overview": "<h1>CHEM EXPO</h1><h4>Chemistry Society</h4><h6>Description</h6><p>Discover the magic of chemistry through interactive experiments and demonstrations. Hands-on activities that will make chemistry fun by using chemicals which are used in our daily life.</p><br><h6>Team Size</h6><p>6-7 members in each team</p><br><h6>General Secretary</h6><p>Pragati +91 70281 88342</p><br>",
+                    "rules": "<p>1. Team Participation:<br> - Each team of 6-7 members must collaborate to complete the assigned experiment at their station.<br> - All members must be involved in some part of the experiment, whether it’s mixing chemicals, following instructions, or explaining the reaction.<br>2. Safe Chemical Handling:<br> - Safety First: Safety goggles, gloves, and aprons will be provided to all participants. These must be worn at all times when handling chemicals.<br> - The chemicals used are non-hazardous, but teams must follow safety guidelines (e.g., no ingestion, washing hands after handling chemicals).<br>3. Experiment Instructions:<br> - Each station has a set of instructions for the experiment, including steps, materials, and safety measures.<br> - Teams must follow these instructions closely to ensure they perform the reaction correctly and safely.</p>",
+                    "judging_criteria": "<p>Teams will be judged on their ‘teamwork’, ‘execution’ of the experiment, and their ability to explain the reaction (what’s happening chemically, how it applies to everyday life).<br> - Points are awarded based on:<br> - Correct execution of the experiment.<br> - Clear and accurate explanation of the chemical reaction.<br> - Creativity or additional demonstrations of the chemical principles (if possible).</p>",
+                    "imgsrc": "/posters/society_30_imgsrc.jpg",
+                    "bsrc1": "/posters/society_30_bsrc1.jpg",
+                    "bsrc2": "/posters/society_30_bsrc2.jpg",
+                    "index": 30
+                },
+                {
+                    "title": "Periodic battleship",
+                    "name": "Chemistry Society",
+                    "overview": "<h1>Periodic battleship</h1><h4>Chemistry Society</h4><h6>Description</h6><p>The game will be totally based on the periodic table like element names, properties, trends in the periodic table, etc.</p><br><h6>Team Size</h6><p>4 to 6 members</p><br><h6>General Secretary</h6><p>Ankita Raj 9354495882</p><br>",
+                    "rules": "<p>Game is divided into 3 stages. In each stage, there will be elimination of participants, and the one who reaches the last stage and wins is the final winner.</p>",
+                    "judging_criteria": "<p>Accuracy, Speed, and Knowledge.</p>",
+                    "imgsrc": "/posters/society_31_imgsrc.jpg",
+                    "bsrc1": "/posters/society_31_bsrc1.jpg",
+                    "bsrc2": "/posters/society_31_bsrc2.jpg",
+                    "index": 31
+                },
+                {
+                    "title": "Let Them Cook",
+                    "name": "Chemistry Society",
+                    "overview": "<h1>Let Them Cook</h1><h4>Chemistry Society</h4><h6>Description</h6><p>Players are provided with boxes containing various slips related to chemistry (reactants, products, reagents, solvents, and conditions). They must create a valid chemical reaction using the slips they pick. The player who forms the most meaningful and correct reaction within the time limit wins the round. After multiple rounds, the player with the most wins is declared the overall winner.</p><br><h6>Team Size</h6><p>4</p><br><h6>General Secretary</h6><p>Pragati +91 70281 88342</p><br>",
+                    "rules": "<p>1. Picking Slips:<br> - Each player selects 5-6 paper slips from the boxes.<br> - The slips can be from any box, but players cannot exceed the set number of slips.<br>2. Forming a Reaction:<br> - Players must combine their selected slips to form a valid and meaningful chemical reaction (reactants → products), using any reagents, solvents, or conditions to complete it.<br> - For example, if a player picks \"ethanol\" (reactant), \"water\" (product), \"sulfuric acid\" (reagent), and \"high temperature\" (condition), they could form a valid esterification reaction.<br>3. Judging the Reaction:<br> - Once time is up, each player presents their reaction.<br> - The reaction must be chemically valid (correct stoichiometry, realistic conditions, etc.).<br>4. Winning the Round:<br> - The player with the most accurate and valid reaction wins the round.<br> - If multiple players create valid reactions, additional criteria (e.g., complexity, creativity) can be considered for the win.<br>5. Rounds and Overall Winner:<br> - The game continues for multiple rounds (decide in advance how many rounds will be played).<br> - The player who wins the most rounds is crowned the overall winner.</p>",
+                    "judging_criteria": "<p>The player who forms the most meaningful and correct reaction within the time limit wins the round. After multiple rounds, the player with the most wins is declared the overall winner.</p>",
+                    "imgsrc": "/posters/society_32_imgsrc.jpg",
+                    "bsrc1": "/posters/society_32_bsrc1.png",
+                    "bsrc2": "/posters/society_32_bsrc2.jpg",
+                    "index": 32
+                },
+                {
+                    "title": "ESCAPE ROOM",
+                    "name": "Chemistry Society",
+                    "overview": "<h1>ESCAPE ROOM</h1><h4>Chemistry Society</h4><h6>Description</h6><p>Participants are to be taken inside a room and asked to answer some questions and solve some puzzles. There would be different levels, and with every round, some participants will be eliminated.</p><br><h6>Team Size</h6><p>1/2</p><br><h6>General Secretary</h6><p>Ankita Raj 9354495882</p><br>",
+                    "rules": "<p>1. Be calm and quiet.<br>2. Phone is not allowed.</p>",
+                    "judging_criteria": "<p>The one who solves all the puzzles or tasks given until the last round would be considered the winner.</p>",
+                    "imgsrc": "/posters/society_33_imgsrc.jpg",
+                    "bsrc1": "/posters/society_33_bsrc1.jpg",
+                    "bsrc2": "/posters/society_33_bsrc2.jpg",
+                    "index": 33
+                },
+                {
+                    "title": "Breaking Bad Quiz",
+                    "name": "Chemistry Society",
+                    "overview": "<h1>Breaking Bad Quiz</h1><h4>Chemistry Society</h4><h6>Description</h6><p>This quiz tests participants' knowledge of the famous chemistry-based TV series 'Breaking Bad'. Participants must answer a series of questions related to the show, including chemistry concepts, character names, plots, and behind-the-scenes trivia.</p><br><h6>Team Size</h6><p>2 to 4 members</p><br><h6>General Secretary</h6><p>Pragati +91 70281 88342</p><br>",
+                    "rules": "<p>1. Multiple-choice questions on 'Breaking Bad'.<br>2. No use of mobile phones during the quiz.<br>3. Teams must submit their answers before the timer ends.</p>",
+                    "judging_criteria": "<p>Correct answers and speed in responding to questions.</p>",
+                    "imgsrc": "/posters/society_34_imgsrc.jpg",
+                    "bsrc1": "/posters/society_34_bsrc1.jpg",
+                    "bsrc2": "/posters/society_34_bsrc2.jpg",
+                    "index": 34
                 }
             ]
         }

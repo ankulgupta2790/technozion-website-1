@@ -10,7 +10,7 @@ export const Register = () => {
                   <WebCanvas /> 
             </div>
             <div className="image-container"> {/* New div wrapping the image */}
-                <img src={img_logo} alt="Coming Soon" /> {/* Added alt for accessibility */}
+                <p>Register before 4th November</p>
             </div>
         </div>
     );
