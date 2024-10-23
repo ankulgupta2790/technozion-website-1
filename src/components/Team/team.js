@@ -77,13 +77,7 @@ export const Team = () => {
                   onMouseEnter={() => handleMouseEnter(rowIndex * 2 + personIndex)} // Calculate index for hover states
                   onMouseLeave={() => handleMouseLeave(rowIndex * 2 + personIndex)} // Calculate index for hover states
                 >  
-                 <div className="personImage">
-                   <img 
-                   src={`/teamImages/${person.image}`} 
-                   alt={``} 
-                  style={{ borderRadius: '50%', width: '100%', height: '100%', objectFit: 'cover' }} 
-                   />
-                 </div>
+                 
                   {!(hoverStates[rowIndex * 2 + personIndex])&&(windowWidth>510) ? ( // Check individual hover state
                     <div className="personDetails">
                       <h1>{person.position}</h1>
@@ -95,7 +89,7 @@ export const Team = () => {
                       <p><strong>{person.position}</strong></p>
                       <p><strong>Name:</strong> {person.name}</p>
                       <p><strong>Contact:</strong> {person.contactNo}</p>
-                      <p><strong>Email:</strong> {person.email}</p>
+                     {(person.email!=="")?<p><strong>Email:</strong> {person.email}</p>:<p></p>}
                     </div>
                   )}
                 </div>
