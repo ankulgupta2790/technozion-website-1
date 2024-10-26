@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { WebCanvas } from "../bg_animation/bg_animate";
 import { getDocument, GlobalWorkerOptions } from 'pdfjs-dist/webpack';
 import gallery from "./gallery.pdf";
+import { Loader } from '../Loader/index.js'; // Update with the path to your loader component
 import './gallery.css';
 
 const pdfjsVersion = "2.12.313"; // Replace with your installed version if necessary
@@ -9,43 +10,56 @@ GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs
 
 export const Gallery = () => {
     const pdfRef = useRef(null);
-    const scaleRef = useRef(1); // To keep track of the current scale
-    const lastDistanceRef = useRef(0); // To track the last distance between fingers
+    const scaleRef = useRef(1); // Track the current scale
+    const lastDistanceRef = useRef(0); // Track the last distance between fingers
+    const [loading, setLoading] = useState(true); // Loading state
+    const [loadedPages, setLoadedPages] = useState(0); // Track number of loaded pages
 
     useEffect(() => {
-        const loadingTask = getDocument(gallery);
-        loadingTask.promise.then((pdf) => {
-            const totalPages = pdf.numPages;
-            const pdfContainer = pdfRef.current;
+        const loadPDF = async () => {
+            try {
+                const pdf = await getDocument(gallery).promise;
+                const totalPages = pdf.numPages;
+                const pdfContainer = pdfRef.current;
+                pdfContainer.innerHTML = ''; // Clear the container
 
-            for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
-                pdf.getPage(pageNum).then((page) => {
-                    const scale = window.innerWidth / page.getViewport({ scale: 1 }).width; // Initial scale
+                for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
+                    const page = await pdf.getPage(pageNum);
+                    const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
                     const viewport = page.getViewport({ scale });
-                    
-                    // Create a canvas for each page
+
+                    // Create and configure canvas
                     const canvas = document.createElement('canvas');
                     const context = canvas.getContext('2d');
                     canvas.width = viewport.width;
                     canvas.height = viewport.height;
 
-                    // Render the PDF page into the canvas context
-                    const renderContext = {
+                    // Render PDF page into canvas
+                    await page.render({
                         canvasContext: context,
-                        viewport: viewport,
-                    };
-                    page.render(renderContext);
+                        viewport,
+                    }).promise;
 
-                    // Append the canvas to the pdfContainer
+                    // Append the canvas to the container in order
                     pdfContainer.appendChild(canvas);
-                });
+
+                    // Track page loading progress
+                    setLoadedPages((prev) => prev + 1);
+                }
+            } catch (error) {
+                console.error("Error loading PDF:", error);
             }
-        }).catch((error) => {
-            console.error("Error loading PDF: ", error);
-        });
+        };
+
+        loadPDF();
     }, []);
 
-    // Function to handle pinch to zoom
+    useEffect(() => {
+        if (loadedPages > 0 && loadedPages === pdfRef.current?.childElementCount) {
+            setLoading(false); // Hide loader once all pages are loaded
+        }
+    }, [loadedPages]);
+
     const handleTouchStart = (e) => {
         if (e.touches.length === 2) {
             const dx = e.touches[0].clientX - e.touches[1].clientX;
@@ -59,13 +73,12 @@ export const Gallery = () => {
             const dx = e.touches[0].clientX - e.touches[1].clientX;
             const dy = e.touches[0].clientY - e.touches[1].clientY;
             const distance = Math.sqrt(dx * dx + dy * dy);
-            
-            // Calculate scale factor
+
             if (lastDistanceRef.current > 0) {
                 const scaleFactor = distance / lastDistanceRef.current;
                 scaleRef.current *= scaleFactor;
                 lastDistanceRef.current = distance;
-                updateCanvasScale(); // Update the canvas scale
+                updateCanvasScale();
             }
         }
     };
@@ -73,26 +86,15 @@ export const Gallery = () => {
     const updateCanvasScale = () => {
         const pdfContainer = pdfRef.current;
         const canvases = pdfContainer.getElementsByTagName('canvas');
-        
+
         for (let canvas of canvases) {
             const context = canvas.getContext('2d');
             const originalWidth = canvas.width;
             const originalHeight = canvas.height;
 
-            // Set new dimensions
+            // Set new dimensions for zoom
             canvas.width = originalWidth * scaleRef.current;
             canvas.height = originalHeight * scaleRef.current;
-
-            // Re-render the PDF page with the new scale
-            const renderContext = {
-                canvasContext: context,
-                viewport: {
-                    width: originalWidth * scaleRef.current,
-                    height: originalHeight * scaleRef.current,
-                    scale: scaleRef.current,
-                },
-            };
-            // You may need to re-render the pages here if you save the page data
         }
     };
 
@@ -101,8 +103,9 @@ export const Gallery = () => {
             <div className="gallery-canvas">
                 <WebCanvas />
             </div>
+            {loading && <Loader />} {/* Show loader until all PDF pages are loaded */}
             <div 
-                className="pdf-container" 
+                className={`pdf-container ${loading ? 'hidden' : ''}`} 
                 ref={pdfRef}
                 onTouchStart={handleTouchStart}
                 onTouchMove={handleTouchMove}
