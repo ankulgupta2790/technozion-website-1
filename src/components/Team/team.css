@@ -24,7 +24,7 @@
 }
 
 /* Styling for Teams image */
-.Teams img {
+.mainteams {
     position: relative;
     height: 10vh; /* Same height as before */
     object-fit: contain;
@@ -83,13 +83,34 @@
 }
 
 /* Add spacing between person cards in grid-row.two-items */
-.grid-row.two-items {
+.grid-row.two-item-even {
     justify-content: space-between; /* Spread cards evenly */
-    width: 80%; 
+    width: 50%; 
     margin: 5% auto; 
-    gap: 10%; 
+    gap: 5%; 
     margin-bottom: 4%;
     margin-top: 4%;
+}
+.grid-row.two-item-odd {
+    justify-content: space-between; /* Spread cards evenly */
+    width: 60%; 
+    margin: 5% auto; 
+    gap: 5%; 
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+.additional-image-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+     height: fit-content;
+}
+
+.sacimg{
+    width: 20%;
+    height: fit-content;
 }
 
 /* Person card styling */
@@ -102,7 +123,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
     color: white;
     position: relative;
     z-index: 4;
@@ -112,7 +133,7 @@
                 inset 0 0 15px rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(5px); 
     border: 1px solid rgba(255, 255, 255, 0.25); 
-    
+    transition: all 1s ease;
 }
 
 
@@ -120,7 +141,7 @@
 
 /* Hover effect */
 .person:hover {
-    
+     transition: 0.5sec ease-in;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
@@ -137,7 +158,7 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
 
 
 .personImage {
-    width: 5vw; 
+    width: 6vw; 
     height: auto;
     display: flex;
     justify-content: center;
@@ -177,7 +198,7 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 80%;
+    font-size: 1rem;
 }
 .person-info{
     width: fit-content;
@@ -190,7 +211,7 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
 }
 .person-info p{
     margin-top: 10%;
-  font-size: 80%;
+  font-size: 1rem;
   border: 30%;
       
 }
@@ -252,20 +273,25 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
         width: 80%;
         margin-top: 15%;
         margin-bottom: 20%;
+        justify-content: center;
+        align-items: center;
     }
-    .Teams img {
+    .mainteams {
         position: relative;
         height: 10vh; /* Same height as before */
         object-fit: contain;
         margin-top: 20%;
         z-index: 2; /* Above the background canvas */
     }
-
+    .sacimg{
+        width: 50%;
+        height: fit-content;
+    }
     .person {
         display: flex;
         flex-direction: row; /* Ensure that personImage and personDetails are side by side */
-        width: 100%;
-        height: auto; /* Adjust height to auto for better responsiveness */
+        width: fit-content;
+        height: fit-content; /* Adjust height to auto for better responsiveness */
         padding: 15px;
         background:  rgba(0, 0, 0, 0.1); 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), 
@@ -279,7 +305,7 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
     }
 
     .personImage {
-        width: 50%; /* Ensure personImage takes 50% of the parent width */
+        width: 18vw; /* Ensure personImage takes 50% of the parent width */
         height: auto; /* Adjust height to auto */
         background-size: cover;
         background-position: center;
@@ -289,7 +315,7 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
     }
 
     .personDetails {
-        width: 50%; /* Ensure personDetails takes 50% of the parent width */
+        width: 28vw; /* Ensure personDetails takes 50% of the parent width */
         padding: 0 10px; /* Padding around the text */
         box-sizing: border-box;
         display: flex;
@@ -307,7 +333,7 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
         font-size: 1.5rem; /* Adjust name font size for mobile */
     }
     .person-info p{
-        font-size: 80%;
+        font-size: 1rem;
     }
 }
 
