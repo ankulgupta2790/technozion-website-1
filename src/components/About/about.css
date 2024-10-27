@@ -45,6 +45,45 @@ body {
   /* padding-bottom: 5px;  */
   overflow: hidden; /* Ensure inner content doesn't overflow */
 }
+.youtube-links {
+  position: absolute;
+  bottom: 30%;
+  left:38%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 150px; /* Adjusted gap for spacing between links */
+  width: fit-content;
+  margin-top: 20px; /* Add spacing from the AboutCard */
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 4;
+  transform: translate(-10%, -50%);
+}
+@media (max-width:1359px){
+  .youtube-links{
+    left:30%;
+  }
+}
+
+.youtube-link {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  padding: 5px 10px; /* Padding for spacing around each link */
+  border: 2px;
+  background:  rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 2px #16f6f3, inset 0 0 10px rgba(255, 255, 255, 0.3); ; 
+  backdrop-filter: blur(5px); 
+      border-radius: 20px;
+}
+
+
+.youtube-icon {
+  width: 30px; /* Increased width for better visibility */
+  height: auto; /* Keep aspect ratio */
+}
 
 /* Create a moving glow effect on the bottom border */
 .border::after {
@@ -127,6 +166,16 @@ body {
     width: 85%;
   }
 } 
+
+@media (max-width:1024px) {
+    .youtube-links{
+       position: absolute;
+       bottom: 12%;
+       left: 15%;
+       transform: translate(-5%, -5%);
+    }
+  
+}
 @media (max-width: 768px) { /* Targeting mobile devices */
   .about_us{
     width: 220px;
@@ -154,12 +203,26 @@ body {
     max-width: 100%; /* Make images responsive */
     height: auto; /* Keep aspect ratio */
   }
+  .youtube-links{
+    position: absolute;
+    bottom: 15%;
+    left: 12%;
+    transform: translate(-5%, -5%);
+ }
 }
 
 @media (min-width: 450px) and (max-width: 650px){
   .theme-content{
     font-size: 0.9rem;
   }
+}
+@media (max-width:650px){
+  .youtube-links{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+     gap:80px
+ }
 }
 
 @media (max-width: 485px){
@@ -169,8 +232,20 @@ body {
   }
   .about-card{
     padding: 10px;
+  
+    
   }
+  .youtube-links{
+    flex-direction: column;
+    gap:10px;
+    bottom: 10%;
+    left: 25%;
+ }
+ .youtube-link{
+   width: 50vw;
+ }
 }
+
 
 @media (max-width: 325px){
   .theme-content{
