@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './team.css'; 
+import P1 from './1.png';
+import  P2 from './2.png';
 
 import { WebCanvas } from "../bg_animation/bg_animate";
 import Teams from './Teams.png';
@@ -33,9 +35,10 @@ export const Team = () => {
       if (isMobile) { 
         rows.push([data[index]]); 
         index += 1; 
-      } else { 
-        rows.push([data[index], data[index + 1],data[index+2]]); 
-        index += 3; 
+      }
+      else { 
+        rows.push([data[index], data[index + 1]]); 
+        index += 2; 
       } 
     } 
     return rows; 
@@ -64,7 +67,7 @@ export const Team = () => {
       <div className="web-canvas">
         <WebCanvas />
       </div>
-      <img src={Teams} alt="teams" />
+      <img src={Teams} alt="teams" className='mainteams'/>
        
      
 
@@ -74,44 +77,56 @@ export const Team = () => {
   <p className='person'>deam_sa@nitw.ac.in</p>
   <p className='person'>sac_president@nitw.ac.in</p>
 </div>
-          
+            <div className="additional-image-container">
+         <img src={P1} alt='sacteries'  className='sacimg'/>
+      </div>
 
         {gridTemplate.map((row, rowIndex) => (
-          <div className={`grid-row ${row.length === 1 ? 'one-item' : 'two-items'}`} key={rowIndex}>
-            {row.map((person, personIndex) =>
-              person ? (
-                <div
-                  className="person"
-                  key={personIndex}
-                  id={`person-${rowIndex}-${personIndex}`}
-                  onMouseEnter={() => handleMouseEnter(rowIndex * 3 + personIndex)} // Calculate index for hover states
-                  onMouseLeave={() => handleMouseLeave(rowIndex * 3 + personIndex)} // Calculate index for hover states
-                >  
-                 <div className="personImage">
-                   <img 
-                   src={`/teamImages/${person.image}`} 
-                   alt={``} 
-                  style={{ borderRadius: '50%', width: '100%', height: '100%', objectFit: 'cover' }} 
-                   />
-                 </div>
-                  {!(hoverStates[rowIndex * 3 + personIndex])&&(windowWidth>510) ? ( // Check individual hover state
-                    <div className="personDetails">
-                      <h1>{person.position}</h1>
-                      <h2>{person.name}</h2>
-                      <p className="person-contact">{person.contact}</p>
-                    </div>
-                  ) : (
-                    <div className="person-info">
-                      <p><strong>{person.position}</strong></p>
-                      <p><strong>Name:</strong> {person.name}</p>
-                      <p><strong>Contact:</strong> {person.contactNo}</p>
-                      {(person.email!=="")?<p><strong>Email:</strong> {person.email}</p>:null}
-                    </div>
-                  )}
-                </div>
-              ) : null
+          <React.Fragment key={rowIndex}>
+    {/* Render the row */}
+    <div className={`grid-row ${row.length === 1 ? 'one-item' : rowIndex % 2 === 0 ? 'two-item-even' :'two-item-odd'}`}>
+      {row.map((person, personIndex) =>
+        person ? (
+          <div
+            className="person"
+            key={personIndex}
+            id={`person-${rowIndex}-${personIndex}`}
+            onMouseEnter={() => handleMouseEnter(rowIndex * 2 + personIndex)} // Calculate index for hover states
+            onMouseLeave={() => handleMouseLeave(rowIndex * 2 + personIndex)} // Calculate index for hover states
+          >
+            <div className="personImage">
+              <img 
+                src={`/teamImages/${person.image}`} 
+                alt="" 
+                style={{ borderRadius: '50%', width: '100%', height: '100%', objectFit: 'cover' }} 
+              />
+            </div>
+            {!(hoverStates[rowIndex * 2 + personIndex]) && windowWidth > 510 ? (
+              <div className="personDetails">
+                <h1>{person.position}</h1>
+                <h2>{person.name}</h2>
+                <p className="person-contact">{person.contact}</p>
+              </div>
+            ) : (
+              <div className="person-info">
+                <p><strong>{person.position}</strong></p>
+                <p><strong>Name:</strong> {person.name}</p>
+                <p><strong>Contact:</strong> {person.contactNo}</p>
+                {person.email && <p><strong>Email:</strong> {person.email}</p>}
+              </div>
             )}
           </div>
+        ) : null
+      )}
+    </div>
+    
+    {/* Render an image after the row with rowIndex 1 */}
+    { (((windowWidth > 786) && rowIndex === 1) || ((windowWidth < 786 && rowIndex === 3))) && (
+  <div className="additional-image-container">
+  <img src={P2} alt='addsacteries' className='sacimg'/>
+  </div>
+)}
+  </React.Fragment>
         ))}
       </div>
     </div>
