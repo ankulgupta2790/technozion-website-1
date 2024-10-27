@@ -34,8 +34,8 @@ export const Team = () => {
         rows.push([data[index]]); 
         index += 1; 
       } else { 
-        rows.push([data[index], data[index + 1]]); 
-        index += 2; 
+        rows.push([data[index], data[index + 1],data[index+2]]); 
+        index += 3; 
       } 
     } 
     return rows; 
@@ -65,7 +65,17 @@ export const Team = () => {
         <WebCanvas />
       </div>
       <img src={Teams} alt="teams" />
+       
+     
+
       <div className="list">
+   
+      <div className="row-container">
+  <p className='person'>deam_sa@nitw.ac.in</p>
+  <p className='person'>sac_president@nitw.ac.in</p>
+</div>
+          
+
         {gridTemplate.map((row, rowIndex) => (
           <div className={`grid-row ${row.length === 1 ? 'one-item' : 'two-items'}`} key={rowIndex}>
             {row.map((person, personIndex) =>
@@ -74,11 +84,17 @@ export const Team = () => {
                   className="person"
                   key={personIndex}
                   id={`person-${rowIndex}-${personIndex}`}
-                  onMouseEnter={() => handleMouseEnter(rowIndex * 2 + personIndex)} // Calculate index for hover states
-                  onMouseLeave={() => handleMouseLeave(rowIndex * 2 + personIndex)} // Calculate index for hover states
+                  onMouseEnter={() => handleMouseEnter(rowIndex * 3 + personIndex)} // Calculate index for hover states
+                  onMouseLeave={() => handleMouseLeave(rowIndex * 3 + personIndex)} // Calculate index for hover states
                 >  
-                 
-                  {!(hoverStates[rowIndex * 2 + personIndex])&&(windowWidth>510) ? ( // Check individual hover state
+                 <div className="personImage">
+                   <img 
+                   src={`/teamImages/${person.image}`} 
+                   alt={``} 
+                  style={{ borderRadius: '50%', width: '100%', height: '100%', objectFit: 'cover' }} 
+                   />
+                 </div>
+                  {!(hoverStates[rowIndex * 3 + personIndex])&&(windowWidth>510) ? ( // Check individual hover state
                     <div className="personDetails">
                       <h1>{person.position}</h1>
                       <h2>{person.name}</h2>
@@ -89,7 +105,7 @@ export const Team = () => {
                       <p><strong>{person.position}</strong></p>
                       <p><strong>Name:</strong> {person.name}</p>
                       <p><strong>Contact:</strong> {person.contactNo}</p>
-                     {(person.email!=="")?<p><strong>Email:</strong> {person.email}</p>:<p></p>}
+                      {(person.email!=="")?<p><strong>Email:</strong> {person.email}</p>:null}
                     </div>
                   )}
                 </div>
