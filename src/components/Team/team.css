@@ -42,7 +42,27 @@
     border-radius: 10px;
     z-index: 2;
     overflow-y: auto;
-}
+} 
+.row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the content */
+    align-items: center; /* Vertically align the paragraphs */
+    gap: 2rem; /* Space between the paragraphs */
+    margin: 20px 0; /* Vertical margin */
+
+  }
+  .row-container p{
+    color: white;
+    font-size: 1.2rem; /* Default font size */
+    width: fit-content;
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Optional background for visibility */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  }
+  
 
 /* Grid row layout */
 .grid-row {
@@ -65,23 +85,20 @@
 /* Add spacing between person cards in grid-row.two-items */
 .grid-row.two-items {
     justify-content: space-between; /* Spread cards evenly */
-    width: 60%; /* Slightly increased width for better spacing */
-    margin: 5% auto; /* Center the row */
-    gap: 20%; 
-    margin-bottom: 9%;
-    margin-top: 9%;
+    width: 80%; 
+    margin: 5% auto; 
+    gap: 10%; 
+    margin-bottom: 4%;
+    margin-top: 4%;
 }
 
 /* Person card styling */
 .person {
-    width: 25vw;
-    height: 40vh;
+    width: calc(fit-content+5%);
+    height: fit-content;
     padding: 15px;
     border-radius: 20px;
-    background:  rgba(0, 0, 0, 0.1); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), 
-                inset 0 0 15px rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(5px); 
+    
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -90,6 +107,10 @@
     position: relative;
     z-index: 4;
     word-wrap: break-word;
+    background:  rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), 
+                inset 0 0 15px rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(5px); 
     border: 1px solid rgba(255, 255, 255, 0.25); 
     
 }
@@ -100,15 +121,23 @@
 /* Hover effect */
 .person:hover {
     
-    box-shadow: 0 20px 30px #16f6f3, inset 0 0 10px rgba(255, 255, 255, 0.3); /* Blue glow effect */
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center; 
     justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), 
+    inset 0 0 15px rgba(255, 255, 255, 0.1); 
+   backdrop-filter: blur(5px); 
+border: 1px solid rgba(255, 255, 255, 0.25); 
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 
+                    inset 0 0 15px rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(5px); 
+        border-radius: 15px;
+        box-shadow: 0 20px 30px #16f6f3, inset 0 0 10px rgba(255, 255, 255, 0.3); 
 }
 
 
 .personImage {
-    width: 50%; 
+    width: 5vw; 
     height: auto;
     display: flex;
     justify-content: center;
@@ -131,13 +160,16 @@
 
 /* Person details */
 .personDetails {
-    width: 100%; /* Occupy 50% width of the card */
+    width: 10vw; /* Occupy 50% width of the card */
     padding: 10px; 
     box-sizing: border-box; 
     display: flex; 
+    
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
+ 
+    border-radius: 40%;
 }
 
 .personDetails h1,
@@ -145,7 +177,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 140%;
+    font-size: 80%;
+}
+.person-info{
+    width: fit-content;
+    height:100%;
+ 
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+    
+}
+.person-info p{
+    margin-top: 10%;
+  font-size: 80%;
+  border: 30%;
+      
 }
 
 .person:hover .person-contact {
@@ -172,11 +219,12 @@
     }
 
     .person {
-        width: 70%; /* Ensure person takes up more space */
+        width: calc(fit-content+5%);
+        height: fit-content; /* Ensure person takes up more space */
     }
 
     .personImage {
-        width: 50%;
+        width: 10vw; 
         height: auto;
     }
 
@@ -188,6 +236,13 @@
         width: 35vw;
         height: 35vh;
     }
+    .personDetails h1,
+.personDetails h2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 80%;
+}
 }
 
 @media (max-width: 786px) {
@@ -260,8 +315,9 @@
     .grid-row.one-item,
     .grid-row.two-items {
         flex-direction: column;
-        width:  80%;
+        width:  60%;
         height: auto;
+        align-items: center;
     }
 
     .person {
@@ -269,8 +325,8 @@
         align-items: center; 
         justify-content: center;
         flex-direction: column; 
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: fit-content;
         padding: 10px;
 
         background:  rgba(0, 0, 0, 0.1); 
@@ -285,7 +341,7 @@
     }
 
     .personImage {
-        width: 50%; /* Ensure personImage takes 50% of the parent width */
+        width: 20vw; /* Ensure personImage takes 50% of the parent width */
         height: auto; /* Adjust height to auto */
         margin-right: 10px;
     }
@@ -302,5 +358,13 @@
     }
     .person-info p{
         font-size: 80%;
+    }
+    .row-container p {
+        font-size: 0.9rem; /* Smaller font size for small screens */
+        padding: 6px 8px; /* Reduced padding */
+    }
+    .row-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        gap: 1rem;
     }
 }
