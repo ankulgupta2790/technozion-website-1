@@ -47,7 +47,7 @@ body {
 }
 .youtube-links {
   position: absolute;
-  bottom: 30%;
+  bottom: 10%;
   left:38%;
   display: flex; 
   flex-direction: row;
@@ -64,6 +64,7 @@ body {
 @media (max-width:1359px){
   .youtube-links{
     left:30%;
+    bottom:5%;
   }
 }
 
