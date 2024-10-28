@@ -78,7 +78,7 @@ export const Team = () => {
   <p className='person'>sac_president@nitw.ac.in</p>
 </div>
             <div className="additional-image-container">
-         <img src={P1} alt='sacteries'  className='sacimg'/>
+         <p className='sacimg'> SECRETARY</p>
       </div>
 
         {gridTemplate.map((row, rowIndex) => (
@@ -123,7 +123,8 @@ export const Team = () => {
     {/* Render an image after the row with rowIndex 1 */}
     { (((windowWidth > 786) && rowIndex === 1) || ((windowWidth < 786 && rowIndex === 3))) && (
   <div className="additional-image-container">
-  <img src={P2} alt='addsacteries' className='sacimg'/>
+  <p className='sacimg'>JOINT SECRETARY</p>
+ 
   </div>
 )}
   </React.Fragment>
