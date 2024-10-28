@@ -104,13 +104,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-   
-     height: fit-content;
+    gap:0px;
+    height: fit-content;
 }
 
 .sacimg{
     width: 20%;
     height: fit-content;
+    font-size: 3rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-self: center;
+     width: fit-content;
 }
 
 /* Person card styling */
@@ -276,6 +282,16 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
         justify-content: center;
         align-items: center;
     }
+    .sacimg{
+        width: 20%;
+        height: fit-content;
+        font-size: 2rem;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-self: center;
+         width: fit-content;
+    }
     .mainteams {
         position: relative;
         height: 10vh; /* Same height as before */
@@ -286,6 +302,7 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
     .sacimg{
         width: 50%;
         height: fit-content;
+        font-size: 2rem;
     }
     .person {
         display: flex;
@@ -344,6 +361,16 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
         width:  60%;
         height: auto;
         align-items: center;
+    } 
+    .sacimg{
+        width: 20%;
+        height: fit-content;
+        font-size: 2rem;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-self: center;
+         width: fit-content;
     }
 
     .person {
