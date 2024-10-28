@@ -1,49 +1,51 @@
 [
-    {
-      "title": "Software Hackathon",
-      "overview": "<h1>Software Hackathon</h1><br><h4>Software Development Club</h4><br><h6>Description</h6><p>A team of students comes together to solve real-world problems using software development, coding, and engineering principles. Participants design, prototype, and present innovative solutions over a set period, usually 24-48 hours, often incorporating programming, hardware, and emerging technologies. These hackathons encourage creativity, teamwork, and hands-on learning, allowing students to apply their technical skills, collaborate across disciplines, and engage with industry professionals. </p><br><h6>Team Size</h6><p>1 - 3</p><br><h6>General Secretary</h6><p>Sama Manikanta Reddy 7032716998</p><br>",
-      "rules": "<p>1. Team Size: Each team must consist of 1-3 members only.<br>2. Original Work: All submissions must be original. Any form of plagiarism will result in immediate disqualification.<br>3. Proper Citation: If any external resources or code are used, proper citations must be provided.<br>4. Deadline Compliance: Missing any submission deadlines will result in immediate rejection and exclusion from the hackathon.<br>5. Mandatory Attendance: All shortlisted teams must attend the 24-hour offline hackathon at NIT Warangal.<br>6. Code of Conduct: Teams must maintain professionalism and respect others. Harassment, discrimination, or inappropriate behaviour will lead to disqualification.<br>7. Project Ownership: Teams retain full ownership of their projects but grant SDC the right to showcase their work for promotional purposes.</p>",
-      "judging_criteria": "<p>1. Innovation in Problem Statements \u2013 Original and creative ideas. <br>2. Feasibility of the Solution \u2013 How practical and realistic the solution is. <br>3. Scalability \u2013 Potential to expand and adapt the solution for large scale. <br>4. Impact of the Solution \u2013 Positive effects it could have on the target audience/industry/market needs. <br>5. Usability \u2013 How user-friendly the solution is. <br>6. Use of Technology \u2013 Effective use of tools and technologies. <br>7. Teamwork \u2013 Collaboration and cooperation among team members. <br>8. Presentation Skills \u2013 Clarity and effectiveness of the presentation. <br>9. Code Quality \u2013 Clean, efficient, and well-organized code. <br>10. Documentation Quality - Clear documentation that explains their solution, code, and process.<br>11. Timely Submissions \u2013 Meeting the deadlines (PPTs etc..) </p>",
-      "imgsrc": "/posters/club_17_imgsrc.png",
-      "bsrc1": "/posters/club_17_bsrc1.png",
-      "bsrc2": "/posters/club_17_bsrc2.png",
-      "index": 17
-    },
-    {
-      "title": "IDEATHON",
-      "overview": "<h1>IDEATHON</h1><br><h4>Innovation Garage</h4><br><h6>Description</h6><p>The Ideathon competition challenges teams to develop innovative ad campaigns based on real-world problem statements in a fast-paced, commercial-style setting. Teams of 3 will brainstorm, plan, and present their ad concepts within a limited timeframe, using creative and technical resources. The event culminates with live presentations, judged on innovation, technical execution, and relevance. </p><br><h6>Team Size</h6><p>1 - 3</p><br><h6>General Secretary</h6><p>Mridula 9121336981</p><br>",
-      "rules": "<p>1. Each team must pick a random problem statement and create a 3-minute ad concept based on it within the allotted time.<br>2. Teams are allowed to use props and digital tools but must strictly adhere to the 60-minute ideation period.<br>3. Judging criteria include creativity, relevance to the problem statement, presentation quality, and time management.</p>",
-      "judging_criteria": "<p>Judging will be based on the following criteria:<br>1. Innovation & Creativity - Originality and uniqueness of the ad concept.<br>2. Technical Feasibility - Practicality and execution of the solution.<br>3. Relevance - How well the ad addresses the problem statement.<br>4. Presentation Quality - Clarity, engagement, and overall delivery.<br>5. Audience Poll- A live poll from the audience, accounting for 20% of the final score.</p>",
-      "imgsrc": "/posters/spotlight_2_imgsrc.png",
-      "bsrc1": "/posters/spotlight_2_bsrc1.png",
-      "bsrc2": "/posters/spotlight_2_bsrc2.png"
-    },
-    {
-      "title": "DRONE RACE",
-      "overview": "<p><h1>DRONE RACE</h1><br>Are you ready to take flight? Join us for an adrenaline-pumping drone racing competition that will put your engineering prowess to the test. Design, build, and pilot your own drone, navigating through a challenging obstacle course at breakneck speeds. Construct a drone that meets specific technical requirements including size, weight, and battery capacity. Compete against students from across the nation in a thrilling drone racing competition. Demonstrate your engineering skills, problem-solving abilities, and piloting expertise. Compete for valuable prizes and recognition as the top drone racer. Your drone's speed, agility, manoeuvrability, and innovative design will be judged. Open to all students with dreams to fly high.</p>",
-      "imgsrc": "/posters/spotlight_3_imgsrc.png",
-      "bsrc1": "/posters/spotlight_3_bsrc1.png",
-      "bsrc2": "/posters/spotlight_3_bsrc2.png"
-    },
-    {
-      "title": "STARTUP FAIR",
-      "overview": "<p><h1>STARTUP FAIR</h1><br>Startup Fair aims to foster innovation, entrepreneurship, and networking with various startup communities, colleges, and businesses. It will provide a platform for budding entrepreneurs to showcase their ideas, connect with potential investors, mentors, and industry experts, and gain valuable insights into the startup ecosystem.</p>",
-      "imgsrc": "/posters/spotlight_4_imgsrc.png",
-      "bsrc1": "/posters/spotlight_4_bsrc1.png",
-      "bsrc2": "/posters/spotlight_4_bsrc2.png"
-    },
-    {
-      "title": "MATLAB RUN",
-      "overview": "<p><h1>MATLAB RUN</h1><br>Join us for the MATLAB Innovation Challenge where students from all engineering disciplines will compete to develop innovative solutions to real-world problems using MATLAB. Showcase your problem-solving abilities, creativity, and technical expertise as you tackle challenges specific to your branch of engineering. Compete against fellow students in your field, apply MATLAB to address real-world issues, connect with industry professionals, and receive guidance from MATLAB experts. Compete for exciting prizes and recognition. Join us for an exhilarating competition that will challenge your mind, inspire your creativity, and help you develop the skills needed to succeed in today's competitive engineering landscape.</p>",
-      "imgsrc": "/posters/spotlight_6_imgsrc.png",
-      "bsrc1": "/posters/spotlight_6_bsrc1.png",
-      "bsrc2": "/posters/spotlight_6_bsrc2.png"
-    },
-    {
-      "title": "E-GAMES IN THE NITW ARENA",
-      "overview": "<p><h1>E-GAMES IN THE NITW ARENA</h1><br>Prepare to immerse yourself in a world of exhilarating competition and cutting-edge technology at the E-Games in the NITW Arena. This event brings together the most passionate and skilled students from across the nation to compete in intense virtual battles using VR headsets. Create and develop your own unique gaming experience and invite other players to join you in your virtual world. The most innovative and engaging games will be recognized and rewarded, and their creators may even catch the attention of renowned companies and industry leaders. Whether you're a seasoned pro or just starting your gaming journey, the e-Games in the NITW Arena offers an unforgettable experience. Compete for glory, connect with like-minded gamers, and discover the limitless possibilities of virtual reality.</p>",
-      "imgsrc": "/posters/spotlight_7_imgsrc.png",
-      "bsrc1": "/posters/spotlight_7_bsrc1.png",
-      "bsrc2": "/posters/spotlight_7_bsrc2.png"
-    }
-  ]
+  {
+    "title": "Software Hackathon",
+    "overview": "<h1>Software Hackathon</h1><br><h4>Software Development Club</h4><br><h6>Description</h6><p>A team of students comes together to solve real-world problems using software development, coding, and engineering principles. Participants design, prototype, and present innovative solutions over a set period, usually 24-48 hours, often incorporating programming, hardware, and emerging technologies. These hackathons encourage creativity, teamwork, and hands-on learning, allowing students to apply their technical skills, collaborate across disciplines, and engage with industry professionals. </p><br><h6>Team Size</h6><p>1 - 3</p><br><h6>General Secretary</h6><p>Sama Manikanta Reddy 7032716998</p><br>",
+    "rules": "<p>1. Team Size: Each team must consist of 1-3 members only.<br>2. Original Work: All submissions must be original. Any form of plagiarism will result in immediate disqualification.<br>3. Proper Citation: If any external resources or code are used, proper citations must be provided.<br>4. Deadline Compliance: Missing any submission deadlines will result in immediate rejection and exclusion from the hackathon.<br>5. Mandatory Attendance: All shortlisted teams must attend the 24-hour offline hackathon at NIT Warangal.<br>6. Code of Conduct: Teams must maintain professionalism and respect others. Harassment, discrimination, or inappropriate behaviour will lead to disqualification.<br>7. Project Ownership: Teams retain full ownership of their projects but grant SDC the right to showcase their work for promotional purposes.</p>",
+    "judging_criteria": "<p>1. Innovation in Problem Statements \u2013 Original and creative ideas. <br>2. Feasibility of the Solution \u2013 How practical and realistic the solution is. <br>3. Scalability \u2013 Potential to expand and adapt the solution for large scale. <br>4. Impact of the Solution \u2013 Positive effects it could have on the target audience/industry/market needs. <br>5. Usability \u2013 How user-friendly the solution is. <br>6. Use of Technology \u2013 Effective use of tools and technologies. <br>7. Teamwork \u2013 Collaboration and cooperation among team members. <br>8. Presentation Skills \u2013 Clarity and effectiveness of the presentation. <br>9. Code Quality \u2013 Clean, efficient, and well-organized code. <br>10. Documentation Quality - Clear documentation that explains their solution, code, and process.<br>11. Timely Submissions \u2013 Meeting the deadlines (PPTs etc..) </p>",
+    "imgsrc": "/posters/club_17_imgsrc.png",
+    "bsrc1": "/posters/club_17_bsrc1.png",
+    "bsrc2": "/posters/club_17_bsrc2.png",
+    "index": 17
+  },
+  {
+    "title": "IDEATHON",
+    "overview": "<h1>IDEATHON</h1><br><h4>Innovation Garage</h4><br><h6>Description</h6><p>The Ideathon competition challenges teams to develop innovative ad campaigns based on real-world problem statements in a fast-paced, commercial-style setting. Teams of 3 will brainstorm, plan, and present their ad concepts within a limited timeframe, using creative and technical resources. The event culminates with live presentations, judged on innovation, technical execution, and relevance. </p><br><h6>Team Size</h6><p>1 - 3</p><br><h6>General Secretary</h6><p>Mridula 9121336981</p><br>",
+    "rules": "<p>1. Each team must pick a random problem statement and create a 3-minute ad concept based on it within the allotted time.<br>2. Teams are allowed to use props and digital tools but must strictly adhere to the 60-minute ideation period.<br>3. Judging criteria include creativity, relevance to the problem statement, presentation quality, and time management.</p>",
+    "judging_criteria": "<p>Judging will be based on the following criteria:<br>1. Innovation & Creativity - Originality and uniqueness of the ad concept.<br>2. Technical Feasibility - Practicality and execution of the solution.<br>3. Relevance - How well the ad addresses the problem statement.<br>4. Presentation Quality - Clarity, engagement, and overall delivery.<br>5. Audience Poll- A live poll from the audience, accounting for 20% of the final score.</p>",
+    "imgsrc": "/posters/spotlight_2_imgsrc.png",
+    "bsrc1": "/posters/spotlight_2_bsrc1.png",
+    "bsrc2": "/posters/spotlight_2_bsrc2.png"
+  },
+  {
+    "title": "Drone Velocity (Drone Race)",
+    "overview": "<h1>Drone Velocity</h1><br><h4>Robotics Club: Spotlight Event</h4><br><h6>Description</h6><p>To promote innovation, technical skills, and teamwork among participants through an exciting drone racing competition. Develop and build an FPV Drone with the ability to compete against other drones in a tournament.</p><br><h6>Team Size</h6><p>1 - 5</p><br><h6>General Secretary</h6><p>Kevin Amal Darren 9080224791</p><br>",
+    "rules": "<p>To be updated soon</p>",
+    "judging_criteria": "<p>To be updated soon</p>",
+    "imgsrc": "/posters/spotlight_3_imgsrc.png",
+    "bsrc1": "/posters/spotlight_3_bsrc1.png",
+    "bsrc2": "/posters/spotlight_3_bsrc2.png"
+  },
+  {
+    "title": "STARTUP FAIR",
+    "overview": "<p><h1>STARTUP FAIR</h1><br>Startup Fair aims to foster innovation, entrepreneurship, and networking with various startup communities, colleges, and businesses. It will provide a platform for budding entrepreneurs to showcase their ideas, connect with potential investors, mentors, and industry experts, and gain valuable insights into the startup ecosystem.</p>",
+    "imgsrc": "/posters/spotlight_4_imgsrc.png",
+    "bsrc1": "/posters/spotlight_4_bsrc1.png",
+    "bsrc2": "/posters/spotlight_4_bsrc2.png"
+  },
+  {
+    "title": "MATLAB RUN",
+    "overview": "<p><h1>MATLAB RUN</h1><br>Join us for the MATLAB Innovation Challenge where students from all engineering disciplines will compete to develop innovative solutions to real-world problems using MATLAB. Showcase your problem-solving abilities, creativity, and technical expertise as you tackle challenges specific to your branch of engineering. Compete against fellow students in your field, apply MATLAB to address real-world issues, connect with industry professionals, and receive guidance from MATLAB experts. Compete for exciting prizes and recognition. Join us for an exhilarating competition that will challenge your mind, inspire your creativity, and help you develop the skills needed to succeed in today's competitive engineering landscape.</p>",
+    "imgsrc": "/posters/spotlight_6_imgsrc.png",
+    "bsrc1": "/posters/spotlight_6_bsrc1.png",
+    "bsrc2": "/posters/spotlight_6_bsrc2.png"
+  },
+  {
+    "title": "E-GAMES IN THE NITW ARENA",
+    "overview": "<p><h1>E-GAMES IN THE NITW ARENA</h1><br>Prepare to immerse yourself in a world of exhilarating competition and cutting-edge technology at the E-Games in the NITW Arena. This event brings together the most passionate and skilled students from across the nation to compete in intense virtual battles using VR headsets. Create and develop your own unique gaming experience and invite other players to join you in your virtual world. The most innovative and engaging games will be recognized and rewarded, and their creators may even catch the attention of renowned companies and industry leaders. Whether you're a seasoned pro or just starting your gaming journey, the e-Games in the NITW Arena offers an unforgettable experience. Compete for glory, connect with like-minded gamers, and discover the limitless possibilities of virtual reality.</p>",
+    "imgsrc": "/posters/spotlight_7_imgsrc.png",
+    "bsrc1": "/posters/spotlight_7_bsrc1.png",
+    "bsrc2": "/posters/spotlight_7_bsrc2.png"
+  }
+]

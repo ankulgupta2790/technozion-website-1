@@ -78,7 +78,7 @@ export const Team = () => {
   <p className='person'>sac_president@nitw.ac.in</p>
 </div>
             <div className="additional-image-container">
-         <p className='sacimg'> SECRETARY</p>
+         <p className='sacimg'> Secretary</p>
       </div>
 
         {gridTemplate.map((row, rowIndex) => (
@@ -123,7 +123,7 @@ export const Team = () => {
     {/* Render an image after the row with rowIndex 1 */}
     { (((windowWidth > 786) && rowIndex === 1) || ((windowWidth < 786 && rowIndex === 3))) && (
   <div className="additional-image-container">
-  <p className='sacimg'>JOINT SECRETARY</p>
+  <p className='sacimg'>Joint Secretary</p>
  
   </div>
 )}

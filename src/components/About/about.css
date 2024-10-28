@@ -77,15 +77,25 @@ body {
 }
 
 .youtube-link {
+  width: calc(fit-content+5%);
+  height: fit-content;
+  padding: 15px;
+  border-radius: 20px;
+
   display: flex;
   align-items: center;
-  height: 10vh;
-  padding: 5px 10px; /* Padding for spacing around each link */
-  border: 2px;
-  background:  rgba(0, 0, 0, 0.1); 
-  box-shadow: 0 2px 2px #16f6f3, inset 0 0 10px rgba(255, 255, 255, 0.3); ; 
-  backdrop-filter: blur(5px); 
-      border-radius: 20px;
+  cursor: pointer;
+
+  color: white;
+  position: relative;
+  z-index: 4;
+  word-wrap: break-word;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
+      inset 0 0 15px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 1s ease;
 }
 
 

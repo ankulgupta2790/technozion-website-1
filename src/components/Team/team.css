@@ -142,7 +142,9 @@
     transition: all 1s ease;
 }
 
-
+.parent * {
+    transition: inherit; /* Inherits transition from the parent */
+}
 
 
 /* Hover effect */
