@@ -26,15 +26,15 @@ html,
 body {
   margin: 0; /* Remove default body margin */
   overflow: hidden; /* Disable scrolling */
-  height: 100%; /* Ensure full height */
+  height: 100%; 
 }
 
 /* Card Container Styles */
 .about-container {
-  padding: 20px; /* Add padding to the container */
-  box-sizing: border-box; /* Include padding in height calculations */
-  min-height: 100vh; /* Ensure content takes full height */
-  overflow: auto; /* Allow scrolling inside this container if needed */
+  padding: 20px; 
+  box-sizing: border-box; 
+  min-height: 100vh; 
+  overflow: auto; 
 }
 
 .border {
@@ -47,8 +47,9 @@ body {
 }
 .youtube-links {
   position: absolute;
-  bottom: 10%;
-  left:38%;
+  bottom: 20%;
+  left:35%;
+  
   display: flex; 
   flex-direction: row;
   justify-content: center;
@@ -60,11 +61,18 @@ body {
   padding: 10px;
   z-index: 4;
   transform: translate(-10%, -50%);
+  align-self: center;
+}
+@media (max-width:1600px){
+  .youtube-links{
+    left:30%;
+    bottom: 10%;
+  }
 }
 @media (max-width:1359px){
   .youtube-links{
-    left:30%;
-    bottom:5%;
+    left:25%;
+    bottom: 7%;
   }
 }
 
