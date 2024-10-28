@@ -74,7 +74,7 @@ export const Team = () => {
       <div className="list">
    
       <div className="row-container">
-  <p className='person'>deam_sa@nitw.ac.in</p>
+  <p className='person'>dean_sa@nitw.ac.in</p>
   <p className='person'>sac_president@nitw.ac.in</p>
 </div>
             <div className="additional-image-container">
