@@ -42,3 +42,10 @@
     width: 100%; 
     height: auto; 
 }
+
+@media (max-width: 610px) {
+    .pdf-container{
+        margin-bottom: 2.5rem;
+        height:80%;
+    }
+}

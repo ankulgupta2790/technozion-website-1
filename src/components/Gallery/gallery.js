@@ -23,9 +23,10 @@ export const Gallery = () => {
                 const pdfContainer = pdfRef.current;
                 pdfContainer.innerHTML = ''; // Clear the container
 
+                const scale = window.innerWidth < 768 ? 0.6 : 1; // Adjust scale based on screen width
+
                 for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
                     const page = await pdf.getPage(pageNum);
-                    const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
                     const viewport = page.getViewport({ scale });
 
                     // Create and configure canvas
@@ -77,6 +78,10 @@ export const Gallery = () => {
             if (lastDistanceRef.current > 0) {
                 const scaleFactor = distance / lastDistanceRef.current;
                 scaleRef.current *= scaleFactor;
+
+                // Limit zoom scale to avoid excessive zooming
+                scaleRef.current = Math.max(0.5, Math.min(scaleRef.current, 3)); // Adjust limits as needed
+
                 lastDistanceRef.current = distance;
                 updateCanvasScale();
             }
@@ -95,6 +100,10 @@ export const Gallery = () => {
             // Set new dimensions for zoom
             canvas.width = originalWidth * scaleRef.current;
             canvas.height = originalHeight * scaleRef.current;
+
+            // Render canvas again to reflect new scale
+            context.scale(scaleRef.current, scaleRef.current);
+            context.drawImage(canvas, 0, 0);
         }
     };
 
