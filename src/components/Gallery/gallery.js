@@ -10,8 +10,6 @@ GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs
 
 export const Gallery = () => {
     const pdfRef = useRef(null);
-    const scaleRef = useRef(1); // Track the current scale
-    const lastDistanceRef = useRef(0); // Track the last distance between fingers
     const [loading, setLoading] = useState(true); // Loading state
     const [loadedPages, setLoadedPages] = useState(0); // Track number of loaded pages
 
@@ -61,52 +59,6 @@ export const Gallery = () => {
         }
     }, [loadedPages]);
 
-    const handleTouchStart = (e) => {
-        if (e.touches.length === 2) {
-            const dx = e.touches[0].clientX - e.touches[1].clientX;
-            const dy = e.touches[0].clientY - e.touches[1].clientY;
-            lastDistanceRef.current = Math.sqrt(dx * dx + dy * dy);
-        }
-    };
-
-    const handleTouchMove = (e) => {
-        if (e.touches.length === 2) {
-            const dx = e.touches[0].clientX - e.touches[1].clientX;
-            const dy = e.touches[0].clientY - e.touches[1].clientY;
-            const distance = Math.sqrt(dx * dx + dy * dy);
-
-            if (lastDistanceRef.current > 0) {
-                const scaleFactor = distance / lastDistanceRef.current;
-                scaleRef.current *= scaleFactor;
-
-                // Limit zoom scale to avoid excessive zooming
-                scaleRef.current = Math.max(0.5, Math.min(scaleRef.current, 3)); // Adjust limits as needed
-
-                lastDistanceRef.current = distance;
-                updateCanvasScale();
-            }
-        }
-    };
-
-    const updateCanvasScale = () => {
-        const pdfContainer = pdfRef.current;
-        const canvases = pdfContainer.getElementsByTagName('canvas');
-
-        for (let canvas of canvases) {
-            const context = canvas.getContext('2d');
-            const originalWidth = canvas.width;
-            const originalHeight = canvas.height;
-
-            // Set new dimensions for zoom
-            canvas.width = originalWidth * scaleRef.current;
-            canvas.height = originalHeight * scaleRef.current;
-
-            // Render canvas again to reflect new scale
-            context.scale(scaleRef.current, scaleRef.current);
-            context.drawImage(canvas, 0, 0);
-        }
-    };
-
     return (
         <div className="centered-container">
             <div className="gallery-canvas">
@@ -116,8 +68,6 @@ export const Gallery = () => {
             <div 
                 className={`pdf-container ${loading ? 'hidden' : ''}`} 
                 ref={pdfRef}
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
             >
                 {/* Canvas elements will be appended here */}
             </div>
