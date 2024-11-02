@@ -11,7 +11,8 @@
                     "imgsrc": "/posters/society_10_imgsrc.png",
                     "bsrc1": "/posters/society_10_bsrc1.png",
                     "bsrc2": "/posters/society_10_bsrc2.png",
-                    "index": 10
+                    "index": 10,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Cryptic Hunt",
@@ -22,7 +23,8 @@
                     "imgsrc": "/posters/society_11_imgsrc.png",
                     "bsrc1": "/posters/society_11_bsrc1.png",
                     "bsrc2": "/posters/society_11_bsrc2.png",
-                    "index": 11
+                    "index": 11,
+                    "glink": "https://google.com"
                 }
             ]
         },
@@ -38,7 +40,8 @@
                     "imgsrc": "/posters/society_6_imgsrc.png",
                     "bsrc1": "/posters/society_6_bsrc1.png",
                     "bsrc2": "/posters/society_6_bsrc2.png",
-                    "index": 6
+                    "index": 6,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Treco Hunt",
@@ -49,7 +52,8 @@
                     "imgsrc": "/posters/society_7_imgsrc.png",
                     "bsrc1": "/posters/society_7_bsrc1.png",
                     "bsrc2": "/posters/society_7_bsrc2.png",
-                    "index": 7
+                    "index": 7,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Data Science Contest",
@@ -60,7 +64,8 @@
                     "imgsrc": "/posters/society_9_imgsrc.png",
                     "bsrc1": "/posters/society_9_bsrc1.png",
                     "bsrc2": "/posters/society_9_bsrc2.png",
-                    "index": 9
+                    "index": 9,
+                    "glink": "https://google.com"
                 }
             ]
         },
@@ -76,7 +81,8 @@
                     "imgsrc": "/posters/society_16_imgsrc.png",
                     "bsrc1": "/posters/society_16_bsrc1.png",
                     "bsrc2": "/posters/society_16_bsrc2.png",
-                    "index": 16
+                    "index": 16,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Build-a-pc",
@@ -87,7 +93,8 @@
                     "imgsrc": "/posters/society_18_imgsrc.png",
                     "bsrc1": "/posters/society_18_bsrc1.png",
                     "bsrc2": "/posters/society_18_bsrc2.png",
-                    "index": 18
+                    "index": 18,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Debugger's Duel",
@@ -98,7 +105,8 @@
                     "imgsrc": "/posters/society_19_imgsrc.png",
                     "bsrc1": "/posters/society_19_bsrc1.png",
                     "bsrc2": "/posters/society_19_bsrc2.png",
-                    "index": 19
+                    "index": 19,
+                    "glink": "https://google.com"
                 }
             ]
         },
@@ -114,7 +122,8 @@
                     "imgsrc": "/posters/society_21_imgsrc.png",
                     "bsrc1": "/posters/society_21_bsrc1.png",
                     "bsrc2": "/posters/society_21_bsrc2.png",
-                    "index": 21
+                    "index": 21,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "FUTURE MANAGER",
@@ -125,7 +134,8 @@
                     "imgsrc": "/posters/society_22_imgsrc.png",
                     "bsrc1": "/posters/society_22_bsrc1.png",
                     "bsrc2": "/posters/society_22_bsrc2.png",
-                    "index": 22
+                    "index": 22,
+                    "glink": "https://google.com"
                 }
             ]
         },
@@ -139,7 +149,8 @@
                     "imgsrc": "/posters/society_1_imgsrc.png",
                     "bsrc1": "/posters/society_1_bsrc1.png",
                     "bsrc2": "/posters/society_1_bsrc2.png",
-                    "index": 1
+                    "index": 1,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Inno Chem",
@@ -150,7 +161,8 @@
                     "imgsrc": "/posters/society_2_imgsrc.png",
                     "bsrc1": "/posters/society_2_bsrc1.png",
                     "bsrc2": "/posters/society_2_bsrc2.png",
-                    "index": 2
+                    "index": 2,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Chem Relay Race",
@@ -161,7 +173,8 @@
                     "imgsrc": "/posters/society_3_imgsrc.png",
                     "bsrc1": "/posters/society_3_bsrc1.png",
                     "bsrc2": "/posters/society_3_bsrc2.png",
-                    "index": 3
+                    "index": 3,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "ChemQuest Auction",
@@ -172,7 +185,8 @@
                     "imgsrc": "/posters/society_4_imgsrc.png",
                     "bsrc1": "/posters/society_4_bsrc1.png",
                     "bsrc2": "/posters/society_4_bsrc2.png",
-                    "index": 4
+                    "index": 4,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Chem-E-Case",
@@ -183,7 +197,8 @@
                     "imgsrc": "/posters/society_5_imgsrc.png",
                     "bsrc1": "/posters/society_5_bsrc1.png",
                     "bsrc2": "/posters/society_5_bsrc2.png",
-                    "index": 5
+                    "index": 5,
+                    "glink": "https://google.com"
                 }
             ]
         },
@@ -199,7 +214,8 @@
                     "imgsrc": "/posters/society_24_imgsrc.jpg",
                     "bsrc1": "/posters/society_24_bsrc1.jpg",
                     "bsrc2": "/posters/society_24_bsrc2.jpg",
-                    "index": 24
+                    "index": 24,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Science Relay Race",
@@ -210,7 +226,8 @@
                     "imgsrc": "/posters/society_26_imgsrc.png",
                     "bsrc1": "/posters/society_26_bsrc1.png",
                     "bsrc2": "/posters/society_26_bsrc2.png",
-                    "index": 26
+                    "index": 26,
+                    "glink": "https://google.com"
                 }
             ]
         },
@@ -226,7 +243,8 @@
                     "imgsrc": "/posters/society_25_imgsrc.png",
                     "bsrc1": "/posters/society_25_bsrc1.png",
                     "bsrc2": "/posters/society_25_bsrc2.png",
-                    "index": 25
+                    "index": 25,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "MetaLusion",
@@ -235,7 +253,8 @@
                     "imgsrc": "/posters/society_27_imgsrc.png",
                     "bsrc1": "/posters/society_27_bsrc1.png",
                     "bsrc2": "/posters/society_27_bsrc2.png",
-                    "index": 27
+                    "index": 27,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "MetaForge",
@@ -246,7 +265,8 @@
                     "imgsrc": "/posters/society_28_imgsrc.png",
                     "bsrc1": "/posters/society_28_bsrc1.png",
                     "bsrc2": "/posters/society_28_bsrc2.png",
-                    "index": 28
+                    "index": 28,
+                    "glink": "https://google.com"
                 }
             ]
         },
@@ -260,7 +280,8 @@
                     "imgsrc": "/posters/society_14_imgsrc.png",
                     "bsrc1": "/posters/society_14_bsrc1.png",
                     "bsrc2": "/posters/society_14_bsrc2.png",
-                    "index": 14
+                    "index": 14,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Dare to feel the pain",
@@ -270,7 +291,8 @@
                     "imgsrc": "/posters/society_15_imgsrc.jpg",
                     "bsrc1": "/posters/society_15_bsrc1.jpg",
                     "bsrc2": "/posters/society_15_bsrc2.jpg",
-                    "index": 15
+                    "index": 15,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Voltage Vortex",
@@ -280,7 +302,8 @@
                     "imgsrc": "/posters/society_17_imgsrc.jpg",
                     "bsrc1": "/posters/society_17_bsrc1.jpg",
                     "bsrc2": "/posters/society_17_bsrc2.jpg",
-                    "index": 17
+                    "index": 17,
+                    "glink": "https://google.com"
                 }
             ]
         },
@@ -296,7 +319,8 @@
                     "imgsrc": "/posters/society_8_imgsrc.png",
                     "bsrc1": "/posters/society_8_bsrc1.png",
                     "bsrc2": "/posters/society_8_bsrc2.png",
-                    "index": 8
+                    "index": 8,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Vehicle Demonstration",
@@ -305,7 +329,8 @@
                     "imgsrc": "/posters/society_20_imgsrc.png",
                     "bsrc1": "/posters/society_20_bsrc1.png",
                     "bsrc2": "/posters/society_20_bsrc2.png",
-                    "index": 20
+                    "index": 20,
+                    "glink": "https://google.com"
                 }
             ]
         },
@@ -321,7 +346,8 @@
                     "imgsrc": "/posters/society_13_imgsrc.jpg",
                     "bsrc1": "/posters/society_13_bsrc1.jpg",
                     "bsrc2": "/posters/society_13_bsrc2.jpg",
-                    "index": 13
+                    "index": 13,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Cellution ",
@@ -332,7 +358,8 @@
                     "imgsrc": "/posters/society_12_imgsrc.jpg",
                     "bsrc1": "/posters/society_12_bsrc1.jpg",
                     "bsrc2": "/posters/society_12_bsrc2.jpg",
-                    "index": 12
+                    "index": 12,
+                    "glink": "https://google.com"
                 }
             ]
         },
@@ -348,7 +375,8 @@
                     "imgsrc": "/posters/society_30_imgsrc.png",
                     "bsrc1": "/posters/society_30_bsrc1.png",
                     "bsrc2": "/posters/society_30_bsrc2.png",
-                    "index": 30
+                    "index": 30,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Periodic Table battleship",
@@ -359,7 +387,8 @@
                     "imgsrc": "/posters/society_31_imgsrc.jpg",
                     "bsrc1": "/posters/society_31_bsrc1.jpg",
                     "bsrc2": "/posters/society_31_bsrc2.jpg",
-                    "index": 31
+                    "index": 31,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Let Them Cook",
@@ -370,7 +399,8 @@
                     "imgsrc": "/posters/society_32_imgsrc.jpg",
                     "bsrc1": "/posters/society_32_bsrc1.png",
                     "bsrc2": "/posters/society_32_bsrc2.jpg",
-                    "index": 32
+                    "index": 32,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "ESCAPE ROOM",
@@ -381,7 +411,8 @@
                     "imgsrc": "/posters/society_33_imgsrc.jpg",
                     "bsrc1": "/posters/society_33_bsrc1.jpg",
                     "bsrc2": "/posters/society_33_bsrc2.jpg",
-                    "index": 33
+                    "index": 33,
+                    "glink": "https://google.com"
                 },
                 {
                     "title": "Chemistry Jeopardy",
@@ -392,7 +423,8 @@
                     "imgsrc": "/posters/society_34_imgsrc.jpg",
                     "bsrc1": "/posters/society_34_bsrc1.jpg",
                     "bsrc2": "/posters/society_34_bsrc2.jpg",
-                    "index": 34
+                    "index": 34,
+                    "glink": "https://google.com"
                 }
             ]
         }

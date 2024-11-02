@@ -8,7 +8,7 @@ import fallbackImg from './tzcomingsoon.png'; // Fallback image
 const Card = () => {
     const location = useLocation(); // Extract data from navigation
     const navigate = useNavigate(); // For navigating back
-    const { title, overview, rules, judging_criteria, imgsrc } = location.state || {}; // Extract state data
+    const { title, overview, rules, judging_criteria, imgsrc, glink } = location.state || {}; // Extract state data
 
     const [activeTab, setActiveTab] = useState('overview'); // Track the active tab
     const [imageSrc, setImageSrc] = useState(imgsrc); // State for image source
@@ -69,6 +69,15 @@ const Card = () => {
         };
     }, []);
 
+    // Handles redirect to the registration link
+    const handleRegister = () => {
+        if (glink) {
+            window.open(glink, '_blank'); // Open the glink URL in a new tab
+        } else {
+            alert("Registration link is unavailable."); // Fallback if glink is missing
+        }
+    };
+
     return (
         <div className="card-container">
             <div className='web-canvas'>
@@ -110,7 +119,7 @@ const Card = () => {
                                 {renderContent()}
                             </div>
                             <div className="register">
-                                <button className="register-button">Register</button>
+                                <button className="register-button" onClick={handleRegister}>Register</button>
                             </div>
                         </div>
                     </div>

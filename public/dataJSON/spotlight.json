@@ -7,7 +7,8 @@
     "imgsrc": "/posters/club_17_imgsrc.png",
     "bsrc1": "/posters/club_17_bsrc1.png",
     "bsrc2": "/posters/club_17_bsrc2.png",
-    "index": 17
+    "index": 17,
+    "glink": "https://google.com"
   },
   {
     "title": "IDEATHON",
@@ -16,7 +17,8 @@
     "judging_criteria": "<p>Judging will be based on the following criteria:<br>1. Innovation & Creativity - Originality and uniqueness of the ad concept.<br>2. Technical Feasibility - Practicality and execution of the solution.<br>3. Relevance - How well the ad addresses the problem statement.<br>4. Presentation Quality - Clarity, engagement, and overall delivery.<br>5. Audience Poll- A live poll from the audience, accounting for 20% of the final score.</p>",
     "imgsrc": "/posters/spotlight_2_imgsrc.png",
     "bsrc1": "/posters/spotlight_2_bsrc1.png",
-    "bsrc2": "/posters/spotlight_2_bsrc2.png"
+    "bsrc2": "/posters/spotlight_2_bsrc2.png",
+    "glink": "https://google.com"
   },
   {
     "title": "Drone Velocity (Drone Race)",
@@ -25,27 +27,31 @@
     "judging_criteria": "<p>To be updated soon</p>",
     "imgsrc": "/posters/spotlight_3_imgsrc.png",
     "bsrc1": "/posters/spotlight_3_bsrc1.png",
-    "bsrc2": "/posters/spotlight_3_bsrc2.png"
+    "bsrc2": "/posters/spotlight_3_bsrc2.png",
+    "glink": "https://google.com"
   },
   {
     "title": "STARTUP FAIR",
     "overview": "<p><h1>STARTUP FAIR</h1><br>Startup Fair aims to foster innovation, entrepreneurship, and networking with various startup communities, colleges, and businesses. It will provide a platform for budding entrepreneurs to showcase their ideas, connect with potential investors, mentors, and industry experts, and gain valuable insights into the startup ecosystem.</p>",
     "imgsrc": "/posters/spotlight_4_imgsrc.png",
     "bsrc1": "/posters/spotlight_4_bsrc1.png",
-    "bsrc2": "/posters/spotlight_4_bsrc2.png"
+    "bsrc2": "/posters/spotlight_4_bsrc2.png",
+    "glink": "https://google.com"
   },
   {
     "title": "MATLAB RUN",
     "overview": "<p><h1>MATLAB RUN</h1><br>Join us for the MATLAB Innovation Challenge where students from all engineering disciplines will compete to develop innovative solutions to real-world problems using MATLAB. Showcase your problem-solving abilities, creativity, and technical expertise as you tackle challenges specific to your branch of engineering. Compete against fellow students in your field, apply MATLAB to address real-world issues, connect with industry professionals, and receive guidance from MATLAB experts. Compete for exciting prizes and recognition. Join us for an exhilarating competition that will challenge your mind, inspire your creativity, and help you develop the skills needed to succeed in today's competitive engineering landscape.</p>",
     "imgsrc": "/posters/spotlight_6_imgsrc.png",
     "bsrc1": "/posters/spotlight_6_bsrc1.png",
-    "bsrc2": "/posters/spotlight_6_bsrc2.png"
+    "bsrc2": "/posters/spotlight_6_bsrc2.png",
+    "glink": "https://google.com"
   },
   {
     "title": "E-GAMES IN THE NITW ARENA",
     "overview": "<p><h1>E-GAMES IN THE NITW ARENA</h1><br>Prepare to immerse yourself in a world of exhilarating competition and cutting-edge technology at the E-Games in the NITW Arena. This event brings together the most passionate and skilled students from across the nation to compete in intense virtual battles using VR headsets. Create and develop your own unique gaming experience and invite other players to join you in your virtual world. The most innovative and engaging games will be recognized and rewarded, and their creators may even catch the attention of renowned companies and industry leaders. Whether you're a seasoned pro or just starting your gaming journey, the e-Games in the NITW Arena offers an unforgettable experience. Compete for glory, connect with like-minded gamers, and discover the limitless possibilities of virtual reality.</p>",
     "imgsrc": "/posters/spotlight_7_imgsrc.png",
     "bsrc1": "/posters/spotlight_7_bsrc1.png",
-    "bsrc2": "/posters/spotlight_7_bsrc2.png"
+    "bsrc2": "/posters/spotlight_7_bsrc2.png",
+    "glink": "https://google.com"
   }
 ]

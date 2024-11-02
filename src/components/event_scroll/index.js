@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Poster from './poster.js';
-import {Loader} from '../Loader/index.js'; // Import your loader
+import { Loader } from '../Loader/index.js'; // Import your loader
 import './index.css';
 import { WebCanvas } from '../bg_animation/bg_animate.js';
 import imgsrc from './tzcomingsoon.png'; // Fallback image
@@ -67,8 +67,8 @@ function Index() {
 
   // Function to handle poster click
   const handlePosterClick = (item) => {
-    // Always pass the original image src
-    navigate('/card', { state: { ...item, imgsrc: item.imgsrc || imgsrc } });
+    // Always pass the original image src and glink
+    navigate('/card', { state: { ...item, imgsrc: item.imgsrc || imgsrc, glink: item.glink } });
   };
 
   // Render society posters

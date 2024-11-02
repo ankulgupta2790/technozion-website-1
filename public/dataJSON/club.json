@@ -7,7 +7,8 @@
         "imgsrc": "/posters/club_0_imgsrc.png",
         "bsrc1": "/posters/club_0_bsrc1.png",
         "bsrc2": "/posters/club_0_bsrc2.png",
-        "index": 0
+        "index": 0,
+        "glink": "https://google.com"
     },
     {
         "title": "Technobot beatdown ",
@@ -18,7 +19,8 @@
         "imgsrc": "/posters/club_1_imgsrc.png",
         "bsrc1": "/posters/club_1_bsrc1.png",
         "bsrc2": "/posters/club_1_bsrc2.png",
-        "index": 1
+        "index": 1,
+        "glink": "https://google.com"
     },
     {
         "title": "Labyrinth ",
@@ -29,7 +31,8 @@
         "imgsrc": "/posters/club_2_imgsrc.png",
         "bsrc1": "/posters/club_2_bsrc1.png",
         "bsrc2": "/posters/club_2_bsrc2.png",
-        "index": 2
+        "index": 2,
+        "glink": "https://google.com"
     },
     {
         "title": "Cicada 3301: A Treasure Hunt",
@@ -40,7 +43,8 @@
         "imgsrc": "/posters/club_3_imgsrc.png",
         "bsrc1": "/posters/club_3_bsrc1.png",
         "bsrc2": "/posters/club_3_bsrc2.png",
-        "index": 3
+        "index": 3,
+        "glink": "https://google.com"
     },
     {
         "title": "Circuit Chase",
@@ -51,7 +55,8 @@
         "imgsrc": "/posters/club_4_imgsrc.png",
         "bsrc1": "/posters/club_4_bsrc1.png",
         "bsrc2": "/posters/club_4_bsrc2.png",
-        "index": 4
+        "index": 4,
+        "glink": "https://google.com"
     },
     {
         "title": "eArena",
@@ -62,7 +67,8 @@
         "imgsrc": "/posters/club_5_imgsrc.png",
         "bsrc1": "/posters/club_5_bsrc1.png",
         "bsrc2": "/posters/club_5_bsrc2.png",
-        "index": 5
+        "index": 5,
+        "glink": "https://google.com"
     },
     {
         "title": "Kaun Banega Crorepati",
@@ -73,7 +79,8 @@
         "imgsrc": "/posters/club_6_imgsrc.png",
         "bsrc1": "/posters/club_6_bsrc1.png",
         "bsrc2": "/posters/club_6_bsrc2.png",
-        "index": 6
+        "index": 6,
+        "glink": "https://google.com"
     },
     {
         "title": "Mystery Maze",
@@ -84,7 +91,8 @@
         "imgsrc": "/posters/club_7_imgsrc.png",
         "bsrc1": "/posters/club_7_bsrc1.png",
         "bsrc2": "/posters/club_7_bsrc2.png",
-        "index": 7
+        "index": 7,
+        "glink": "https://google.com"
     },
     {
         "title": "Find The Scam",
@@ -95,7 +103,8 @@
         "imgsrc": "/posters/club_8_imgsrc.png",
         "bsrc1": "/posters/club_8_bsrc1.png",
         "bsrc2": "/posters/club_8_bsrc2.png",
-        "index": 8
+        "index": 8,
+        "glink": "https://google.com"
     },
     {
         "title": "CAMPUS INNOV8",
@@ -106,7 +115,8 @@
         "imgsrc": "/posters/club_9_imgsrc.png",
         "bsrc1": "/posters/club_9_bsrc1.png",
         "bsrc2": "/posters/club_9_bsrc2.png",
-        "index": 9
+        "index": 9,
+        "glink": "https://google.com"
     },
     {
         "title": "thrust off",
@@ -117,7 +127,8 @@
         "imgsrc": "/posters/club_10_imgsrc.png",
         "bsrc1": "/posters/club_10_bsrc1.png",
         "bsrc2": "/posters/club_10_bsrc2.png",
-        "index": 10
+        "index": 10,
+        "glink": "https://google.com"
     },
     {
         "title": "Research paper presentation ",
@@ -128,7 +139,8 @@
         "imgsrc": "/posters/club_11_imgsrc.jpg",
         "bsrc1": "/posters/club_11_bsrc1.jpg",
         "bsrc2": "/posters/club_11_bsrc2.jpg",
-        "index": 11
+        "index": 11,
+        "glink": "https://google.com"
     },
     {
         "title": "wonder cosmos",
@@ -137,7 +149,8 @@
         "imgsrc": "/posters/club_12_imgsrc.png",
         "bsrc1": "/posters/club_12_bsrc1.png",
         "bsrc2": "/posters/club_12_bsrc2.png",
-        "index": 12
+        "index": 12,
+        "glink": "https://google.com"
     },
     {
         "title": "Astro world",
@@ -146,7 +159,8 @@
         "imgsrc": "/posters/club_13_imgsrc.png",
         "bsrc1": "/posters/club_13_bsrc1.png",
         "bsrc2": "/posters/club_13_bsrc2.png",
-        "index": 13
+        "index": 13,
+        "glink": "https://google.com"
     },
     {
         "title": "celestial snapshots",
@@ -157,7 +171,8 @@
         "imgsrc": "/posters/club_14_imgsrc.png",
         "bsrc1": "/posters/club_14_bsrc1.png",
         "bsrc2": "/posters/club_14_bsrc2.png",
-        "index": 14
+        "index": 14,
+        "glink": "https://google.com"
     },
     {
         "title": "the ultimate treasure Hunt",
@@ -168,7 +183,8 @@
         "imgsrc": "/posters/club_15_imgsrc.png",
         "bsrc1": "/posters/club_15_bsrc1.png",
         "bsrc2": "/posters/club_15_bsrc2.png",
-        "index": 15
+        "index": 15,
+        "glink": "https://google.com"
     },
     {
         "title": "Recreate the moment ",
@@ -179,7 +195,8 @@
         "imgsrc": "/posters/club_18_imgsrc.jpg",
         "bsrc1": "/posters/club_18_bsrc1.jpg",
         "bsrc2": "/posters/club_18_bsrc2.jpg",
-        "index": 18
+        "index": 18,
+        "glink": "https://google.com"
     },
     {
         "title": "Clutch Combat",
@@ -190,7 +207,8 @@
         "imgsrc": "/posters/club_20_imgsrc.jpg",
         "bsrc1": "/posters/club_20_bsrc1.jpg",
         "bsrc2": "/posters/club_20_bsrc2.jpg",
-        "index": 20
+        "index": 20,
+        "glink": "https://google.com"
     },
     {
         "title": "Animated Expressions",
@@ -201,7 +219,8 @@
         "imgsrc": "/posters/club_19_imgsrc.png",
         "bsrc1": "/posters/club_19_bsrc1.png",
         "bsrc2": "/posters/club_19_bsrc2.png",
-        "index": 19
+        "index": 19,
+        "glink": "https://google.com"
     },
     {
         "title": "Rocket design challenge",
@@ -212,7 +231,8 @@
         "imgsrc": "/posters/club_16_imgsrc.png",
         "bsrc1": "/posters/club_16_bsrc1.png",
         "bsrc2": "/posters/club_16_bsrc2.png",
-        "index": 16
+        "index": 16,
+        "glink": "https://google.com"
     },
     {
         "title": "Dutch Auction",
@@ -223,6 +243,7 @@
         "imgsrc": "/posters/society_23_imgsrc.png",
         "bsrc1": "/posters/society_23_bsrc1.png",
         "bsrc2": "/posters/society_23_bsrc2.png",
-        "index": 23
+        "index": 23,
+        "glink": "https://google.com"
     }
 ]
