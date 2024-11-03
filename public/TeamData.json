@@ -103,6 +103,16 @@
     "position":"",
     "image":"shivang.jpg",
      "email":""
+  },
+  
+    {
+    "name":"aman",
+    "contactNo":"8328352932",
+    "image":"aman.jpg",
+    "position":"",
+    "email":""
   }
+
+  
 
 ]
