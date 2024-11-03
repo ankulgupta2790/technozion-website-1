@@ -42,6 +42,7 @@
     border-radius: 10px;
     z-index: 2;
     overflow-y: auto;
+    margin-bottom: 3%;
 } 
 .row-container {
     display: flex;
@@ -111,7 +112,7 @@
 .sacimg{
     width: 20%;
     height: fit-content;
-    font-size: 1.5rem;
+    font-size: 3rem;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -142,9 +143,7 @@
     transition: all 1s ease;
 }
 
-.parent * {
-    transition: inherit; /* Inherits transition from the parent */
-}
+
 
 
 /* Hover effect */
@@ -153,15 +152,13 @@
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), 
-    inset 0 0 15px rgba(255, 255, 255, 0.1); 
+   
+
+   border: 1px solid rgba(255, 255, 255, 0.25); 
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), inset 0 0 15px rgba(255, 255, 255, 0.1); 
    backdrop-filter: blur(5px); 
-border: 1px solid rgba(255, 255, 255, 0.25); 
-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 
-                    inset 0 0 15px rgba(255, 255, 255, 0.1); 
-        backdrop-filter: blur(5px); 
-        border-radius: 15px;
-        box-shadow: 0 20px 30px #16f6f3, inset 0 0 10px rgba(255, 255, 255, 0.3); 
+   border-radius: 15px;
+   box-shadow: 0 20px 30px #16f6f3, inset 0 0 10px rgba(255, 255, 255, 0.3); 
 }
 
 
