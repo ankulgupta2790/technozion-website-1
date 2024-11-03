@@ -13,7 +13,7 @@ const oldNavigation = [
 const rightNavigation = [
   { name: "GALLERY", link: "/gallery" },
   { name: "TEAM", link: "/team" },
-  { name: "REGISTER", link: "/register" },
+  { name: "REGISTER", link: "https://forms.gle/6oA8sPJB9L9GkYsb9" },
 ];
 
 const dropList = [
