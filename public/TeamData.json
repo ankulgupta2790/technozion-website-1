@@ -64,6 +64,45 @@
    "email": "",
    "image":"tech.jpg"
     
+  },
+  {
+    "name":"Vikram",
+    "contactNo":"9929523068",
+    "image":"vikram.jpg",
+    "position":"",
+    "email":""
+
+  },
+  {
+    "name":"Anubhav",
+    "contactNo":"6378827728",
+    "image":"anubhav.jpg",
+    "position":"",
+    "email":""
+
+  },
+  {
+    "name":"Prashant",
+    "contactNo":"7739902211",
+    "image":"prashant.jpg",
+    "position":"",
+    "email":""
+
+  },
+  {
+    "name":"Sahil",
+    "contactNo":"8168298651",
+    "image":"sahil.jpg",
+    "position":"",
+    "email":""
+
+  },
+  {
+    "name":"Shivang",
+    "contactNo":"7651935316",
+    "position":"",
+    "image":"shivang.jpg",
+     "email":""
   }
-  
+
 ]
