@@ -77,7 +77,7 @@
     "name":"Vikram",
     "contactNo":"9929523068",
     "image":"vikram.jpg",
-    "position":"",
+    "position":"Lead Developer",
     "email":"vv22csb0b32@student.nitw.ac.in"
 
   },
@@ -85,7 +85,7 @@
     "name":"Anubhav",
     "contactNo":"6378827728",
     "image":"anubhav.jpg",
-    "position":"",
+    "position":"Lead Developer",
     "email":"av22csb0b27@student.nitw.ac.in"
 
   },
@@ -93,7 +93,7 @@
     "name":"Prashant",
     "contactNo":"7739902211",
     "image":"prashant.jpg",
-    "position":"",
+    "position":"Developer",
     "email":"pr22csb0b03@student.nitw.ac.in"
 
   },
@@ -101,14 +101,14 @@
     "name":"Sahil",
     "contactNo":"8168298651",
     "image":"sahil.jpg",
-    "position":"",
+    "position":"Designer",
     "email":"sy22csb0b20@student.nitw.ac.in"
 
   },
   {
     "name":"Shivang",
     "contactNo":"7651935316",
-    "position":"",
+    "position":"Lead Developer",
     "image":"shivang.jpg",
      "email":"sk22eeb0a24@student.nitw.ac.in"
   },
@@ -116,8 +116,15 @@
     "name":"Aman",
     "contactNo":"8328352932",
     "image":"aman.jpg",
-    "position":"",
+    "position":"Developer",
     "email":"ac23ceb0b06@student.nitw.ac.in"
+  },
+  {
+    "name":"Bharat Jain",
+    "contactNo":"9729322358",
+    "image":"bharat.jpg",
+    "position":"Designer",
+    "email":"bj24mac2r06@student.nitw.ac.in"
   }
 
 ]
