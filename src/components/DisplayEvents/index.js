@@ -39,16 +39,16 @@ export function Displayevents() {
   }, [state]);
 
   if (isLoading) {
-    return <p>Loading...</p>; // Display loading indicator while fetching data
+    return <p>Loading...</p>; 
   }
 
   if (!data) {
-    return <p>No data available</p>; // Handle case when no data is available
+    return <p>No data available</p>; 
   }
 
   return (
     <div className="coming-soon">
-      {/* Pass the fetched data to the Carousel component */}
+     
       <Carousel data={data} />
     </div>
   );

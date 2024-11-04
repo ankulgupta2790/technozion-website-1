@@ -40,10 +40,10 @@ export default function Navbar() {
 
   useEffect(() => {
     if (isMobileView) {
-      // Merge old and right navigation for mobile view
+      
       setNavigation([...oldNavigation, ...rightNavigation]);
     } else {
-      // Show original navigation
+     
       setNavigation(oldNavigation);
     }
   }, [isMobileView]);

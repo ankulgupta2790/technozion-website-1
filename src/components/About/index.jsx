@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import './about.css';
 import logo1 from './logo1.png';
 import AboutCard from './AboutCard';
@@ -7,9 +7,9 @@ import youtubeLogo from './youtube-logo.png';
 export const About = () => {
   return (
     <div className="relative">
-      {/* Add WebCanvas here with specific class */}
+     
       <div className="about-canvas">
-        <WebCanvas /> {/* Position the canvas behind the content */}
+        <WebCanvas /> 
       </div>
 
       <div className="about-container w-full z-2 relative p-4 text-white">

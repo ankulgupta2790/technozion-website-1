@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import { WebCanvas } from "../bg_animation/bg_animate";
 import { getDocument, GlobalWorkerOptions } from 'pdfjs-dist/webpack';
 import gallery from "./gallery.pdf";
-import { Loader } from '../Loader/index.js'; // Update with the path to your loader component
+import { Loader } from '../Loader/index.js'; 
 import './gallery.css';
 
-const pdfjsVersion = "2.12.313"; // Replace with your installed version if necessary
+const pdfjsVersion = "2.12.313"; 
 GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsVersion}/pdf.worker.min.js`;
 
 export const Gallery = () => {

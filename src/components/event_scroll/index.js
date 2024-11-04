@@ -15,8 +15,8 @@ function Index() {
   const { state } = location || {};
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [headingImage, setHeadingImage] = useState(null); // State to hold the heading image
-  const [error, setError] = useState(null); // State to track errors
+  const [headingImage, setHeadingImage] = useState(null); 
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,7 +24,7 @@ function Index() {
         let response;
         if (state && state.dataSource === 'societies') {
           response = await fetch('/dataJSON/societyx.json');
-          setHeadingImage(dept); // Set heading image to dept when societies data is fetched
+          setHeadingImage(dept); 
         } else if (state && state.dataSource === 'spotlight') {
           response = await fetch('/dataJSON/spotlight.json');
           setHeadingImage(spotlight); // Set heading image to spotlight
@@ -108,8 +108,8 @@ function Index() {
             {data.map((item, index) => (
               <Poster
                 key={index}
-                imageSrc={item.imgsrc} // Pass the event's imgsrc
-                fallbackSrc={imgsrc} // Pass fallback image in case of error
+                imageSrc={item.imgsrc} 
+                fallbackSrc={imgsrc} 
                 title={item.title}
                 content={item.name}
                 onClick={() => handlePosterClick(item)}
