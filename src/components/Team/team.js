@@ -72,7 +72,7 @@ export const Team = () => {
   target="_blank" 
   className='person'
 >
-  dean_sa@nitw.ac.in
+ dean_sa@nitw.ac.in
 </a>
 
 <a 

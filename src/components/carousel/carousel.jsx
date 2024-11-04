@@ -30,22 +30,22 @@ const Carousel = ({ data }) => {
   return (
     <>
       <div className="carousel-canvas">
-        <WebCanvas /> {/* Position the canvas behind the content */}
+        <WebCanvas /> 
       </div>
       <div className="carousel">
         <button onClick={prevCard} className="carousel-button prev">«</button>
         <div className="carousel-content">
           <Card
-            // Fallback logic for title and name
+          
             title={cards[currentIndex]?.title || cards[currentIndex]?.name}
 
-            // Fallback for description (skip if not available)
+            
             description={cards[currentIndex]?.description}
 
-            // Skip 'rules' if not available
-            // rules={cards[currentIndex]?.rules || undefined}
+           
+            
 
-            // Fallback for contact (skip if not available)
+            
             contact={cards[currentIndex]?.contact}
 
             // Fallback image, if imgSrc is not available, use a default one

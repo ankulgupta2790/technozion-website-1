@@ -264,18 +264,70 @@ body {
    width: 50vw;
  }
 }
-
+@media (max-width:450px) {
+  .youtube-links{
+    flex-direction: column;
+    gap:10px;
+    bottom: 12%;
+    left: 25%;
+    width: fit-content;
+   
+ }
+ .youtube-link{
+   width: 50vw;
+   height: 5vh;
+   font-size: 0.8rem;
+ }
+  
+}
 
 @media (max-width: 325px){
   .theme-content{
     font-size: 0.8rem;
   }
+  
 }
 
 @media (max-width: 250px){
   .theme-content{
     font-size: 0.6rem;
   }
+  .youtube-links{
+    flex-direction: column;
+    gap:10px;
+    bottom: 12%;
+    left: 25%;
+    width: fit-content;
+   
+ }
+ .youtube-link{
+   width: 50vw;
+   height: 5vh;
+   font-size: 0.5rem;
+ }
+}
+@media (max-height:575px) {
+  .youtube-links{
+    flex-direction: column;
+    gap:10px;
+    bottom: 12%;
+    left: 30%;
+    width: fit-content;
+    height:fit-content;
+    padding: 0px;
+   
+ }
+ .youtube-link{
+   width: 50vw;
+   height: 4vh;
+   font-size: 0.5rem;
+   gap:5px;
+ 
+ }
+ .youtube-link img{
+    height:3vh;
+    width: 7vw;
+ }
 }
 
 /* iPad Styles */

@@ -27,11 +27,11 @@ const Events = () => {
       y: ["0%", "-10%", "0%"], // Moves up and down
       transition: { repeat: Infinity, duration: 2, ease: "easeInOut" },
     },
-    moveToCenterCard1: { scale: 2, x: X1f, y: '-20vh', opacity: 1, rotateY: 720 },
+    moveToCenterCard1: { scale: 2, x: X1f, y: '-20vh', opacity: 1, rotateY: 360 },
     moveDownCard1: { scale: 0, y: '100vh', x: D1f, opacity: 0 },
-    moveToCenterCard2: { scale: 2, x: '0', y: '-20vh', opacity: 1, rotateY: 720 },
+    moveToCenterCard2: { scale: 2, x: '0', y: '-20vh', opacity: 1, rotateY: 360 },
     moveDownCard2: { scale: 0, y: '100vh', opacity: 0 },
-    moveToCenterCard3: { scale: 2, x: X2f, y: '-20vh', opacity: 1, rotateY: 720 },
+    moveToCenterCard3: { scale: 2, x: X2f, y: '-20vh', opacity: 1, rotateY: 360 },
     moveDownCard3: { scale: 0, y: '100vh', x: D2f, opacity: 0 },
   };
 
