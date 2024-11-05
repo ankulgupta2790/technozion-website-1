@@ -32,10 +32,12 @@
   },
   {
     "title": "STARTUP FAIR",
-    "overview": "<p><h1>STARTUP FAIR</h1><br>Startup Fair aims to foster innovation, entrepreneurship, and networking with various startup communities, colleges, and businesses. It will provide a platform for budding entrepreneurs to showcase their ideas, connect with potential investors, mentors, and industry experts, and gain valuable insights into the startup ecosystem.</p>",
-    "imgsrc": "/posters/spotlight_4_imgsrc.png",
-    "bsrc1": "/posters/spotlight_4_bsrc1.png",
-    "bsrc2": "/posters/spotlight_4_bsrc2.png",
+    "overview": "<h1>STARTUP FAIR</h1><br><h4>Entrepreneurship and honey bee Club</h4><br><h6>Description</h6><p>Do you have a solution to a problem students face? Turn your ideas into reality with Campus Innov8! Present your innovative • and practical ideas to address issues affecting students and stand a chance to get your startup officially registered with Institute support! </p><br><h6>Team Size</h6><p>1 - 4</p><br><h6>General Secretary</h6><p>Rishi 9866545674</p><br>",
+    "rules": "<p>Pitch Practical Ideas: Solutions must address real, feasible student issues: <br>Presentation: Minimum 10-slide PowerPoint is recommended. <br>No Outside Help: Team collaboration only; no external input.</p>",
+    "judging_criteria": "<p>Impact & Feasibility: How practical and effective is the solution?<br>Presentation: Clarity, engagement, and creativity.<br>Panel Decision: Professors will judge and announce the winners.<br>Winning teams get startup registration support from the Institute!</p>",
+    "imgsrc": "/posters/spotlight_4_imgsrc.jpg",
+    "bsrc1": "/posters/spotlight_4_bsrc1.jpg",
+    "bsrc2": "/posters/spotlight_4_bsrc2.jpg",
     "glink": "https://forms.gle/6oA8sPJB9L9GkYsb9"
   },
   {
