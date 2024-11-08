@@ -30,7 +30,7 @@ const CountdownTimer = ({ targetDate }) => {
     }, [targetDate]);
 
     if (isTimeUp) {
-        return null; // Hide the countdown clock when the time is up
+        return null; // Hide the entire countdown component when the time is up
     }
 
     return (
@@ -59,7 +59,7 @@ const CountdownTimer = ({ targetDate }) => {
 
 const Hero = () => {
     // Set the target date and time for IST (Indian Standard Time)
-    const targetDate = new Date("2024-11-08T10:30:00Z"); // This is 00:00:00 IST on November 8, 2024
+    const targetDate = new Date("2024-11-08T10:30:00Z"); // This is 4:00 PM IST on November 8, 2024
 
     return (
         <div>
